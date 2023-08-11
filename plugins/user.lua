@@ -9,4 +9,32 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
-}
+{"donRaphaco/neotex",
+  ft={'tex'}},
+{"lervag/vimtex",
+  ft={'tex'}},
+{"karb94/neoscroll.nvim",
+  event = "User Astrofile",},
+  {
+  "m4xshen/hardtime.nvim",
+  event = "User Astrofile",
+},
+  {'sbdchd/neoformat',
+  cmd = 'Neoformat',
+  ft={'py','rs','tex'}},
+  {
+    "zbirenbaum/copilot.lua",
+      cmd = "Copilot",
+      event = "User AstroFile",
+      opts = { suggestion = { auto_trigger = true, debounce = 150,
+        keymap = {
+        accept = "<C-l>", -- this is the default
+        accept_word = false, -- this means to only accept with <C-l> on the current word instead of the whole line
+        accept_line = false, -- this means to only accept with <C-l> on the whole line instead of the current word
+        next = "<C-.>",
+        prev = "<C-,>",
+        dismiss = "<C/>"
+      },
+    },
+  },
+}}
