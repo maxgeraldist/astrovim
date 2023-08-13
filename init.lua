@@ -68,7 +68,8 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
     vim.o.termguicolors = true
-    require("copilot.suggestion").toggle_auto_trigger()
+    vim.g.python3_host_prog = 'C:\\Users\\maxge\\AppData\\Local\\Programs\\Python\\Python310-32\\python' 
+    --    require("copilot.suggestion").toggle_auto_trigger()
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {

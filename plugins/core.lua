@@ -16,6 +16,11 @@ return {
         "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
         "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
         "    ██   ████   ████   ██ ██      ██",
+        --add date, time and week day
+        " ",
+        "    " .. os.date("%A, %d %B %Y"),
+        "    " .. os.date("%H:%M"),
+        " ",
       }
       return opts
     end,
