@@ -13,6 +13,26 @@ return {
   ft={'tex'}},
 {"lervag/vimtex",
   ft={'tex'}},
+{ "nvim-lua/plenary.nvim" },
+{"nvim-neorg/neorg",
+    ft = "norg",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = function()
+      require("neorg").setup {
+        load = {
+          ["core.defaults"] = {}, -- Loads default behaviour
+          ["core.concealer"] = {}, -- Adds pretty icons to your documents
+          ["core.dirman"] = { -- Manages Neorg workspaces
+            config = {
+              workspaces = {
+                notes = "~/notes",
+              },
+            },
+          },
+        },
+      }
+    end,
+  },
 {"karb94/neoscroll.nvim",
   event = "User Astrofile"},
   {'sbdchd/neoformat',
