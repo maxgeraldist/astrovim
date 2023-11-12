@@ -68,7 +68,19 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
     vim.o.termguicolors = true
-    vim.g.python3_host_prog = 'C:\\Users\\maxge\\AppData\\Local\\Programs\\Python\\Python310-32\\python' 
+    vim.opt.clipboard = "unnamedplus"
+    vim.cmd('autocmd FileType tex setlocal wrap')
+    local hour = os.date("*t").hour
+
+    local current_hour = tonumber(os.date("%H"))
+    if current_hour >= 7 and current_hour < 19 then
+        vim.cmd('colorscheme astrolight')
+    else
+        vim.cmd('colorscheme astromars')
+    end
+
+    -- set_theme() -- This line is not needed as you've already set the theme above.
+end,
     --    require("copilot.suggestion").toggle_auto_trigger()
     -- Set up custom filetypes
     -- vim.filetype.add {
@@ -82,5 +94,5 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
-  end,
+ 
 }

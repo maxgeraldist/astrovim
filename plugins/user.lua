@@ -14,6 +14,19 @@ return {
 {"lervag/vimtex",
   ft={'tex'}},
 { "nvim-lua/plenary.nvim" },
+{"svermeulen/vim-yoink", lazy=false,
+  config = function()
+        vim.api.nvim_set_keymap('n', '<c-n>', '<plug>(YoinkPostPasteSwapBack)', {})
+        vim.api.nvim_set_keymap('n', '<c-p>', '<plug>(YoinkPostPasteSwapForward)', {})
+        vim.api.nvim_set_keymap('n', 'p', '<plug>(YoinkPaste_p)', {})
+        vim.api.nvim_set_keymap('n', 'P', '<plug>(YoinkPaste_P)', {})
+        vim.api.nvim_set_keymap('n', '[y', '<plug>(YoinkRotateBack)', {})
+        vim.api.nvim_set_keymap('n', ']y', '<plug>(YoinkRotateForward)', {})
+        vim.api.nvim_set_keymap('n', '<c-=>', '<plug>(YoinkPostPasteToggleFormat)', {})
+        vim.api.nvim_set_keymap('n', 'y', '<plug>(YoinkYankPreserveCursorPosition)', {})
+        vim.api.nvim_set_keymap('x', 'y', '<plug>(YoinkYankPreserveCursorPosition)', {})
+      end,
+},
 {"nvim-neorg/neorg",
     ft = "norg",
     dependencies = { "nvim-lua/plenary.nvim" },
@@ -25,8 +38,9 @@ return {
           ["core.dirman"] = { -- Manages Neorg workspaces
             config = {
               workspaces = {
-                notes = "~/notes",
+                notes = "C:\\Users\\maxge\\Desktop\\notes",
               },
+              default_workspace = "notes",
             },
           },
         },

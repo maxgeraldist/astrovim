@@ -1,8 +1,4 @@
--- Mapping data with "desc" stored directly by vim.keymap.set().
---
--- Please use this mappings table to set keyboard mapping since this is the
--- lower level configuration and more robust one. (which-key will
--- automatically pick-up stored data by this setting.)
+
 return {
   -- first key is the mode
   n = {
@@ -15,18 +11,28 @@ return {
       end,
       desc = "Pick to close",
     },
-    -- tables with the `name` key will be registered with which-key if it's installed
-    -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    -- For normal mode deletion
+    ["d"] = { "\"_d", desc = "Delete without yank" },
+    ["D"] = { "\"_D", desc = "Delete to end of line without yank" },
+    ["x"] = { "\"_x", desc = "Delete character without yank" },
+    ["X"] = { "d", desc = "Cut" },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+  },
+  v = {
+    -- For visual mode deletion
+    ["d"] = { "\"_d", desc = "Delete selection without yank" },
+    ["x"] = { "d", desc = "Cut selection" },
   },
   i= {
     ["C-l"] = { "copilot#Accept(<Tab>)", silent = true, expr = true, script = true }, -- Copilot
     ["C-k"] = { "copilot#Reject(<Tab>)", silent = true, expr = true, script = true }, -- 
   },
 }
+
