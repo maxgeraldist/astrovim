@@ -74,7 +74,7 @@ return {
 
     local current_hour = tonumber(os.date("%H"))
     if current_hour >= 7 and current_hour < 19 then
-        vim.cmd('colorscheme astrolight')
+        vim.cmd('colorscheme shine')
     else
         vim.cmd('colorscheme astromars')
     end

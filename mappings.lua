@@ -1,4 +1,3 @@
-
 return {
   -- first key is the mode
   n = {
@@ -16,6 +15,9 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
     -- For normal mode deletion
+    ["gg"] =  { "\"gg0", desc = "Go to the start of the document" },
+    ["G"] =  { "\"G$", desc = "Go to the end of the document" },
+    ["dd"] = { "\"_dd", desc = "Delete line without yank" },
     ["d"] = { "\"_d", desc = "Delete without yank" },
     ["D"] = { "\"_D", desc = "Delete to end of line without yank" },
     ["x"] = { "\"_x", desc = "Delete character without yank" },
@@ -35,4 +37,3 @@ return {
     ["C-k"] = { "copilot#Reject(<Tab>)", silent = true, expr = true, script = true }, -- 
   },
 }
-
