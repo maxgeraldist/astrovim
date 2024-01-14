@@ -17,7 +17,6 @@ return {
     },
   },
 
-
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
@@ -69,29 +68,22 @@ return {
   polish = function()
     vim.o.termguicolors = true
     vim.opt.clipboard = "unnamedplus"
-    vim.cmd('autocmd FileType tex setlocal wrap')
-    local hour = os.date("*t").hour
-
-    local current_hour = tonumber(os.date("%H"))
-    if current_hour >= 7 and current_hour < 19 then
-        vim.cmd('colorscheme shine')
-    else
-        vim.cmd('colorscheme astromars')
-    end
-
-    -- set_theme() -- This line is not needed as you've already set the theme above.
-end,
-    --    require("copilot.suggestion").toggle_auto_trigger()
-    -- Set up custom filetypes
-    -- vim.filetype.add {
-    --   extension = {
-    --     foo = "fooscript",
-    --   },
-    --   filename = {
-    --     ["Foofile"] = "fooscript",
-    --   },
-    --   pattern = {
-    --     ["~/%.config/foo/.*"] = "fooscript",
-    --   },
-    -- }
+    vim.cmd "autocmd FileType tex setlocal wrap"
+    vim.cmd [[let g:grammarous#languagetool_cmd = "java -jar C:/Users/maxge/AppData/Local/nvim-data/lazy/vim-grammarous/misc/LanguageTool-stable/LanguageTool-6.3/languagetool-commandline.jar"]]
+    -- vim.cmd('autocmd VimEnter * if strftime("%H") >= 7 && strftime("%H") < 21 | colorscheme shine | else | colorscheme astromars | endif')
+    vim.cmd "colorscheme astromars"
+  end,
+  --    require("copilot.suggestion").toggle_auto_trigger()
+  -- Set up custom filetypes
+  -- vim.filetype.add {
+  --   extension = {
+  --     foo = "fooscript",
+  --   },
+  --   filename = {
+  --     ["Foofile"] = "fooscript",
+  --   },
+  --   pattern = {
+  --     ["~/%.config/foo/.*"] = "fooscript",
+  --   },
+  -- }
 }

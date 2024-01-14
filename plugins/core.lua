@@ -18,17 +18,18 @@ return {
         "    ██   ████   ████   ██ ██      ██",
         --add date, time and week day
         " ",
-        "    " .. os.date("%A, %d %B %Y"),
-        "    " .. os.date("%H:%M"),
+        "    " .. os.date "%A, %d %B %Y",
+        "    " .. os.date "%H:%M",
         " ",
       }
       return opts
     end,
   },
 
-  
-
   -- You can disable default plugins as follows:
+  { "stevearc/aerial.nvim", enabled = false },
+  { "L3MON4D3/LuaSnip", enabled = false },
+  { "rafamadriz/friendly-snippets", enabled = false },
   -- { "max397574/better-escape.nvim", enabled = false },
   --
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call

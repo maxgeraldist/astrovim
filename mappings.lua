@@ -3,21 +3,23 @@ return {
   n = {
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
-    ["ciw"] = { "\"_ciw", desc = "Change in word without yank" },
+    ["ciw"] = { '"_ciw', desc = "Change in word without yank" },
     ["ci'"] = { "\"_ci'", desc = "Change in single quotes without yank" },
-    ["ci\""] = { "\"_ci\"", desc = "Change in double quotes without yank" },
-    ["ci("] = { "\"_ci(", desc = "Change in parentheses without yank" },
-    ["ci)"] = { "\"_ci)", desc = "Change in parentheses without yank" },
-    ["ci{"] = { "\"_ci{", desc = "Change in braces without yank" },
-    ["ci}"] = { "\"_ci}", desc = "Change in braces without yank" },
-    ["ci["] = { "\"_ci[", desc = "Change in brackets without yank" },
-    ["ci]"] = { "\"_ci]", desc = "Change in brackets without yank" },
-    ["ci<"] = { "\"_ci<", desc = "Change in angle brackets without yank" },
-    ["ci>"] = { "\"_ci>", desc = "Change in angle brackets without yank" },
+    ['ci"'] = { '"_ci"', desc = "Change in double quotes without yank" },
+    ["ci("] = { '"_ci(', desc = "Change in parentheses without yank" },
+    ["ci)"] = { '"_ci)', desc = "Change in parentheses without yank" },
+    ["ci{"] = { '"_ci{', desc = "Change in braces without yank" },
+    ["ci}"] = { '"_ci}', desc = "Change in braces without yank" },
+    ["ci["] = { '"_ci[', desc = "Change in brackets without yank" },
+    ["ci]"] = { '"_ci]', desc = "Change in brackets without yank" },
+    ["ci<"] = { '"_ci<', desc = "Change in angle brackets without yank" },
+    ["ci>"] = { '"_ci>', desc = "Change in angle brackets without yank" },
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr) require("astronvim.utils.buffer").close(bufnr) end)
+        require("astronvim.utils.status").heirline.buffer_picker(
+          function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
+        )
       end,
       desc = "Pick to close",
     },
@@ -26,12 +28,12 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
     -- For normal mode deletion
-    ["gg"] =  { "gg0", desc = "Go to the start of the document" },
-    ["G"] =  { "G$", desc = "Go to the end of the document" },
-    ["dd"] = { "\"_dd", desc = "Delete line without yank" },
-    ["d"] = { "\"_d", desc = "Delete without yank" },
-    ["D"] = { "\"_D", desc = "Delete to end of line without yank" },
-    ["x"] = { "\"_x", desc = "Delete character without yank" },
+    ["gg"] = { "gg0", desc = "Go to the start of the document" },
+    ["G"] = { "G$", desc = "Go to the end of the document" },
+    ["dd"] = { '"_dd', desc = "Delete line without yank" },
+    ["d"] = { '"_d', desc = "Delete without yank" },
+    ["D"] = { '"_D', desc = "Delete to end of line without yank" },
+    ["x"] = { '"_x', desc = "Delete character without yank" },
     ["X"] = { "d", desc = "Cut" },
   },
   t = {
@@ -40,13 +42,13 @@ return {
   },
   v = {
     -- For visual mode deletion
-    ["d"] = { "\"_d", desc = "Delete selection without yank" },
+    ["d"] = { '"_d', desc = "Delete selection without yank" },
     ["x"] = { "d", desc = "Cut selection" },
-    ["gg"] =  { "gg0", desc = "Go to the start of the document" },
-    ["G"] =  { "G$", desc = "Go to the end of the document" },
+    ["gg"] = { "gg0", desc = "Go to the start of the document" },
+    ["G"] = { "G$", desc = "Go to the end of the document" },
   },
-  i= {
+  i = {
     ["C-l"] = { "copilot#Accept(<Tab>)", silent = true, expr = true, script = true }, -- Copilot
-    ["C-k"] = { "copilot#Reject(<Tab>)", silent = true, expr = true, script = true }, -- 
+    ["C-k"] = { "copilot#Reject(<Tab>)", silent = true, expr = true, script = true }, --
   },
 }
