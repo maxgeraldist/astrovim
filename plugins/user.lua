@@ -1,16 +1,4 @@
 return {
-  -- You can also add new plugins here as well:
-  -- Add plugins, the lazy syntax
-  -- "andweeb/presence.nvim",
-  -- {
-  --   "ray-x/lsp_signature.nvim",
-  --   event = "BufRead",
-  --   config = function()
-  --     require("lsp_signature").setup()
-  --   end,
-  -- },
-  { "lervag/vimtex", ft = { "tex" } },
-  { "nvim-lua/plenary.nvim" },
   {
     "svermeulen/vim-yoink",
     lazy = false,
@@ -26,6 +14,7 @@ return {
       vim.api.nvim_set_keymap("x", "y", "<plug>(YoinkYankPreserveCursorPosition)", {})
     end,
   },
+  { "nvim-lua/plenary.nvim" },
   {
     "nvim-neorg/neorg",
     ft = "norg",

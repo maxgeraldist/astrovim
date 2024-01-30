@@ -14,6 +14,7 @@ return {
       --   ["remote_name"] = "https://remote_url.come/repo.git", -- full remote url
       --   ["remote2"] = "github_user/repo", -- GitHub user/repo shortcut,
       --   ["remote3"] = "github_user", -- GitHub user assume AstroNvim fork
+      ["maxgeraldist"] = "https://github.com/maxgeraldist/astrovim",
     },
   },
 
@@ -40,7 +41,7 @@ return {
         -- disable lua_ls formatting capability if you want to use StyLua to format your lua code
         -- "lua_ls",
       },
-      timeout_ms = 1000, -- default format timeout
+      timeout_ms = 10000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function
       --   return true
       -- end
@@ -66,12 +67,12 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
-    vim.o.termguicolors = true
+    vim.api.nvim_exec("language en_US", true)
     vim.opt.clipboard = "unnamedplus"
     vim.cmd "autocmd FileType tex setlocal wrap"
-    vim.cmd [[let g:grammarous#languagetool_cmd = "java -jar C:/Users/maxge/AppData/Local/nvim-data/lazy/vim-grammarous/misc/LanguageTool-stable/LanguageTool-6.3/languagetool-commandline.jar"]]
     -- vim.cmd('autocmd VimEnter * if strftime("%H") >= 7 && strftime("%H") < 21 | colorscheme shine | else | colorscheme astromars | endif')
     vim.cmd "colorscheme astromars"
+    vim.cmd "autocmd BufWritePost *.tex silent !pdflatex %"
   end,
   --    require("copilot.suggestion").toggle_auto_trigger()
   -- Set up custom filetypes
