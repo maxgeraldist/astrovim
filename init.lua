@@ -1,90 +1,69 @@
+function CompileTex()
+  local filename = vim.fn.expand "%:r"
+  local bbl_exists = vim.fn.filereadable(filename .. ".bbl")
+  os.execute("pdflatex " .. filename .. ".tex > /dev/null 2>&1")
+  if bbl_exists == 0 then
+    os.execute("biber " .. filename .. " > /dev/null 2>&1")
+    os.execute("pdflatex " .. filename .. ".tex > /dev/null 2>&1")
+  end
+end
+
 return {
-  -- Configure AstroNvim updates
   updater = {
-    remote = "origin", -- remote to use
-    channel = "stable", -- "stable" or "nightly"
-    version = "latest", -- "latest", tag name, or regex search like "v1.*" to only do updates before v2 (STABLE ONLY)
-    branch = "nightly", -- branch name (NIGHTLY ONLY)
-    commit = nil, -- commit hash (NIGHTLY ONLY)
-    pin_plugins = nil, -- nil, true, false (nil will pin plugins on stable only)
-    skip_prompts = false, -- skip prompts about breaking changes
-    show_changelog = true, -- show the changelog after performing an update
-    auto_quit = false, -- automatically quit the current session after a successful update
-    remotes = { -- easily add new remotes to track
-      --   ["remote_name"] = "https://remote_url.come/repo.git", -- full remote url
-      --   ["remote2"] = "github_user/repo", -- GitHub user/repo shortcut,
-      --   ["remote3"] = "github_user", -- GitHub user assume AstroNvim fork
+    remote = "origin",
+    channel = "stable",
+    version = "latest",
+    branch = "nightly",
+    commit = nil,
+    pin_plugins = nil,
+    skip_prompts = false,
+    show_changelog = true,
+    auto_quit = false,
+    remotes = {
       ["maxgeraldist"] = "https://github.com/maxgeraldist/astrovim",
     },
   },
 
-  -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
     underline = true,
   },
 
   lsp = {
-    -- customize lsp formatting options
     formatting = {
-      -- control auto formatting on save
       format_on_save = {
-        enabled = true, -- enable or disable format on save globally
-        allow_filetypes = { -- enable format on save for specified filetypes only
-          -- "go",
-        },
-        ignore_filetypes = { -- disable format on save for specified filetypes
-          -- "python",
-        },
+        enabled = true,
+        allow_filetypes = {},
+        ignore_filetypes = {},
       },
-      disabled = { -- disable formatting capabilities for the listed language servers
-        -- disable lua_ls formatting capability if you want to use StyLua to format your lua code
-        -- "lua_ls",
-      },
-      timeout_ms = 10000, -- default format timeout
-      -- filter = function(client) -- fully override the default formatting function
-      --   return true
-      -- end
+      disabled = {},
+      timeout_ms = 10000,
     },
-    -- enable servers that you already have installed without mason
-    servers = {
-      -- "pyright"
-    },
+    servers = {},
   },
 
-  -- Configure require("lazy").setup() options
   lazy = {
     defaults = { lazy = true },
     performance = {
       rtp = {
-        -- customize default disabled vim plugins
         disabled_plugins = { "tohtml", "gzip", "matchit", "zipPlugin", "netrwPlugin", "tarPlugin" },
       },
     },
   },
 
-  -- This function is run last and is a good place to configuring
-  -- augroups/autocommands and custom filetypes also this just pure lua so
-  -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
     vim.api.nvim_exec("language en_US", true)
     vim.opt.clipboard = "unnamedplus"
     vim.cmd "autocmd FileType tex setlocal wrap"
     -- vim.cmd('autocmd VimEnter * if strftime("%H") >= 7 && strftime("%H") < 21 | colorscheme shine | else | colorscheme astromars | endif')
     vim.cmd "colorscheme astromars"
-    vim.cmd "autocmd BufWritePost *.tex silent !pdflatex %"
+
+    vim.cmd [[
+          autocmd BufWritePost *.tex silent lua CompileTex()
+        ]]
+    vim.g.loaded_node_provider = 0
+    vim.g.loaded_perl_provider = 0
+    vim.g.loaded_ruby_provider = 0
+    vim.g.python3_host_prog = "/usr/bin/python3"
   end,
-  --    require("copilot.suggestion").toggle_auto_trigger()
-  -- Set up custom filetypes
-  -- vim.filetype.add {
-  --   extension = {
-  --     foo = "fooscript",
-  --   },
-  --   filename = {
-  --     ["Foofile"] = "fooscript",
-  --   },
-  --   pattern = {
-  --     ["~/%.config/foo/.*"] = "fooscript",
-  --   },
-  -- }
 }
