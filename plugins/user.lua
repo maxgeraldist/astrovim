@@ -14,11 +14,12 @@ return {
       vim.api.nvim_set_keymap("x", "y", "<plug>(YoinkYankPreserveCursorPosition)", {})
     end,
   },
-  { "nvim-lua/plenary.nvim" },
   {
     "nvim-neorg/neorg",
     ft = "norg",
-    dependencies = { "nvim-lua/plenary.nvim" },
+    dependencies = {
+      "luarocks.nvim",
+    },
     config = function()
       require("neorg").setup {
         load = {
@@ -27,7 +28,7 @@ return {
           ["core.dirman"] = { -- Manages Neorg workspaces
             config = {
               workspaces = {
-                notes = "C:\\Users\\maxge\\Desktop\\notes",
+                notes = "~/Documents/notes",
               },
               default_workspace = "notes",
             },

@@ -1,11 +1,9 @@
 function CompileTex()
   local filename = vim.fn.expand "%:r"
   local bbl_exists = vim.fn.filereadable(filename .. ".bbl")
+  if bbl_exists == 0 then os.execute("pdflatex " .. filename .. ".tex > /dev/null 2>&1") end
+  os.execute("biber " .. filename .. " > /dev/null 2>&1")
   os.execute("pdflatex " .. filename .. ".tex > /dev/null 2>&1")
-  if bbl_exists == 0 then
-    os.execute("biber " .. filename .. " > /dev/null 2>&1")
-    os.execute("pdflatex " .. filename .. ".tex > /dev/null 2>&1")
-  end
 end
 
 return {
