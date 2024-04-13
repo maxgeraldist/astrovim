@@ -1,0 +1,4537 @@
+
+
+"plugins.lua" 
+"plugins.lua" 25L, 531B written
+"plugins.lua" 25L, 531B written
+
+[nvim-treesitter] [0/1] Downloading tree-sitter-lua...
+[nvim-treesitter] [0/1] Creating temporary directory
+[nvim-treesitter] [0/1] Extracting tree-sitter-lua...
+[nvim-treesitter] [0/1] Compiling...
+[nvim-treesitter] [1/1] Treesitter parser for lua has been installed
+
+[nvim-treesitter] [0/1] Downloading tree-sitter-python...
+[nvim-treesitter] [0/1] Creating temporary directory
+[nvim-treesitter] [0/1] Extracting tree-sitter-python...
+[nvim-treesitter] [0/1] Compiling...
+
+tree-sitter CLI not found: `tree-sitter` is not executable!
+tree-sitter CLI is needed because `latex` is marked that it needs to be generated from the grammar definitions to be compatible with nvim!
+
+[nvim-treesitter] [1/2] Downloading tree-sitter-sql...
+[nvim-treesitter] [1/2] Creating temporary directory
+[nvim-treesitter] [1/2] Extracting tree-sitter-sql...
+[nvim-treesitter] [1/2] Compiling...
+[nvim-treesitter] [2/2] Treesitter parser for sql has been installed
+
+41 lines >ed 1 time
+41 lines >ed 1 time
+41 lines >ed 1 time
+41 lines >ed 1 time
+40 lines >ed 1 time
+40 lines >ed 1 time
+
+"plugins.lua" 
+"plugins.lua" 34L, 851B written
+"plugins.lua" 34L, 851B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: vim/_init_packages.lua:0: /home/mike/.config/nvim/lua/plugins.lua:23: '}' expected (to close '{' at line 21) near 'config'
+stack traceback:
+	[C]: in function 'error'
+	vim/_init_packages.lua: in function <vim/_init_packages.lua:0>
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 34L, 857B written
+"plugins.lua" 34L, 857B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: vim/_init_packages.lua:0: /home/mike/.config/nvim/lua/plugins.lua:23: '}' expected (to close '{' at line 21) near 'config'
+stack traceback:
+	[C]: in function 'error'
+	vim/_init_packages.lua: in function <vim/_init_packages.lua:0>
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+"plugins.lua" 
+"plugins.lua" 34L, 891B written
+"plugins.lua" 34L, 891B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: vim/_init_packages.lua:0: /home/mike/.config/nvim/lua/plugins.lua:23: '}' expected (to close '{' at line 21) near 'config'
+stack traceback:
+	[C]: in function 'error'
+	vim/_init_packages.lua: in function <vim/_init_packages.lua:0>
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+"plugins.lua" 
+"plugins.lua" 35L, 904B written
+"plugins.lua" 35L, 904B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: vim/_init_packages.lua:0: /home/mike/.config/nvim/lua/plugins.lua:23: '}' expected (to close '{' at line 21) near 'config'
+stack traceback:
+	[C]: in function 'error'
+	vim/_init_packages.lua: in function <vim/_init_packages.lua:0>
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+"plugins.lua" 
+"plugins.lua" 35L, 906B written
+"plugins.lua" 35L, 906B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: vim/_init_packages.lua:0: /home/mike/.config/nvim/lua/plugins.lua:23: '}' expected (to close '{' at line 21) near 'config'
+stack traceback:
+	[C]: in function 'error'
+	vim/_init_packages.lua: in function <vim/_init_packages.lua:0>
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+
+"plugins.lua" 
+"plugins.lua" 35L, 907B written
+"plugins.lua" 35L, 907B written
+Downloading tree-sitter-c...
+Creating temporary directory
+Extracting tree-sitter-c...
+Compiling...
+Treesitter parser for c has been installed
+Downloading tree-sitter-vim...
+Creating temporary directory
+Extracting tree-sitter-vim...
+Compiling...
+Treesitter parser for vim has been installed
+Downloading tree-sitter-vimdoc...
+Creating temporary directory
+Extracting tree-sitter-vimdoc...
+Compiling...
+Treesitter parser for vimdoc has been installed
+Downloading tree-sitter-query...
+Creating temporary directory
+Extracting tree-sitter-query...
+Compiling...
+Treesitter parser for query has been installed
+Error detected while processing /home/mike/.config/nvim/init.lua:
+tree-sitter CLI not found: `tree-sitter` is not executable!
+tree-sitter CLI is needed because `latex` is marked that it needs to be generated from the grammar definitions to be compatible with nvim!
+Error detected while processing /home/mike/.config/nvim/init.lua:
+tree-sitter CLI not found: `tree-sitter` is not executable!
+tree-sitter CLI is needed because `latex` is marked that it needs to be generated from the grammar definitions to be compatible with nvim!
+Error detected while processing /home/mike/.config/nvim/init.lua:
+tree-sitter CLI not found: `tree-sitter` is not executable!
+tree-sitter CLI is needed because `latex` is marked that it needs to be generated from the grammar definitions to be compatible with nvim!
+Error detected while processing /home/mike/.config/nvim/init.lua:
+tree-sitter CLI not found: `tree-sitter` is not executable!
+tree-sitter CLI is needed because `latex` is marked that it needs to be generated from the grammar definitions to be compatible with nvim!
+
+"plugins.lua" 
+"plugins.lua" 35L, 898B written
+"plugins.lua" 35L, 898B written
+
+"options.lua" 
+"options.lua" 25L, 598B written
+"options.lua" 25L, 598B written
+
+10 lines to indent... 
+11 lines indented 
+
+"plugins.lua" 
+"plugins.lua" 46L, 1419B written
+"plugins.lua" 46L, 1419B written
+
+
+search hit BOTTOM, continuing at TOP
+
+"plugins.lua" 
+"plugins.lua" 46L, 1371B written
+"plugins.lua" 46L, 1371B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: Vim:E6100: "datn" is not a valid stdpath
+stack traceback:
+	[C]: in function 'stdpath'
+	/home/mike/.config/nvim/lua/plugins.lua:1: in main chunk
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+"plugins.lua" 
+"plugins.lua" 46L, 1371B written
+"plugins.lua" 46L, 1371B written
+Error detected while processing BufReadPost Autocommands for "*":
+Error executing lua callback: /usr/share/nvim/runtime/filetype.lua:24: Error executing lua: /usr/share/nvim/runtime/filetype.lua:25: BufReadPost Autocommands for "*"..FileType Autocommands for "*": Vim(append):Unknown keybinding: nnit_selectionstack traceback:
+stack traceback:
+	[C]: in function 'nvim_cmd'
+	/usr/share/nvim/runtime/filetype.lua:25: in function </usr/share/nvim/runtime/filetype.lua:24>
+	[C]: in function 'nvim_buf_call'
+	/usr/share/nvim/runtime/filetype.lua:24: in function </usr/share/nvim/runtime/filetype.lua:10>
+stack traceback:
+	[C]: in function 'nvim_buf_call'
+	/usr/share/nvim/runtime/filetype.lua:24: in function </usr/share/nvim/runtime/filetype.lua:10>
+Error detected while processing BufReadPost Autocommands for "*":
+Error executing lua callback: /usr/share/nvim/runtime/filetype.lua:24: Error executing lua: /usr/share/nvim/runtime/filetype.lua:25: BufReadPost Autocommands for "*"..FileType Autocommands for "*": Vim(append):Unknown keybinding: nnit_selectionstack traceback:
+stack traceback:
+	[C]: in function 'nvim_cmd'
+	/usr/share/nvim/runtime/filetype.lua:25: in function </usr/share/nvim/runtime/filetype.lua:24>
+	[C]: in function 'nvim_buf_call'
+	/usr/share/nvim/runtime/filetype.lua:24: in function </usr/share/nvim/runtime/filetype.lua:10>
+stack traceback:
+	[C]: in function 'nvim_buf_call'
+	/usr/share/nvim/runtime/filetype.lua:24: in function </usr/share/nvim/runtime/filetype.lua:10>
+
+"plugins.lua" 
+"plugins.lua" 46L, 1420B written
+"plugins.lua" 46L, 1420B written
+search hit BOTTOM, continuing at TOP
+search hit BOTTOM, continuing at TOP
+search hit BOTTOM, continuing at TOP
+search hit BOTTOM, continuing at TOP
+
+"plugins.lua" 
+"plugins.lua" 46L, 1371B written
+"plugins.lua" 46L, 1371B written
+
+"plugins.lua" 
+"plugins.lua" 46L, 1378B written
+"plugins.lua" 46L, 1378B written
+
+"plugins.lua" 
+"plugins.lua" 46L, 1399B written
+"plugins.lua" 46L, 1399B written
+
+"plugins.lua" 
+"plugins.lua" 49L, 1461B written
+"plugins.lua" 49L, 1461B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: vim/_init_packages.lua:0: /home/mike/.config/nvim/lua/plugins.lua:49: '}' expected (to close '{' at line 14) near ')'
+stack traceback:
+	[C]: in function 'error'
+	vim/_init_packages.lua: in function <vim/_init_packages.lua:0>
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+"plugins.lua" 
+"plugins.lua" 49L, 1467B written
+"plugins.lua" 49L, 1467B writtenrecording @jrecording @jrecording @jrecording @jrecording @j
+
+39 lines to indent... 
+40 lines indented recording @j
+recording @j
+recording @j
+recording @j
+recording @j
+recording @j
+recording @j
+recording @j
+recording @j
+
+"plugins.lua" 
+"plugins.lua" 90L, 3977B writtenrecording @j
+"plugins.lua" 90L, 3977B written
+E447: Cannot find file "goto_next" in path
+E447: Cannot find file "goto_next" in path
+
+"plugins.lua" 
+"plugins.lua" 85L, 3737B written
+"plugins.lua" 85L, 3737B written
+
+"plugins.lua" 
+"plugins.lua" 85L, 3762B written
+"plugins.lua" 85L, 3762B written
+Already at newest change
+
+
+10 lines to indent... 
+11 lines indented 
+23 lines to indent... 
+24 lines indented 
+
+
+
+
+
+
+10 lines to indent... 
+11 lines indented 
+23 lines to indent... 
+24 lines indented 
+
+
+
+
+
+
+
+37 lines >ed 1 time
+37 lines >ed 1 time
+
+"plugins.lua" 
+"plugins.lua" 122L, 6343B written
+"plugins.lua" 122L, 6343B written
+
+
+
+E490: No fold found
+recording @j
+recording @j
+E490: No fold foundrecording @j
+E490: No fold foundrecording @j
+E490: No fold foundrecording @j
+E490: No fold foundrecording @j
+E490: No fold foundrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @j
+recording @j
+recording @jrecording @jrecording @jrecording @jrecording @j
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp"
+          owned by: mike   dated: Mi Apr 03 23:47:33 2024
+         file name: ~mike/.config/nvim/lua/plugins.lua
+          modified: YES
+         user name: mike   host name: mike
+        process ID: 17896
+While opening file "/home/mike/.config/nvim/lua/plugins.lua"
+             dated: Mi Apr 03 23:41:33 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/plugins.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: 
+
+"plugins.lua" 
+"plugins.lua" 103L, 4651B written
+"plugins.lua" 103L, 4651B written
+Already at newest change
+
+"plugins.lua" 
+"plugins.lua" 99L, 4778B written
+"plugins.lua" 99L, 4778B written
+
+"plugins.lua" 
+"plugins.lua" 100L, 4801B written
+"plugins.lua" 100L, 4801B written
+
+"plugins.lua" 
+"plugins.lua" 100L, 4801B written
+"plugins.lua" 100L, 4801B written
+
+"plugins.lua" 
+"plugins.lua" 102L, 4991B written
+"plugins.lua" 102L, 4991B written
+84 lines yanked
+38 lines yanked
+
+
+8 lines to indent... 
+9 lines indented 
+
+"plugins.lua" 
+"plugins.lua" 111L, 5428B written
+"plugins.lua" 111L, 5428B written
+E490: No fold found
+
+
+
+"plugins.lua" 
+"plugins.lua" 114L, 5474B written
+"plugins.lua" 114L, 5474B written
+
+
+20 lines yanked
+
+
+
+"plugins.lua" 
+"plugins.lua" 119L, 5564B written
+"plugins.lua" 119L, 5564B written
+
+E492: Not an editor command: Mason
+search hit BOTTOM, continuing at TOP
+search hit BOTTOM, continuing at TOP
+search hit BOTTOM, continuing at TOP
+
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 123L, 5628B written
+"plugins.lua" 123L, 5628B written
+
+Command `Mason` not found after loading `mason.nvim`
+
+10 lines yanked
+
+
+7 lines to indent... 
+8 lines indented 
+
+
+"plugins.lua" 
+"plugins.lua" 131L, 5924B written
+"plugins.lua" 131L, 5924B written
+
+E21: Cannot make changes, 'modifiable' is off
+"lua-language-server" was successfully installed.
+
+
+
+
+
+
+
+
+[nvim-treesitter] [0/1] Downloading tree-sitter-markdown...
+[nvim-treesitter] [0/1] Creating temporary directory
+[nvim-treesitter] [0/1] Extracting tree-sitter-markdown...
+[nvim-treesitter] [0/1] Compiling...
+[nvim-treesitter] [1/1] Treesitter parser for markdown has been installed
+8 lines yanked
+E21: Cannot make changes, 'modifiable' is off
+
+{}
+
+
+E21: Cannot make changes, 'modifiable' is off
+"lua-language-server" was successfully uninstalled.
+
+
+"plugins.lua" 
+"plugins.lua" 124L, 5826B written
+"plugins.lua" 124L, 5826B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: vim/_init_packages.lua:0: /home/mike/.config/nvim/lua/plugins.lua:122: '}' expected (to close '{' at line 14) near '{'
+stack traceback:
+	[C]: in function 'error'
+	vim/_init_packages.lua: in function <vim/_init_packages.lua:0>
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+"plugins.lua" 
+"plugins.lua" 122L, 5819B written
+"plugins.lua" 122L, 5819B written
+
+
+
+9 lines yanked
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+
+
+8 lines to indent... 
+9 lines indented 
+
+"plugins.lua" 
+"plugins.lua" 130L, 6143B written
+"plugins.lua" 130L, 6143B written
+
+
+E492: Not an editor command: lazy
+
+22 lines yanked
+
+"lua-language-server" was successfully installed.
+
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 139L, 6234B written
+"plugins.lua" 139L, 6234B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: vim/_init_packages.lua:0: /home/mike/.config/nvim/lua/plugins.lua:139: '}' expected (to close '{' at line 14) near ')'
+stack traceback:
+	[C]: in function 'error'
+	vim/_init_packages.lua: in function <vim/_init_packages.lua:0>
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+"plugins.lua" 
+"plugins.lua" 122L, 5819B written
+"plugins.lua" 122L, 5819B written
+
+E492: Not an editor command: lazy
+
+
+search hit BOTTOM, continuing at TOP
+
+
+
+
+10 lines to indent... 
+11 lines indented 
+
+13 lines to indent... 
+14 lines indented 
+
+"plugins.lua" 
+"plugins.lua" 139L, 6408B written
+"plugins.lua" 139L, 6408B written
+
+"plugins.lua" 
+"plugins.lua" 128L, 6053B written
+"plugins.lua" 128L, 6053B written
+
+
+"plugins.lua" 
+"plugins.lua" 123L, 5913B written
+"plugins.lua" 123L, 5913B written
+
+
+E492: Not an editor command: lazy
+
+
+E492: Not an editor command: Mason
+
+"plugins.lua" 
+"plugins.lua" 124L, 5936B written
+"plugins.lua" 124L, 5936B written
+
+Failed to run `config` for mason.nvim
+
+/home/mike/.config/nvim/lua/plugins.lua:115: module 'mason-lspconfig' not found:
+^Ino field package.preload['mason-lspconfig']
+cache_loader: module mason-lspconfig not found
+cache_loader_lib: module mason-lspconfig not found
+^Ino file './mason-lspconfig.lua'
+^Ino file '/usr/share/luajit-2.1/mason-lspconfig.lua'
+^Ino file '/usr/local/share/lua/5.1/mason-lspconfig.lua'
+^Ino file '/usr/local/share/lua/5.1/mason-lspconfig/init.lua'
+^Ino file '/usr/share/lua/5.1/mason-lspconfig.lua'
+^Ino file '/usr/share/lua/5.1/mason-lspconfig/init.lua'
+^Ino file './mason-lspconfig.so'
+^Ino file '/usr/local/lib/lua/5.1/mason-lspconfig.so'
+^Ino file '/usr/lib/lua/5.1/mason-lspconfig.so'
+^Ino file '/usr/local/lib/lua/5.1/loadall.so'
+
+# stacktrace:
+  - plugins.lua:115 _in_ **config**
+
+"plugins.lua" 
+"plugins.lua" 124L, 5936B written
+"plugins.lua" 124L, 5936B written
+
+Failed to run `config` for mason.nvim
+
+/home/mike/.config/nvim/lua/plugins.lua:115: module 'mason-lspconfig' not found:
+^Ino field package.preload['mason-lspconfig']
+cache_loader: module mason-lspconfig not found
+cache_loader_lib: module mason-lspconfig not found
+^Ino file './mason-lspconfig.lua'
+^Ino file '/usr/share/luajit-2.1/mason-lspconfig.lua'
+^Ino file '/usr/local/share/lua/5.1/mason-lspconfig.lua'
+^Ino file '/usr/local/share/lua/5.1/mason-lspconfig/init.lua'
+^Ino file '/usr/share/lua/5.1/mason-lspconfig.lua'
+^Ino file '/usr/share/lua/5.1/mason-lspconfig/init.lua'
+^Ino file './mason-lspconfig.so'
+^Ino file '/usr/local/lib/lua/5.1/mason-lspconfig.so'
+^Ino file '/usr/lib/lua/5.1/mason-lspconfig.so'
+^Ino file '/usr/local/lib/lua/5.1/loadall.so'
+
+# stacktrace:
+  - plugins.lua:115 _in_ **config**
+
+
+
+"plugins.lua" 
+"plugins.lua" 123L, 5826B written
+"plugins.lua" 123L, 5826B written
+
+Failed to run `config` for mason.nvim
+
+/home/mike/.config/nvim/lua/plugins.lua:115: module 'mason-lspconfig' not found:
+^Ino field package.preload['mason-lspconfig']
+cache_loader: module mason-lspconfig not found
+cache_loader_lib: module mason-lspconfig not found
+^Ino file './mason-lspconfig.lua'
+^Ino file '/usr/share/luajit-2.1/mason-lspconfig.lua'
+^Ino file '/usr/local/share/lua/5.1/mason-lspconfig.lua'
+^Ino file '/usr/local/share/lua/5.1/mason-lspconfig/init.lua'
+^Ino file '/usr/share/lua/5.1/mason-lspconfig.lua'
+^Ino file '/usr/share/lua/5.1/mason-lspconfig/init.lua'
+^Ino file './mason-lspconfig.so'
+^Ino file '/usr/local/lib/lua/5.1/mason-lspconfig.so'
+^Ino file '/usr/lib/lua/5.1/mason-lspconfig.so'
+^Ino file '/usr/local/lib/lua/5.1/loadall.so'
+
+# stacktrace:
+  - plugins.lua:115 _in_ **config**
+
+
+"plugins.lua" 
+"plugins.lua" 112L, 5474B written
+"plugins.lua" 112L, 5474B written
+
+"plugins.lua" 
+"plugins.lua" 116L, 5606B written
+"plugins.lua" 116L, 5606B written
+
+"plugins.lua" 
+"plugins.lua" 124L, 5795B written
+"plugins.lua" 124L, 5795B written
+
+"plugins.lua" 
+"plugins.lua" 124L, 5795B written
+"plugins.lua" 124L, 5795B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: vim/_init_packages.lua:0: /home/mike/.config/nvim/lua/plugins.lua:118: '}' expected (to close '{' at line 116) near 'config'
+stack traceback:
+	[C]: in function 'error'
+	vim/_init_packages.lua: in function <vim/_init_packages.lua:0>
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+"plugins.lua" 
+"plugins.lua" 124L, 5795B written
+"plugins.lua" 124L, 5795B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: vim/_init_packages.lua:0: /home/mike/.config/nvim/lua/plugins.lua:118: '}' expected (to close '{' at line 116) near 'config'
+stack traceback:
+	[C]: in function 'error'
+	vim/_init_packages.lua: in function <vim/_init_packages.lua:0>
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+
+
+"plugins.lua" 
+"plugins.lua" 125L, 5802B written
+"plugins.lua" 125L, 5802B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: vim/_init_packages.lua:0: /home/mike/.config/nvim/lua/plugins.lua:118: '}' expected (to close '{' at line 116) near 'config'
+stack traceback:
+	[C]: in function 'error'
+	vim/_init_packages.lua: in function <vim/_init_packages.lua:0>
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+
+
+"plugins.lua" 
+"plugins.lua" 125L, 5805B written
+"plugins.lua" 125L, 5805B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: vim/_init_packages.lua:0: /home/mike/.config/nvim/lua/plugins.lua:120: unexpected symbol near '='
+stack traceback:
+	[C]: in function 'error'
+	vim/_init_packages.lua: in function <vim/_init_packages.lua:0>
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+
+10 lines yanked
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: vim/_init_packages.lua:0: /home/mike/.config/nvim/lua/plugins.lua:120: unexpected symbol near '='
+stack traceback:
+	[C]: in function 'error'
+	vim/_init_packages.lua: in function <vim/_init_packages.lua:0>
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+"plugins.lua" 
+"plugins.lua" 125L, 5813B written
+"plugins.lua" 125L, 5813B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: vim/_init_packages.lua:0: /home/mike/.config/nvim/lua/plugins.lua:120: unexpected symbol near '='
+stack traceback:
+	[C]: in function 'error'
+	vim/_init_packages.lua: in function <vim/_init_packages.lua:0>
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+
+"plugins.lua" 
+"plugins.lua" 125L, 5811B written
+"plugins.lua" 125L, 5811B written
+
+
+"plugins.lua" 
+"plugins.lua" 125L, 5811B written
+"plugins.lua" 125L, 5811B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+Plugin which-key is not installed
+4 lines yanked
+6 lines yanked
+Error detected while processing /home/mike/.config/nvim/init.lua:
+Plugin which-key is not installed
+
+"plugins.lua" 
+"plugins.lua" 125L, 5816B written
+"plugins.lua" 125L, 5816B written
+
+
+E756: Spell checking is not possible
+
+
+
+
+
+
+E490: No fold found
+
+
+E490: No fold found
+
+
+E490: No fold found
+
+
+
+
+
+
+
+
+
+
+
+
+16 lines changed
+
+
+
+
+
+
+
+
+
+
+
+E492: Not an editor command: lazy
+
+
+
+
+
+man.lua: "no manual entry for lspconfig"
+man.lua: "no manual entry for lspconfig"
+Error detected while processing BufReadCmd Autocommands for "man://*"..script nvim_exec2() called at BufReadCmd Autocommands for "man://*":0:
+E486: Pattern not found: \s\{199,}
+
+
+recording @krecording @k
+
+"plugins.lua" 
+"plugins.lua" 128L, 5861B writtenrecording @k
+"plugins.lua" 128L, 5861B writtenrecording @krecording @k
+
+recording @k
+recording @k
+recording @krecording @krecording @krecording @krecording @k
+
+"plugins.lua" 
+"plugins.lua" 138L, 6215B writtenrecording @k
+"plugins.lua" 138L, 6215B written
+
+
+
+
+
+
+
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 141L, 6283B written
+"plugins.lua" 141L, 6283B written
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+270 lines to indent... 
+250 lines to indent... 
+200 lines to indent... 
+150 lines to indent... 
+100 lines to indent... 
+50 lines to indent... 
+271 lines indented 
+
+
+
+"plugins.lua" 
+"plugins.lua" 423L, 22625B written
+"plugins.lua" 423L, 22625B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: vim/_init_packages.lua:0: /home/mike/.config/nvim/lua/plugins.lua:139: '}' expected (to close '{' at line 129) near 'config'
+stack traceback:
+	[C]: in function 'error'
+	vim/_init_packages.lua: in function <vim/_init_packages.lua:0>
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 422L, 22618B written
+"plugins.lua" 422L, 22618B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: vim/_init_packages.lua:0: /home/mike/.config/nvim/lua/plugins.lua:139: '}' expected (to close '{' at line 129) near 'config'
+stack traceback:
+	[C]: in function 'error'
+	vim/_init_packages.lua: in function <vim/_init_packages.lua:0>
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 422L, 22618B written
+"plugins.lua" 422L, 22618B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: vim/_init_packages.lua:0: /home/mike/.config/nvim/lua/plugins.lua:139: '}' expected (to close '{' at line 129) near 'config'
+stack traceback:
+	[C]: in function 'error'
+	vim/_init_packages.lua: in function <vim/_init_packages.lua:0>
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+
+"plugins.lua" 
+"plugins.lua" 421L, 22614B written
+"plugins.lua" 421L, 22614B written
+[lspconfig] Cannot access configuration for lua. Ensure this server is listed in `server_configurations.md` or added as a custom server.
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Some options have changed, please run `:Neotree migrations` to see the changes
+[lspconfig] Cannot access configuration for lua. Ensure this server is listed in `server_configurations.md` or added as a custom server.
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Some options have changed, please run `:Neotree migrations` to see the changes
+[lspconfig] Cannot access configuration for lua. Ensure this server is listed in `server_configurations.md` or added as a custom server.
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+Some options have changed, please run `:Neotree migrations` to see the changes
+
+
+
+
+
+
+
+
+
+
+
+
+Already at newest change
+
+"plugins.lua" 
+"plugins.lua" 417L, 22353B written
+"plugins.lua" 417L, 22353B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[lspconfig] Cannot access configuration for lua. Ensure this server is listed in `server_configurations.md` or added as a custom server.
+Some options have changed, please run `:Neotree migrations` to see the changes
+
+
+
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[lspconfig] Cannot access configuration for lua. Ensure this server is listed in `server_configurations.md` or added as a custom server.
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp"
+          owned by: mike   dated: Do Apr 04 02:11:57 2024
+         file name: ~mike/.config/nvim/lua/plugins.lua
+          modified: YES
+         user name: mike   host name: mike
+        process ID: 40989
+While opening file "/home/mike/.config/nvim/lua/plugins.lua"
+             dated: Do Apr 04 02:10:09 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/plugins.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: 
+Some options have changed, please run `:Neotree migrations` to see the changes
+recording @q
+recording @qrecording @qrecording @q
+
+recording @q
+
+"plugins.lua" 
+"plugins.lua" 416L, 22257B writtenrecording @q
+"plugins.lua" 416L, 22257B writtenrecording @q
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[lspconfig] Cannot access configuration for lua. Ensure this server is listed in `server_configurations.md` or added as a custom server.
+
+"plugins.lua" 
+"plugins.lua" 416L, 22260B written
+"plugins.lua" 416L, 22260B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 5L, 197B written
+"remaps.lua" 5L, 197B written
+
+
+
+
+5 lines yanked
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+"remaps.lua" 
+"remaps.lua" 5L, 209B written
+"remaps.lua" 5L, 209B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+[Neo-tree INFO] No items, skipping git ignored/status lookups
+[Neo-tree INFO] No items, skipping git ignored/status lookups
+[Neo-tree INFO] No items, skipping git ignored/status lookups
+[Neo-tree INFO] No items, skipping git ignored/status lookups
+[Neo-tree INFO] No items, skipping git ignored/status lookups
+[Neo-tree INFO] No items, skipping git ignored/status lookups
+[Neo-tree INFO] No items, skipping git ignored/status lookups
+[Neo-tree INFO] No items, skipping git ignored/status lookups
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+E37: No write since last change
+E162: No write since last change for buffer "remaps.lua"
+
+
+
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+"options.lua" 
+"options.lua" 32L, 741B written
+"options.lua" 32L, 741B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+8 lines yanked
+
+
+
+
+9 lines to indent... 
+10 lines indented 
+
+
+
+"plugins.lua" 
+"plugins.lua" 428L, 22639B written
+"plugins.lua" 428L, 22639B written
+
+"plugins.lua" 
+"plugins.lua" 428L, 22659B written
+"plugins.lua" 428L, 22659B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+"options.lua" 
+"options.lua" 33L, 741B written
+Error detected while processing BufWritePost Autocommands for "*.lua":
+E492: Not an editor command: FormatWrite
+
+"options.lua" 
+"options.lua" 33L, 741B written
+Error detected while processing BufWritePost Autocommands for "*.lua":
+E492: Not an editor command: FormatWrite
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+"options.lua" 
+"options.lua" 33L, 741B written
+"options.lua" 33L, 741B written
+
+
+
+"options.lua" 
+"options.lua" 34L, 728B written
+"options.lua" 34L, 728B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+"options.lua" 
+"options.lua" 34L, 702B written
+"options.lua" 34L, 702B written
+
+"options.lua" 
+"options.lua" 34L, 702B written
+"options.lua" 34L, 702B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+"options.lua" 
+"options.lua" 34L, 733B written
+"options.lua" 34L, 733B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+6 lines to indent... 
+7 lines indented 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 436L, 23091B written
+"plugins.lua" 436L, 23091B written
+
+"plugins.lua" 
+"plugins.lua" 428L, 22659B written
+"plugins.lua" 428L, 22659B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+
+"plugins.lua" 
+"plugins.lua" 436L, 23091B written
+"plugins.lua" 436L, 23091B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%options.lua.swp"
+          owned by: mike   dated: Do Apr 04 02:50:36 2024
+         file name: ~mike/.config/nvim/lua/options.lua
+          modified: no
+         user name: mike   host name: mike
+        process ID: 44029 (STILL RUNNING)
+While opening file "/home/mike/.config/nvim/lua/options.lua"
+             dated: Do Apr 04 02:48:16 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/options.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%options.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%options.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort: 
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+"options.lua" 
+"options.lua" 33L, 718B written
+"options.lua" 33L, 718B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+"options.lua" 
+"options.lua" 34L, 728B written
+"options.lua" 34L, 728B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+
+
+
+
+
+
+
+E447: Cannot find file "vim/cmd/colorscheme" in path
+
+"plugins.lua" 
+"plugins.lua" 428L, 22659B written
+"plugins.lua" 428L, 22659B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+"options.lua" 
+"options.lua" 26L, 599B written
+"options.lua" 26L, 599B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+2 lines to indent... 
+3 lines indented 
+
+"options.lua" 
+"options.lua" 28L, 692B written
+"options.lua" 28L, 692B written
+
+
+
+"options.lua" 
+"options.lua" 28L, 693B written
+"options.lua" 28L, 693B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+15 lines yanked
+
+
+
+"remaps.lua" 
+"remaps.lua" 15L, 1014B written
+"remaps.lua" 15L, 1014B written
+
+
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 16L, 1083B written
+"remaps.lua" 16L, 1083B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: vim/loader.lua:0: /home/mike/.config/nvim/lua/remaps.lua:9: unexpected symbol near '['
+stack traceback:
+	[C]: in function 'error'
+	vim/loader.lua: in function <vim/loader.lua:0>
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:3: in main chunk
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 15L, 1199B written
+"remaps.lua" 15L, 1199B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+"remaps.lua" 
+"remaps.lua" 15L, 1199B written
+"remaps.lua" 15L, 1199B written
+
+"remaps.lua" 
+"remaps.lua" 15L, 1199B written
+"remaps.lua" 15L, 1199B written
+
+
+
+
+
+
+
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+search hit BOTTOM, continuing at TOP
+search hit BOTTOM, continuing at TOP
+search hit BOTTOM, continuing at TOP
+search hit BOTTOM, continuing at TOP
+search hit BOTTOM, continuing at TOP
+
+You'll need to install window-picker to use this command: https://github.com/s1n7ax/nvim-window-picker
+search hit BOTTOM, continuing at TOP
+
+
+
+
+
+
+
+
+26 lines yanked
+
+
+282 lines yanked
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+406 lines yanked
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp"
+          owned by: mike   dated: Do Apr 04 13:22:16 2024
+         file name: ~mike/.config/nvim/lua/plugins.lua
+          modified: YES
+         user name: mike   host name: mike
+        process ID: 2797
+While opening file "/home/mike/.config/nvim/lua/plugins.lua"
+             dated: Do Apr 04 02:55:13 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/plugins.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: 
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp"
+          owned by: mike   dated: Do Apr 04 13:22:16 2024
+         file name: ~mike/.config/nvim/lua/plugins.lua
+          modified: YES
+         user name: mike   host name: mike
+        process ID: 2797
+While opening file "/home/mike/.config/nvim/lua/plugins.lua"
+             dated: Do Apr 04 02:55:13 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/plugins.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: 
+
+
+279 lines yanked
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 142L, 6336B written
+"plugins.lua" 142L, 6336B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+E492: Not an editor command: lazy
+
+
+
+
+
+
+
+4 lines >ed 1 time
+4 lines >ed 1 time
+
+"plugins.lua" 
+"plugins.lua" 146L, 6435B written
+"plugins.lua" 146L, 6435B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 22L, 1448B written
+"remaps.lua" 22L, 1448B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+[telescope.run_command]: Unknown command
+
+
+
+[telescope.run_command]: Unknown command
+
+
+
+[telescope.run_command]: Unknown command
+
+
+
+
+
+
+[telescope.run_command]: Unknown command
+
+
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 22L, 1788B written
+"remaps.lua" 22L, 1788B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 23L, 1789B written
+"remaps.lua" 23L, 1789B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+
+
+
+
+85 lines yanked
+
+
+
+
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 62L, 1590B written
+"plugins.lua" 62L, 1590B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 62L, 1590B written
+"plugins.lua" 62L, 1590B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+recording @qrecording @q
+
+E37: No write since last change (add ! to override)recording @qrecording @jrecording @j
+recording @jrecording @jrecording @jrecording @jrecording @j
+recording @j
+recording @j
+recording @j
+recording @j
+
+[telescope.run_command]: Unknown commandrecording @j
+recording @jrecording @j
+recording @j
+recording @jrecording @jrecording @jrecording @j
+recording @jrecording @j
+recording @j
+
+"remaps.lua" 
+"remaps.lua" 23L, 1789B writtenrecording @j
+"remaps.lua" 23L, 1789B writtenrecording @jrecording @j
+recording @jrecording @j
+recording @j
+recording @jrecording @jrecording @jrecording @j
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+"plugins.lua" 
+"plugins.lua" 66L, 1637B written
+"plugins.lua" 66L, 1637B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+recording @hrecording @hrecording @h
+
+kanagawa
+
+habamax
+
+kanagawa
+
+
+
+
+
+Error executing Lua callback: ...nvim/lazy/telescope.nvim/lua/telescope/builtin/__git.lua:448: /home/mike/.config/nvim/lua is not a git directory
+stack traceback:
+	[C]: in function 'error'
+	...nvim/lazy/telescope.nvim/lua/telescope/builtin/__git.lua:448: in function 'try_worktrees'
+	...nvim/lazy/telescope.nvim/lua/telescope/builtin/__git.lua:481: in function 'set_opts_cwd'
+	...nvim/lazy/telescope.nvim/lua/telescope/builtin/__git.lua:497: in function 'v'
+	.../nvim/lazy/telescope.nvim/lua/telescope/builtin/init.lua:580: in function <.../nvim/lazy/telescope.nvim/lua/telescope/builtin/init.lua:539>
+	...share/nvim/lazy/telescope.nvim/lua/telescope/command.lua:188: in function 'run_command'
+	...share/nvim/lazy/telescope.nvim/lua/telescope/command.lua:259: in function 'load_command'
+	...ocal/share/nvim/lazy/telescope.nvim/plugin/telescope.lua:108: in function <...ocal/share/nvim/lazy/telescope.nvim/plugin/telescope.lua:107>
+
+
+
+"remaps.lua" 
+"remaps.lua" 26L, 1902B written
+"remaps.lua" 26L, 1902B written
+
+
+
+
+
+
+
+
+
+
+
+
+SpecialKey     xxx guifg=#938aa9
+EndOfBuffer    xxx guifg=#1f1f28
+TermCursor     xxx cterm=reverse gui=reverse
+TermCursorNC   xxx cleared
+NonText        xxx guifg=#54546d
+Directory      xxx guifg=#7e9cd8
+ErrorMsg       xxx guifg=#e82424
+IncSearch      xxx guifg=#223249 guibg=#ff9e3b
+Search         xxx guifg=#dcd7ba guibg=#2d4f67
+CurSearch      xxx cterm=bold gui=bold guifg=#dcd7ba guibg=#2d4f67
+MoreMsg        xxx guifg=#658594
+ModeMsg        xxx cterm=bold gui=bold guifg=#ff9e3b
+LineNr         xxx guifg=#54546d guibg=#2a2a37
+LineNrAbove    xxx links to LineNr
+LineNrBelow    xxx links to LineNr
+CursorLineNr   xxx cterm=bold gui=bold guifg=#ff9e3b guibg=#2a2a37
+CursorLineSign xxx links to SignColumn
+CursorLineFold xxx links to FoldColumn
+Question       xxx links to MoreMsg
+StatusLine     xxx guifg=#c8c093 guibg=#16161d
+StatusLineNC   xxx guifg=#54546d guibg=#16161d
+WinSeparator   xxx guifg=#16161d
+VertSplit      xxx links to WinSeparator
+Title          xxx cterm=bold gui=bold guifg=#7e9cd8
+Visual         xxx guibg=#223249
+VisualNC       xxx cleared
+WarningMsg     xxx guifg=#ff9e3b
+WildMenu       xxx links to Pmenu
+Folded         xxx guifg=#938aa9 guibg=#2a2a37
+FoldColumn     xxx guifg=#54546d guibg=#2a2a37
+DiffAdd        xxx guibg=#2b3328
+DiffChange     xxx guibg=#252535
+DiffDelete     xxx guifg=#c34043 guibg=#43242b
+DiffText       xxx guibg=#49443c
+SignColumn     xxx guifg=#938aa9 guibg=#2a2a37
+Conceal        xxx cterm=bold gui=bold guifg=#938aa9
+SpellBad       xxx cterm=undercurl gui=undercurl guisp=#e82424
+SpellCap       xxx cterm=undercurl gui=undercurl guisp=#ff9e3b
+SpellRare      xxx cterm=undercurl gui=undercurl guisp=#ff9e3b
+SpellLocal     xxx cterm=undercurl gui=undercurl guisp=#ff9e3b
+Pmenu          xxx guifg=#dcd7ba guibg=#223249
+PmenuSel       xxx guibg=#2d4f67
+PmenuKind      xxx links to Pmenu
+PmenuKindSel   xxx links to PmenuSel
+PmenuExtra     xxx links to Pmenu
+PmenuExtraSel  xxx links to PmenuSel
+PmenuSbar      xxx guibg=#223249
+PmenuThumb     xxx guibg=#2d4f67
+TabLine        xxx guifg=#938aa9 guibg=#16161d
+TabLineSel     xxx guifg=#c8c093 guibg=#2a2a37
+TabLineFill    xxx guibg=#1f1f28
+CursorColumn   xxx links to CursorLine
+CursorLine     xxx guibg=#363646
+ColorColumn    xxx guibg=#2a2a37
+QuickFixLine   xxx guibg=#2a2a37
+Whitespace     xxx guifg=#54546d
+NormalNC       xxx links to Normal
+MsgSeparator   xxx guibg=#1f1f28
+NormalFloat    xxx guifg=#c8c093 guibg=#16161d
+MsgArea        xxx links to StatusLine
+FloatBorder    xxx guifg=#54546d guibg=#16161d
+WinBar         xxx guifg=#c8c093
+WinBarNC       xxx guifg=#c8c093
+Cursor         xxx guifg=#1f1f28 guibg=#dcd7ba
+FloatTitle     xxx cterm=bold gui=bold guifg=#938aa9 guibg=#16161d
+lCursor        xxx links to Cursor
+Normal         xxx guifg=#dcd7ba guibg=#1f1f28
+Substitute     xxx guifg=#dcd7ba guibg=#c34043
+FloatShadow    xxx guibg=Black blend=80
+FloatShadowThrough xxx guibg=Black blend=100
+RedrawDebugNormal xxx cterm=reverse gui=reverse
+RedrawDebugClear xxx ctermbg=11 guibg=Yellow
+RedrawDebugComposed xxx ctermbg=10 guibg=Green
+RedrawDebugRecompose xxx ctermbg=9 guibg=Red
+Error          xxx guifg=#e82424
+Todo           xxx cterm=bold gui=bold guifg=#223249 guibg=#658594
+String         xxx guifg=#98bb6c
+Constant       xxx guifg=#ffa066
+Character      xxx links to String
+Number         xxx guifg=#d27e99
+Boolean        xxx cterm=bold gui=bold guifg=#ffa066
+Float          xxx links to Number
+Function       xxx guifg=#7e9cd8
+Identifier     xxx guifg=#e6c384
+Conditional    xxx links to Statement
+Statement      xxx cterm=bold gui=bold guifg=#957fb8
+Repeat         xxx links to Statement
+Label          xxx links to Statement
+Operator       xxx guifg=#c0a36e
+Keyword        xxx cterm=italic gui=italic guifg=#957fb8
+Exception      xxx guifg=#e46876
+Include        xxx links to PreProc
+PreProc        xxx guifg=#e46876
+Define         xxx links to PreProc
+Macro          xxx links to PreProc
+PreCondit      xxx links to PreProc
+StorageClass   xxx links to Type
+Type           xxx guifg=#7aa89f
+Structure      xxx links to Type
+Typedef        xxx links to Type
+Tag            xxx links to Special
+Special        xxx guifg=#7fb4ca
+SpecialChar    xxx links to Special
+Delimiter      xxx guifg=#9cabca
+SpecialComment xxx links to Special
+Debug          xxx links to Special
+DiagnosticError xxx guifg=#e82424
+DiagnosticWarn xxx guifg=#ff9e3b
+DiagnosticInfo xxx guifg=#658594
+DiagnosticHint xxx guifg=#6a9589
+DiagnosticOk   xxx guifg=#98bb6c
+DiagnosticUnderlineError xxx cterm=undercurl gui=undercurl guisp=#e82424
+DiagnosticUnderlineWarn xxx cterm=undercurl gui=undercurl guisp=#ff9e3b
+DiagnosticUnderlineInfo xxx cterm=undercurl gui=undercurl guisp=#658594
+DiagnosticUnderlineHint xxx cterm=undercurl gui=undercurl guisp=#6a9589
+DiagnosticUnderlineOk xxx cterm=underline gui=underline guisp=LightGreen
+DiagnosticVirtualTextError xxx links to DiagnosticError
+DiagnosticVirtualTextWarn xxx links to DiagnosticWarn
+DiagnosticVirtualTextInfo xxx links to DiagnosticInfo
+DiagnosticVirtualTextHint xxx links to DiagnosticHint
+DiagnosticVirtualTextOk xxx links to DiagnosticOk
+DiagnosticFloatingError xxx guifg=#e82424
+DiagnosticFloatingWarn xxx guifg=#ff9e3b
+DiagnosticFloatingInfo xxx guifg=#658594
+DiagnosticFloatingHint xxx guifg=#6a9589
+DiagnosticFloatingOk xxx guifg=#98bb6c
+DiagnosticSignError xxx guifg=#e82424 guibg=#2a2a37
+DiagnosticSignWarn xxx guifg=#ff9e3b guibg=#2a2a37
+DiagnosticSignInfo xxx guifg=#658594 guibg=#2a2a37
+DiagnosticSignHint xxx guifg=#6a9589 guibg=#2a2a37
+DiagnosticSignOk xxx links to DiagnosticOk
+DiagnosticDeprecated xxx cterm=strikethrough gui=strikethrough guisp=Red
+DiagnosticUnnecessary xxx links to Comment
+Comment        xxx cterm=italic gui=italic guifg=#727169
+@text          xxx cleared
+@text.literal  xxx links to Comment
+@text.reference xxx links to Identifier
+@text.title    xxx links to Title
+@text.uri      xxx links to Underlined
+Underlined     xxx cterm=underline gui=underline guifg=#7fb4ca
+@text.underline xxx links to Underlined
+@text.todo     xxx links to Todo
+@comment       xxx links to Comment
+@punctuation   xxx links to Delimiter
+@constant      xxx links to Constant
+@constant.builtin xxx links to Special
+@constant.macro xxx links to Define
+@define        xxx links to Define
+@macro         xxx links to Macro
+@string        xxx links to String
+@string.escape xxx cterm=bold gui=bold guifg=#c0a36e
+@string.special xxx links to SpecialChar
+@character     xxx links to Character
+@character.special xxx links to SpecialChar
+@number        xxx links to Number
+@boolean       xxx links to Boolean
+@float         xxx links to Float
+@function      xxx links to Function
+@function.builtin xxx links to Special
+@function.macro xxx links to Macro
+@parameter     xxx links to Identifier
+@method        xxx links to Function
+@field         xxx links to Identifier
+@property      xxx links to Identifier
+@constructor   xxx guifg=#7fb4ca
+@conditional   xxx links to Conditional
+@repeat        xxx links to Repeat
+@label         xxx links to Label
+@operator      xxx links to Operator
+@keyword       xxx links to Keyword
+@exception     xxx links to Exception
+@variable      xxx guifg=#dcd7ba
+@type          xxx links to Type
+@type.definition xxx links to Typedef
+@storageclass  xxx links to StorageClass
+@namespace     xxx links to Identifier
+@include       xxx links to Include
+@preproc       xxx links to PreProc
+@debug         xxx links to Debug
+@tag           xxx links to Tag
+@lsp           xxx cleared
+@lsp.type.class xxx links to Structure
+@lsp.type.comment xxx cleared
+@lsp.type.decorator xxx links to Function
+@lsp.type.enum xxx links to Structure
+@lsp.type.enumMember xxx links to Constant
+@lsp.type.function xxx links to Function
+@lsp.type.interface xxx links to Structure
+@lsp.type.macro xxx links to Macro
+@lsp.type.method xxx links to @function.method
+@lsp.type.namespace xxx links to @module
+@lsp.type.parameter xxx links to @variable.parameter
+@lsp.type.property xxx links to Identifier
+@lsp.type.struct xxx links to Structure
+@lsp.type.type xxx links to Type
+@lsp.type.typeParameter xxx links to Typedef
+@lsp.type.variable xxx cleared
+MatchParen     xxx cterm=bold gui=bold guifg=#ff9e3b
+Ignore         xxx links to NonText
+NvimInternalError xxx ctermfg=9 ctermbg=9 guifg=Red guibg=Red
+NvimAssignment xxx links to Operator
+NvimPlainAssignment xxx links to NvimAssignment
+NvimAugmentedAssignment xxx links to NvimAssignment
+NvimAssignmentWithAddition xxx links to NvimAugmentedAssignment
+NvimAssignmentWithSubtraction xxx links to NvimAugmentedAssignment
+NvimAssignmentWithConcatenation xxx links to NvimAugmentedAssignment
+NvimOperator   xxx links to Operator
+NvimUnaryOperator xxx links to NvimOperator
+NvimUnaryPlus  xxx links to NvimUnaryOperator
+NvimUnaryMinus xxx links to NvimUnaryOperator
+NvimNot        xxx links to NvimUnaryOperator
+NvimBinaryOperator xxx links to NvimOperator
+NvimComparison xxx links to NvimBinaryOperator
+NvimComparisonModifier xxx links to NvimComparison
+NvimBinaryPlus xxx links to NvimBinaryOperator
+NvimBinaryMinus xxx links to NvimBinaryOperator
+NvimConcat     xxx links to NvimBinaryOperator
+NvimConcatOrSubscript xxx links to NvimConcat
+NvimOr         xxx links to NvimBinaryOperator
+NvimAnd        xxx links to NvimBinaryOperator
+NvimMultiplication xxx links to NvimBinaryOperator
+NvimDivision   xxx links to NvimBinaryOperator
+NvimMod        xxx links to NvimBinaryOperator
+NvimTernary    xxx links to NvimOperator
+NvimTernaryColon xxx links to NvimTernary
+NvimParenthesis xxx links to Delimiter
+NvimLambda     xxx links to NvimParenthesis
+NvimNestingParenthesis xxx links to NvimParenthesis
+NvimCallingParenthesis xxx links to NvimParenthesis
+NvimSubscript  xxx links to NvimParenthesis
+NvimSubscriptBracket xxx links to NvimSubscript
+NvimSubscriptColon xxx links to NvimSubscript
+NvimCurly      xxx links to NvimSubscript
+NvimContainer  xxx links to NvimParenthesis
+NvimDict       xxx links to NvimContainer
+NvimList       xxx links to NvimContainer
+NvimIdentifier xxx links to Identifier
+NvimIdentifierScope xxx links to NvimIdentifier
+NvimIdentifierScopeDelimiter xxx links to NvimIdentifier
+NvimIdentifierName xxx links to NvimIdentifier
+NvimIdentifierKey xxx links to NvimIdentifier
+NvimColon      xxx links to Delimiter
+NvimComma      xxx links to Delimiter
+NvimArrow      xxx links to Delimiter
+NvimRegister   xxx links to SpecialChar
+NvimNumber     xxx links to Number
+NvimFloat      xxx links to NvimNumber
+NvimNumberPrefix xxx links to Type
+NvimOptionSigil xxx links to Type
+NvimOptionName xxx links to NvimIdentifier
+NvimOptionScope xxx links to NvimIdentifierScope
+NvimOptionScopeDelimiter xxx links to NvimIdentifierScopeDelimiter
+NvimEnvironmentSigil xxx links to NvimOptionSigil
+NvimEnvironmentName xxx links to NvimIdentifier
+NvimString     xxx links to String
+NvimStringBody xxx links to NvimString
+NvimStringQuote xxx links to NvimString
+NvimStringSpecial xxx links to SpecialChar
+NvimSingleQuote xxx links to NvimStringQuote
+NvimSingleQuotedBody xxx links to NvimStringBody
+NvimSingleQuotedQuote xxx links to NvimStringSpecial
+NvimDoubleQuote xxx links to NvimStringQuote
+NvimDoubleQuotedBody xxx links to NvimStringBody
+NvimDoubleQuotedEscape xxx links to NvimStringSpecial
+NvimFigureBrace xxx links to NvimInternalError
+NvimSingleQuotedUnknownEscape xxx links to NvimInternalError
+NvimSpacing    xxx links to Normal
+NvimInvalidSingleQuotedUnknownEscape xxx links to NvimInternalError
+NvimInvalid    xxx links to Error
+NvimInvalidAssignment xxx links to NvimInvalid
+NvimInvalidPlainAssignment xxx links to NvimInvalidAssignment
+NvimInvalidAugmentedAssignment xxx links to NvimInvalidAssignment
+NvimInvalidAssignmentWithAddition xxx links to NvimInvalidAugmentedAssignment
+NvimInvalidAssignmentWithSubtraction xxx links to NvimInvalidAugmentedAssignment
+NvimInvalidAssignmentWithConcatenation xxx links to NvimInvalidAugmentedAssignment
+NvimInvalidOperator xxx links to NvimInvalid
+NvimInvalidUnaryOperator xxx links to NvimInvalidOperator
+NvimInvalidUnaryPlus xxx links to NvimInvalidUnaryOperator
+NvimInvalidUnaryMinus xxx links to NvimInvalidUnaryOperator
+NvimInvalidNot xxx links to NvimInvalidUnaryOperator
+NvimInvalidBinaryOperator xxx links to NvimInvalidOperator
+NvimInvalidComparison xxx links to NvimInvalidBinaryOperator
+NvimInvalidComparisonModifier xxx links to NvimInvalidComparison
+NvimInvalidBinaryPlus xxx links to NvimInvalidBinaryOperator
+NvimInvalidBinaryMinus xxx links to NvimInvalidBinaryOperator
+NvimInvalidConcat xxx links to NvimInvalidBinaryOperator
+NvimInvalidConcatOrSubscript xxx links to NvimInvalidConcat
+NvimInvalidOr  xxx links to NvimInvalidBinaryOperator
+NvimInvalidAnd xxx links to NvimInvalidBinaryOperator
+NvimInvalidMultiplication xxx links to NvimInvalidBinaryOperator
+NvimInvalidDivision xxx links to NvimInvalidBinaryOperator
+NvimInvalidMod xxx links to NvimInvalidBinaryOperator
+NvimInvalidTernary xxx links to NvimInvalidOperator
+NvimInvalidTernaryColon xxx links to NvimInvalidTernary
+NvimInvalidDelimiter xxx links to NvimInvalid
+NvimInvalidParenthesis xxx links to NvimInvalidDelimiter
+NvimInvalidLambda xxx links to NvimInvalidParenthesis
+NvimInvalidNestingParenthesis xxx links to NvimInvalidParenthesis
+NvimInvalidCallingParenthesis xxx links to NvimInvalidParenthesis
+NvimInvalidSubscript xxx links to NvimInvalidParenthesis
+NvimInvalidSubscriptBracket xxx links to NvimInvalidSubscript
+NvimInvalidSubscriptColon xxx links to NvimInvalidSubscript
+NvimInvalidCurly xxx links to NvimInvalidSubscript
+NvimInvalidContainer xxx links to NvimInvalidParenthesis
+NvimInvalidDict xxx links to NvimInvalidContainer
+NvimInvalidList xxx links to NvimInvalidContainer
+NvimInvalidValue xxx links to NvimInvalid
+NvimInvalidIdentifier xxx links to NvimInvalidValue
+NvimInvalidIdentifierScope xxx links to NvimInvalidIdentifier
+NvimInvalidIdentifierScopeDelimiter xxx links to NvimInvalidIdentifier
+NvimInvalidIdentifierName xxx links to NvimInvalidIdentifier
+NvimInvalidIdentifierKey xxx links to NvimInvalidIdentifier
+NvimInvalidColon xxx links to NvimInvalidDelimiter
+NvimInvalidComma xxx links to NvimInvalidDelimiter
+NvimInvalidArrow xxx links to NvimInvalidDelimiter
+NvimInvalidRegister xxx links to NvimInvalidValue
+NvimInvalidNumber xxx links to NvimInvalidValue
+NvimInvalidFloat xxx links to NvimInvalidNumber
+NvimInvalidNumberPrefix xxx links to NvimInvalidNumber
+NvimInvalidOptionSigil xxx links to NvimInvalidIdentifier
+NvimInvalidOptionName xxx links to NvimInvalidIdentifier
+NvimInvalidOptionScope xxx links to NvimInvalidIdentifierScope
+NvimInvalidOptionScopeDelimiter xxx links to NvimInvalidIdentifierScopeDelimiter
+NvimInvalidEnvironmentSigil xxx links to NvimInvalidOptionSigil
+NvimInvalidEnvironmentName xxx links to NvimInvalidIdentifier
+NvimInvalidString xxx links to NvimInvalidValue
+NvimInvalidStringBody xxx links to NvimStringBody
+NvimInvalidStringQuote xxx links to NvimInvalidString
+NvimInvalidStringSpecial xxx links to NvimStringSpecial
+NvimInvalidSingleQuote xxx links to NvimInvalidStringQuote
+NvimInvalidSingleQuotedBody xxx links to NvimInvalidStringBody
+NvimInvalidSingleQuotedQuote xxx links to NvimInvalidStringSpecial
+NvimInvalidDoubleQuote xxx links to NvimInvalidStringQuote
+NvimInvalidDoubleQuotedBody xxx links to NvimInvalidStringBody
+NvimInvalidDoubleQuotedEscape xxx links to NvimInvalidStringSpecial
+NvimInvalidDoubleQuotedUnknownEscape xxx links to NvimInvalidValue
+NvimInvalidFigureBrace xxx links to NvimInvalidDelimiter
+NvimInvalidSpacing xxx links to ErrorMsg
+NvimDoubleQuotedUnknownEscape xxx links to NvimInvalidValue
+LspInfoTitle   xxx links to Title
+LspInfoTip     xxx links to Comment
+LspInfoList    xxx links to Function
+LspInfoBorder  xxx links to Label
+LspInfoFiletype xxx links to Type
+NeoTreeNormal  xxx links to Normal
+NeoTreeNormalNC xxx links to NormalNC
+NeoTreeSignColumn xxx links to SignColumn
+NeoTreeStatusLine xxx links to StatusLine
+NeoTreeStatusLineNC xxx links to StatusLineNC
+NeoTreeVertSplit xxx links to VertSplit
+NeoTreeWinSeparator xxx links to WinSeparator
+NeoTreeEndOfBuffer xxx links to EndOfBuffer
+NeoTreeFloatBorder xxx links to FloatBorder
+NeoTreeFloatNormal xxx links to NormalFloat
+NeoTreeFloatTitle xxx guifg=#dcd7ba guibg=#16161d
+NeoTreeTitleBar xxx guifg=#1f1f28 guibg=#54546d
+NeoTreeBufferNumber xxx links to SpecialChar
+NeoTreeMessage xxx gui=italic guifg=#575653
+NeoTreeFadeText1 xxx guifg=#626262
+NeoTreeFadeText2 xxx guifg=#444444
+NeoTreeDotfile xxx guifg=#626262
+NeoTreeHiddenByName xxx links to NeoTreeDotfile
+NeoTreeCursorLine xxx links to CursorLine
+NeoTreeDimText xxx guifg=#575653
+NeoTreeDirectoryName xxx links to Directory
+NeoTreeDirectoryIcon xxx links to Directory
+NeoTreeFileIcon xxx links to NeoTreeDirectoryIcon
+NeoTreeFileName xxx cleared
+NeoTreeFileNameOpened xxx gui=bold
+NeoTreeSymbolicLinkTarget xxx links to NeoTreeFileName
+NeoTreeFilterTerm xxx links to SpecialChar
+NeoTreeRootName xxx cterm=bold gui=bold guifg=#e6c384
+NeoTreeIndentMarker xxx links to NonText
+NeoTreeExpander xxx links to NeoTreeDimText
+NeoTreeModified xxx links to String
+NeoTreeWindowsHidden xxx links to NeoTreeDotfile
+NeoTreePreview xxx links to Search
+NeoTreeGitAdded xxx guifg=#76946a
+NeoTreeGitDeleted xxx guifg=#c34043
+NeoTreeGitModified xxx guifg=#dca561
+NeoTreeGitConflict xxx guifg=#e82424
+NeoTreeGitIgnored xxx links to NeoTreeDotfile
+NeoTreeGitRenamed xxx links to NeoTreeGitModified
+NeoTreeGitStaged xxx guifg=#76946a
+NeoTreeGitUnstaged xxx cterm= gui=
+                   links to NeoTreeGitModified
+NeoTreeGitUntracked xxx cterm= gui=
+                   links to NeoTreeGitModified
+NeoTreeTabActive xxx links to TabLineSel
+NeoTreeTabInactive xxx links to TabLine
+NeoTreeTabSeparatorActive xxx links to NeoTreeTabActive
+NeoTreeTabSeparatorInactive xxx links to NeoTreeTabInactive
+NeoTreeFileStats xxx guifg=#6a6862
+NeoTreeFileStatsHeader xxx gui=bold guifg=#827156
+DapUIRestart   xxx guifg=#98bb6c
+DapUIPlayPause xxx guifg=#98bb6c
+DapUIStop      xxx guifg=#e82424
+DapUIStepOut   xxx guifg=#7fb4ca
+DapUIStepBack  xxx guifg=#7fb4ca
+DapUIStepInto  xxx guifg=#7fb4ca
+DapUIStepOver  xxx guifg=#7fb4ca
+DapUIBreakpointsDisabledLine xxx links to Comment
+DapUIBreakpointsCurrentLine xxx cterm=bold gui=bold guifg=#e6c384
+DapUIBreakpointsInfo xxx guifg=#658594
+DapUIBreakpointsPath xxx links to Directory
+DapUIWatchesError xxx guifg=#e82424
+DapUIWatchesValue xxx guifg=#e6c384
+DapUIWatchesEmpty xxx guifg=#e82424
+DapUIFloatBorder xxx guifg=#54546d
+DapUILineNumber xxx guifg=#7fb4ca
+@tag.delimiter xxx guifg=#9cabca
+@tag.attribute xxx guifg=#e6c384
+@diff          xxx cleared
+@diff.delta    xxx guifg=#dca561
+@diff.minus    xxx guifg=#c34043
+DapUIModifiedValue xxx cterm=bold gui=bold guifg=#7fb4ca
+DapUIType      xxx links to Type
+DapUIScope     xxx links to Special
+@markup        xxx cleared
+@markup.quote  xxx links to @variable.parameter
+@variable.parameter xxx guifg=#b8b4d0
+@markup.heading xxx links to Function
+@markup.underline xxx cterm=underline gui=underline
+@markup.strikethrough xxx cterm=strikethrough gui=strikethrough
+NotifyWARNTitle xxx links to DiagnosticWarn
+@markup.italic xxx cterm=italic gui=italic
+@markup.strong xxx cterm=bold gui=bold
+@comment.note  xxx cterm=bold gui=bold guifg=#223249 guibg=#6a9589
+@comment.warning xxx cterm=bold gui=bold guifg=#223249 guibg=#ff9e3b
+@comment.error xxx cterm=bold gui=bold guifg=#dcd7ba guibg=#e82424
+NotifyWARNIcon xxx links to DiagnosticWarn
+@punctuation.bracket xxx guifg=#9cabca
+NotifyTRACEBorder xxx links to Comment
+@keyword.luap  xxx links to @string.regex
+NotifyHINTBorder xxx links to DiagnosticHint
+keyword.exception xxx cterm=bold gui=bold guifg=#ff5d62
+@keyword.return xxx cterm=italic gui=italic guifg=#ff5d62
+@keyword.import xxx links to PreProc
+@keyword.operator xxx cterm=bold gui=bold guifg=#c0a36e
+@constructor.lua xxx guifg=#957fb8
+@attribute     xxx links to Constant
+DashboardFooter xxx guifg=#727169
+@string.regexp xxx guifg=#c0a36e
+DashboardShortCut xxx guifg=#7fb4ca
+@variable.builtin xxx cterm=italic gui=italic guifg=#e46876
+NvimTreeWinSeparator xxx links to WinSeparator
+NvimTreeOpenedFile xxx cterm=italic gui=italic guifg=#7fb4ca
+NvimTreeExecFile xxx cterm=bold gui=bold guifg=#98bb6c
+NvimTreeFolderName xxx links to Directory
+NvimTreeSymlink xxx links to Type
+NvimTreeImageFile xxx guifg=#e46876
+NvimTreeSpecialFile xxx guifg=#7fb4ca
+NvimTreeGitStaged xxx guifg=#76946a
+NvimTreeGitDeleted xxx guifg=#c34043
+NvimTreeGitNew xxx guifg=#76946a
+NvimTreeGitDirty xxx guifg=#dca561
+NvimTreeRootFolder xxx cterm=bold gui=bold guifg=#e6c384
+NvimTreeNormalNC xxx links to NvimTreeNormal
+NvimTreeNormal xxx links to Normal
+TelescopeResultsVariable xxx links to @variable
+TelescopeResultsMethod xxx links to Function
+@lsp.typemod.function.readonly xxx cterm=bold gui=bold guifg=#7e9cd8
+@lsp.typemod.variable.injected xxx links to @variable
+@lsp.typemod.string.injected xxx links to String
+@lsp.typemod.operator.injected xxx links to Operator
+@lsp.typemod.method.defaultLibrary xxx links to @function.builtin
+TelescopeTitle xxx guifg=#938aa9
+@lsp.typemod.function.defaultLibrary xxx links to @function.builtin
+@lsp.typemod.function.builtin xxx links to @function.builtin
+@lsp.typemod.variable.defaultLibrary xxx links to Special
+@lsp.typemod.variable.static xxx links to Constant
+@lsp.typemod.variable.global xxx links to Constant
+@lsp.typemod.keyword.documentation xxx links to Special
+@lsp.typemod.operator.controlFlow xxx links to @keyword.exception
+NeogitDiffContextHighlight xxx guibg=#252535
+@lsp.mod.typeHint xxx links to Type
+diffNewFile    xxx guifg=#76946a
+diffOldFile    xxx guifg=#c34043
+diffChanged    xxx guifg=#dca561
+diffDeleted    xxx guifg=#c34043
+diffRemoved    xxx guifg=#c34043
+diffAdded      xxx guifg=#76946a
+debugBreakpoint xxx guifg=#7fb4ca guibg=#2a2a37
+debugPC        xxx guibg=#43242b
+VisualNOS      xxx links to Visual
+FloatFooter    xxx guifg=#54546d guibg=#16161d
+CursorIM       xxx links to Cursor
+GitSignsChange xxx guifg=#dca561 guibg=#2a2a37
+GitSignsDelete xxx guifg=#c34043 guibg=#2a2a37
+GitSignsAdd    xxx guifg=#76946a guibg=#2a2a37
+Bold           xxx cterm=bold gui=bold
+LspCodeLens    xxx guifg=#727169
+LspReferenceWrite xxx cterm=underline gui=underline guibg=#49443c
+LspReferenceRead xxx links to LspReferenceText
+LspReferenceText xxx guibg=#49443c
+LspSignatureActiveParameter xxx guifg=#ff9e3b
+healthError    xxx guifg=#e82424
+healthSuccess  xxx guifg=#98bb6c
+healthWarning  xxx guifg=#ff9e3b
+CmpDocumentation xxx links to NormalFloat
+CmpDocumentationBorder xxx links to FloatBorder
+CmpCompletion  xxx links to Pmenu
+CmpCompletionSel xxx guibg=#2d4f67
+DashboardHeader xxx guifg=#c34043
+CmpCompletionThumb xxx links to PmenuThumb
+CmpCompletionSbar xxx links to PmenuSbar
+CmpItemAbbr    xxx guifg=#dcd7ba
+CmpItemAbbrDeprecated xxx cterm=strikethrough gui=strikethrough guifg=#727169
+CmpItemAbbrMatch xxx guifg=#7e9cd8
+NotifyERRORBorder xxx links to DiagnosticError
+NotifyWARNBorder xxx links to DiagnosticWarn
+NotifyINFOBorder xxx links to DiagnosticInfo
+NotifyDEBUGBorder xxx links to Debug
+NotifyERRORIcon xxx links to DiagnosticError
+NotifyINFOIcon xxx links to DiagnosticInfo
+NotifyHINTIcon xxx links to DiagnosticHint
+NotifyDEBUGIcon xxx links to Debug
+NotifyTRACEIcon xxx links to Comment
+NotifyERRORTitle xxx links to DiagnosticError
+NotifyINFOTitle xxx links to DiagnosticInfo
+NotifyHINTTitle xxx links to DiagnosticHint
+NotifyDEBUGTitle xxx links to Debug
+NotifyTRACETitle xxx links to Comment
+DapUIDecoration xxx guifg=#54546d
+DapUIStoppedThread xxx guifg=#7fb4ca
+DapUISource    xxx guifg=#e46876
+@variable.member xxx guifg=#e6c384
+CmpItemKindKeyword xxx links to @keyword
+@punctuation.delimiter xxx guifg=#9cabca
+@markup.math   xxx links to Constant
+@string.special.symbol xxx guifg=#e6c384
+@diff.plus     xxx guifg=#76946a
+NotifyBackground xxx guibg=#1f1f28
+DashboardIcon  xxx guifg=#938aa9
+@lsp.mod.readonly xxx links to Constant
+@lsp.type.magicFunction xxx links to @function.builtin
+@lsp.type.builtinConstant xxx links to @constant.builtin
+DashboardKey   xxx guifg=#7fb4ca
+@lsp.type.selfParameter xxx links to @variable.builtin
+@module        xxx cleared
+DashboardDesc  xxx guifg=#e6c384
+DashboardCenter xxx guifg=#e6c384
+NvimTreeWindowPicker xxx cterm=bold gui=bold guifg=#7fb4ca guibg=#1a1a22
+TelescopeResultsField xxx links to @field
+@punctuation.special xxx guifg=#7fb4ca
+TelescopeResultsClass xxx links to Structure
+TelescopeSelectionCaret xxx links to CursorLineNr
+TelescopeSelection xxx links to CursorLine
+TreesitterContextLineNumber xxx guifg=#938aa9 guibg=#2a2a37
+TreesitterContext xxx links to Folded
+NeogitDiffDeleteHighlight xxx guibg=#43242b
+NeogitDiffAddHighlight xxx guibg=#2b3328
+NeogitHunkHeaderHighlight xxx guifg=#ffa066 guibg=#252535
+NeogitHunkHeader xxx guifg=#7e9cd8
+NavicIconsVariable xxx links to @variable
+@markup.environment xxx links to Keyword
+DapUIUnavailable xxx guifg=#727169
+NavicSeparator xxx guifg=#dcd7ba
+NavicText      xxx guifg=#dcd7ba
+NavicIconsTypeParameter xxx links to Identifier
+NavicIconsOperator xxx links to Operator
+NavicIconsEvent xxx links to Structure
+FloatermBorder xxx guifg=#54546d guibg=#1f1f28
+NavicIconsStruct xxx links to Structure
+NavicIconsEnumMember xxx links to TSField
+TSField        xxx cleared
+NavicIconsNull xxx links to Type
+NavicIconsKey  xxx links to Keyword
+NavicIconsObject xxx links to Type
+NavicIconsArray xxx links to Type
+NavicIconsBoolean xxx links to Boolean
+NavicIconsNumber xxx links to Number
+NavicIconsString xxx links to String
+NavicIconsConstant xxx links to Constant
+NavicIconsFunction xxx links to Function
+NavicIconsInterface xxx links to Type
+NavicIconsEnum xxx links to Identifier
+NavicIconsConstructor xxx links to @constructor
+NavicIconsField xxx links to TSField
+NavicIconsProperty xxx links to TSProperty
+TSProperty     xxx cleared
+TelescopeBorder xxx guifg=#54546d guibg=#1f1f28
+NavicIconsMethod xxx links to Function
+NavicIconsClass xxx links to Structure
+NavicIconsPackage xxx links to TSInclude
+TSInclude      xxx cleared
+TelescopeResultsStruct xxx links to Structure
+NavicIconsNamespace xxx links to TSInclude
+NavicIconsModule xxx links to TSInclude
+NavicIconsFile xxx links to Directory
+LazyProgressTodo xxx guifg=#54546d
+IblScope       xxx guifg=#938aa9
+IblWhitespace  xxx guifg=#54546d
+IblIndent      xxx guifg=#54546d
+IndentBlanklineContextStart xxx cterm=underline gui=underline guisp=#938aa9
+IndentBlanklineContextChar xxx guifg=#938aa9
+IndentBlanklineSpaceCharBlankline xxx guifg=#54546d
+IndentBlanklineSpaceChar xxx guifg=#54546d
+IndentBlanklineChar xxx guifg=#54546d
+CmpItemKindCopilot xxx links to String
+CmpItemKindValue xxx links to String
+CmpItemKindEnumMember xxx links to Constant
+CmpItemKindReference xxx links to Type
+CmpItemKindOperator xxx links to Operator
+CmpItemKindConstant xxx links to Constant
+CmpItemKindTypeParameter xxx links to Type
+CmpItemKindFolder xxx links to Directory
+CmpItemKindFile xxx links to Directory
+CmpItemKindModule xxx links to @include
+DapUIThread    xxx guifg=#e6c384
+CmpItemKindText xxx guifg=#dcd7ba
+CmpItemKindSnippet xxx guifg=#7fb4ca
+CmpItemKindEnum xxx links to Type
+CmpItemKindField xxx links to @field
+CmpItemKindProperty xxx links to @property
+CmpItemKindStruct xxx links to Type
+CmpItemKindInterface xxx links to Type
+CmpItemKindClass xxx links to Type
+CmpItemKindConstructor xxx links to @constructor
+CmpItemKindMethod xxx links to Function
+CmpItemKindFunction xxx links to Function
+CmpItemKindVariable xxx guifg=#c8c093
+CmpItemMenu    xxx guifg=#727169
+CmpItemKindDefault xxx guifg=#717c7c
+CmpItemAbbrMatchFuzzy xxx links to CmpItemAbbrMatch
+markdownEscape xxx cleared
+markdownCodeBlock xxx guifg=#98bb6c
+markdownCode   xxx guifg=#98bb6c
+qfFileName     xxx links to Directory
+qfLineNr       xxx links to LineNr
+CmpCompletionBorder xxx guifg=#2d4f67 guibg=#223249
+Italic         xxx cterm=italic gui=italic
+Method         xxx cleared
+TelescopeResultsOperator xxx links to Operator
+TelescopePreviewNormal xxx links to TelescopeNormal
+TelescopeNormal xxx links to Normal
+TelescopePreviewDate xxx links to Directory
+TelescopePreviewGroup xxx links to Constant
+TelescopePreviewUser xxx links to Constant
+TelescopePreviewSize xxx links to String
+TelescopePreviewSticky xxx links to Keyword
+TelescopePreviewHyphen xxx links to NonText
+TelescopePreviewExecute xxx links to String
+TelescopePreviewWrite xxx links to Statement
+TelescopePreviewRead xxx links to Constant
+TelescopePreviewSocket xxx links to Statement
+TelescopePreviewLink xxx links to Special
+TelescopePreviewBlock xxx links to Constant
+TelescopePreviewDirectory xxx links to Directory
+TelescopePreviewCharDev xxx links to Constant
+TelescopePreviewPipe xxx links to Constant
+TelescopePreviewMatch xxx links to Search
+TelescopePreviewLine xxx links to Visual
+TelescopePromptPrefix xxx links to Identifier
+TelescopeMatching xxx links to Special
+TelescopePromptCounter xxx links to NonText
+TelescopePreviewTitle xxx links to TelescopeTitle
+TelescopeResultsTitle xxx links to TelescopeTitle
+TelescopePromptTitle xxx links to TelescopeTitle
+TelescopePreviewBorder xxx links to TelescopeBorder
+TelescopeResultsBorder xxx links to TelescopeBorder
+TelescopePromptBorder xxx links to TelescopeBorder
+TelescopeResultsNormal xxx links to TelescopeNormal
+TelescopePromptNormal xxx links to TelescopeNormal
+TelescopeMultiIcon xxx links to Identifier
+TelescopeMultiSelection xxx links to Type
+TelescopeResultsDiffUntracked xxx links to NonText
+TelescopeResultsDiffDelete xxx links to DiffDelete
+TelescopeResultsDiffAdd xxx links to DiffAdd
+TelescopeResultsDiffChange xxx links to DiffChange
+TelescopeResultsSpecialComment xxx links to SpecialComment
+TelescopeResultsIdentifier xxx links to Identifier
+TelescopeResultsComment xxx links to Comment
+TelescopeResultsNumber xxx links to Number
+TelescopeResultsLineNr xxx links to LineNr
+Struct         xxx cleared
+TelescopeResultsFunction xxx links to Function
+TelescopeResultsConstant xxx links to Constant
+TelescopePreviewMessageFillchar xxx links to TelescopePreviewMessage
+TelescopePreviewMessage xxx links to TelescopePreviewNormal
+WhichKeyFloat  xxx links to NormalFloat
+WhichKey       xxx links to Function
+WhichKeyValue  xxx links to Comment
+WhichKeyBorder xxx links to FloatBorder
+WhichKeyDesc   xxx links to Identifier
+WhichKeyGroup  xxx links to Keyword
+WhichKeySeparator xxx links to Comment
+@spell         xxx cleared
+vimAutoEvent   xxx cleared
+vimAugroup     xxx cleared
+vimAutoCmdSfxList xxx cleared
+Terminal       xxx cleared
+StatuslineTerm xxx cleared
+StatuslineTermNC xxx cleared
+MessageWindow  xxx cleared
+PopupNotification xxx cleared
+javaScriptFunction xxx cleared
+javaScriptIdentifier xxx cleared
+sqlKeyword     xxx cleared
+yamlBlockMappingKey xxx cleared
+rubyMacro      xxx cleared
+rubyDefine     xxx cleared
+vimVar         xxx cleared
+vimOper        xxx cleared
+vimSep         xxx cleared
+vimParenSep    xxx cleared
+vimCommentString xxx cleared
+gitCommitSummary xxx cleared
+markdownUrl    xxx cleared
+elixirOperator xxx cleared
+elixirKeyword  xxx cleared
+elixirBlockDefinition xxx cleared
+elixirDefine   xxx cleared
+elixirPrivateDefine xxx cleared
+elixirGuard    xxx cleared
+elixirPrivateGuard xxx cleared
+elixirModuleDefine xxx cleared
+elixirProtocolDefine xxx cleared
+elixirImplDefine xxx cleared
+elixirRecordDefine xxx cleared
+elixirPrivateRecordDefine xxx cleared
+elixirMacroDefine xxx cleared
+elixirPrivateMacroDefine xxx cleared
+elixirDelegateDefine xxx cleared
+elixirOverridableDefine xxx cleared
+elixirExceptionDefine xxx cleared
+elixirCallbackDefine xxx cleared
+elixirStructDefine xxx cleared
+elixirExUnitMacro xxx cleared
+elixirInclude  xxx cleared
+elixirAtom     xxx cleared
+elixirDocTest  xxx cleared
+ALEErrorSign   xxx cleared
+ALEInfoSign    xxx cleared
+ALEWarningSign xxx cleared
+ALEError       xxx cleared
+ALEVirtualTextError xxx cleared
+ALEWarning     xxx cleared
+ALEVirtualTextWarning xxx cleared
+ALEInfo        xxx cleared
+ALEVirtualTextInfo xxx cleared
+ToolbarLine    xxx cleared
+ToolbarButton  xxx cleared
+diffSubname    xxx cleared
+
+
+
+
+
+
+
+
+
+
+
+
+
+E37: No write since last change
+E162: No write since last change for buffer "remaps.lua"
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 25L, 2010B written
+"remaps.lua" 25L, 2010B written
+
+
+
+      #  search history
+      1  recipe_df = 
+      2  array
+      3  + ", "
+      4  head
+      5  onion
+      6  \<query\>
+      7  \<get_recipes\>
+      8  ")
+      9  :")
+     10  missing_ingred
+     11  error
+     12  missing_ingredi
+     13  recipe_df.loc[recipe_df
+     14  recipe_df.loc[recipe_df["recipe_id"] == recipe_id,
+     15  recipe_df.loc[recipe_df["recipe_
+     16  IN
+     17  count
+     18  drop
+     19  instructions
+     20  CREATE TABLE
+     21  cursor
+     22  trimm
+     23  91
+     24  recipe_id
+     25  descriptions
+     26  Stir-Fry
+     27  \<remove_after_and\>
+     28  rinsed
+     29  ground
+     30  \<remove_before_semicolon_in_middle\>
+     31  strip
+     32  recipes
+     33  Mango-Chile-Lime Lassi
+     34  descript
+     35  clean
+     36  clean_instr
+     37  \<clean_descriptions\>
+     38  fresh
+     39  kosher
+     40  wjp;e
+     41  whole
+     42  washed
+     43  \<descriptions\>
+     44  apply
+     45  instr
+     46  dscript
+     47  instruction
+     48  \/n
+     49  \\n
+     50  \<preclean\>
+     51  descrip
+     52  plus
+     53  \<useless_words\>
+     54  ingredient_count
+     55  refact
+     56  "ID"
+     57  recipes["ID"].apply
+     58  recipes["ID
+     59  ID_replace
+     60  int(kjjk
+     61  ID
+     62  id_map = ingredients.set_index("ID")["ID_replace"].to_dict()
+     63  id_map = ingredients.set_index("ID")["I
+     64  ajjjjjjjjj
+     65  org
+     66  print
+     67  column_name
+     68  assign
+     69  \<missing\>
+     70  uniqu
+     71  \V    if len(recipe_df) == 0:^M        print("No recipes found with the given ingredients")^M        conn.close()^M        return^M
+     72  \Vv
+     73  astroda
+     74  neorg
+     75  utils
+     76  latexinden
+     77  :
+     78  cmp
+     79  rust
+     80  complet
+     81  require("astrocore
+     82  gl
+     83  config
+     84  complete
+     85  %s/\"/\'/g
+     86  "
+     87  sqlf
+     88  on_attach
+     89  \^M
+     90  ^M$
+     91  \r$
+     92  \r\n
+     93  \\u00e9
+     94  \u00b0F
+     95  sql
+     96  copi
+     97  "\n
+     98  json
+     99  nonu
+    100  autoch
+    101  autochdir
+    102  ignore
+    103  gui
+    104  tab
+    105  height
+    106  cmd
+    107  lua
+    108  auto
+    109  enable_normal
+    110  enable_nor
+    111  fuzzy
+    112  pyright
+    113  lsp
+    114  space
+    115  >
+    116  close
+    117  neotree
+    118  git
+    119  H
+    120  git =
+>   121  lspconfig
+
+
+
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+E490: No fold found
+
+
+E490: No fold found
+
+
+
+
+
+
+
+
+
+[telescope.run_command]: Unknown command
+
+
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+
+remote/host: generated rplugin manifest: /home/mike/.local/share/nvim/rplugin.vim
+
+
+
+"plugins.lua" 
+"plugins.lua" 66L, 1677B written
+"plugins.lua" 66L, 1677B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 46L, 3164B written
+"remaps.lua" 46L, 3164B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+"plugins.lua" 
+"plugins.lua" 67L, 1740B written
+"plugins.lua" 67L, 1740B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 49L, 3896B written
+"remaps.lua" 49L, 3896B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+
+
+
+
+9 lines to indent... 
+10 lines indented 
+
+
+
+25 lines to indent... 
+26 lines indented 
+
+
+
+
+
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 93L, 2792B written
+"plugins.lua" 93L, 2792B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+
+recording @k
+recording @k
+recording @krecording @k
+recording @k
+recording @krecording @k
+
+
+
+
+
+
+
+
+15 lines to indent... 
+16 lines indented 
+
+
+
+
+
+
+
+
+
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 122L, 3511B written
+"plugins.lua" 122L, 3511B written
+
+4 lines yanked
+E21: Cannot make changes, 'modifiable' is off
+
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 123L, 3568B written
+"plugins.lua" 123L, 3568B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Failed to run `config` for none-ls.nvim
+
+/home/mike/.config/nvim/lua/plugins.lua:106: module 'none-ls' not found:
+^Ino field package.preload['none-ls']
+cache_loader: module none-ls not found
+cache_loader_lib: module none-ls not found
+^Ino file './none-ls.lua'
+^Ino file '/usr/share/luajit-2.1/none-ls.lua'
+^Ino file '/usr/local/share/lua/5.1/none-ls.lua'
+^Ino file '/usr/local/share/lua/5.1/none-ls/init.lua'
+^Ino file '/usr/share/lua/5.1/none-ls.lua'
+^Ino file '/usr/share/lua/5.1/none-ls/init.lua'
+^Ino file './none-ls.so'
+^Ino file '/usr/local/lib/lua/5.1/none-ls.so'
+^Ino file '/usr/lib/lua/5.1/none-ls.so'
+^Ino file '/usr/local/lib/lua/5.1/loadall.so'
+
+# stacktrace:
+  - plugins.lua:106 _in_ **config**
+  - plugins.lua:14
+  - ~/.config/nvim/init.lua:2
+
+
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Failed to run `config` for none-ls.nvim
+
+/home/mike/.config/nvim/lua/plugins.lua:106: module 'none-ls' not found:
+^Ino field package.preload['none-ls']
+cache_loader: module none-ls not found
+cache_loader_lib: module none-ls not found
+^Ino file './none-ls.lua'
+^Ino file '/usr/share/luajit-2.1/none-ls.lua'
+^Ino file '/usr/local/share/lua/5.1/none-ls.lua'
+^Ino file '/usr/local/share/lua/5.1/none-ls/init.lua'
+^Ino file '/usr/share/lua/5.1/none-ls.lua'
+^Ino file '/usr/share/lua/5.1/none-ls/init.lua'
+^Ino file './none-ls.so'
+^Ino file '/usr/local/lib/lua/5.1/none-ls.so'
+^Ino file '/usr/lib/lua/5.1/none-ls.so'
+^Ino file '/usr/local/lib/lua/5.1/loadall.so'
+
+# stacktrace:
+  - plugins.lua:106 _in_ **config**
+  - plugins.lua:14
+  - ~/.config/nvim/init.lua:2recording @G
+
+recording @Grecording @G
+21 lines yankedrecording @Grecording @Grecording @G
+recording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @G
+
+"plugins.lua" 
+"plugins.lua" 123L, 3568B writtenrecording @G
+"plugins.lua" 123L, 3568B writtenrecording @G
+
+"plugins.lua" 
+"plugins.lua" 123L, 3568B writtenrecording @G
+"plugins.lua" 123L, 3568B writtenrecording @Grecording @Grecording @G
+recording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @G
+
+"plugins.lua" 
+"plugins.lua" 123L, 3573B writtenrecording @G
+"plugins.lua" 123L, 3573B writtenrecording @G
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+recording @qrecording @qrecording @qrecording @qrecording @j
+recording @jrecording @j
+recording @jrecording @j
+recording @jrecording @j
+recording @jrecording @jrecording @jrecording @j
+recording @jrecording @j
+recording @jrecording @j
+recording @jrecording @j
+recording @jrecording @j
+recording @j
+recording @jrecording @j
+recording @jrecording @j
+recording @jrecording @j
+recording @j
+recording @j
+recording @jrecording @j
+
+recording @j
+recording @j
+recording @j
+recording @jrecording @j
+recording @j
+recording @j
+recording @jrecording @j
+recording @jrecording @j
+recording @j
+recording @j
+
+"term://~/.config/nvim/lua//8997:/bin/bash;#toggleterm#1" 44 lines --100%--recording @jrecording @jrecording @jrecording @jrecording @jrecording @j
+
+
+
+
+
+recording @k
+recording @k
+recording @krecording @k
+recording @krecording @k
+recording @krecording @k
+recording @krecording @k
+
+recording @k
+recording @krecording @k
+
+
+
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Failed to run `config` for none-ls.nvim
+
+/home/mike/.config/nvim/lua/plugins.lua:106: module 'none-ls.nvim' not found:
+^Ino field package.preload['none-ls.nvim']
+cache_loader: module none-ls.nvim not found
+cache_loader_lib: module none-ls.nvim not found
+^Ino file './none-ls/nvim.lua'
+^Ino file '/usr/share/luajit-2.1/none-ls/nvim.lua'
+^Ino file '/usr/local/share/lua/5.1/none-ls/nvim.lua'
+^Ino file '/usr/local/share/lua/5.1/none-ls/nvim/init.lua'
+^Ino file '/usr/share/lua/5.1/none-ls/nvim.lua'
+^Ino file '/usr/share/lua/5.1/none-ls/nvim/init.lua'
+^Ino file './none-ls/nvim.so'
+^Ino file '/usr/local/lib/lua/5.1/none-ls/nvim.so'
+^Ino file '/usr/lib/lua/5.1/none-ls/nvim.so'
+^Ino file '/usr/local/lib/lua/5.1/loadall.so'
+^Ino file './none-ls.so'
+^Ino file '/usr/local/lib/lua/5.1/none-ls.so'
+^Ino file '/usr/lib/lua/5.1/none-ls.so'
+^Ino file '/usr/local/lib/lua/5.1/loadall.so'
+
+# stacktrace:
+  - plugins.lua:106 _in_ **config**
+  - plugins.lua:14
+  - ~/.config/nvim/init.lua:2recording @G
+recording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @Grecording @G
+recording @G
+recording @Grecording @G
+
+recording @Grecording @Grecording @Grecording @G
+
+recording @Grecording @G
+22 lines yankedrecording @G
+
+recording @G
+recording @G
+recording @G
+
+recording @Grecording @G
+
+recording @G
+recording @G
+recording @G
+
+recording @G
+
+recording @G
+recording @G
+recording @G
+
+recording @G
+
+"plugins.lua" 
+"plugins.lua" 118L, 3262B writtenrecording @G
+"plugins.lua" 118L, 3262B writtenrecording @G
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Failed to run `config` for none-ls.nvim
+
+/home/mike/.config/nvim/lua/plugins.lua:106: module 'none-ls.nvim' not found:
+^Ino field package.preload['none-ls.nvim']
+cache_loader: module none-ls.nvim not found
+cache_loader_lib: module none-ls.nvim not found
+^Ino file './none-ls/nvim.lua'
+^Ino file '/usr/share/luajit-2.1/none-ls/nvim.lua'
+^Ino file '/usr/local/share/lua/5.1/none-ls/nvim.lua'
+^Ino file '/usr/local/share/lua/5.1/none-ls/nvim/init.lua'
+^Ino file '/usr/share/lua/5.1/none-ls/nvim.lua'
+^Ino file '/usr/share/lua/5.1/none-ls/nvim/init.lua'
+^Ino file './none-ls/nvim.so'
+^Ino file '/usr/local/lib/lua/5.1/none-ls/nvim.so'
+^Ino file '/usr/lib/lua/5.1/none-ls/nvim.so'
+^Ino file '/usr/local/lib/lua/5.1/loadall.so'
+^Ino file './none-ls.so'
+^Ino file '/usr/local/lib/lua/5.1/none-ls.so'
+^Ino file '/usr/lib/lua/5.1/none-ls.so'
+^Ino file '/usr/local/lib/lua/5.1/loadall.so'
+
+# stacktrace:
+  - plugins.lua:106 _in_ **config**
+  - plugins.lua:14
+  - ~/.config/nvim/init.lua:2
+
+"plugins.lua" 
+"plugins.lua" 123L, 3569B written
+"plugins.lua" 123L, 3569B written
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Error executing vim.schedule lua callback: /home/mike/.config/nvim/lua/plugins.lua:117: Expected 5 arguments
+stack traceback:
+	[C]: in function 'nvim_buf_set_keymap'
+	/home/mike/.config/nvim/lua/plugins.lua:117: in function 'on_attach'
+	...ocal/share/nvim/lazy/none-ls.nvim/lua/null-ls/client.lua:164: in function 'setup_buffer'
+	...ocal/share/nvim/lazy/none-ls.nvim/lua/null-ls/client.lua:101: in function ''
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Error executing vim.schedule lua callback: /home/mike/.config/nvim/lua/plugins.lua:117: Expected 5 arguments
+stack traceback:
+	[C]: in function 'nvim_buf_set_keymap'
+	/home/mike/.config/nvim/lua/plugins.lua:117: in function 'on_attach'
+	...ocal/share/nvim/lazy/none-ls.nvim/lua/null-ls/client.lua:164: in function 'setup_buffer'
+	...ocal/share/nvim/lazy/none-ls.nvim/lua/null-ls/client.lua:101: in function ''
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+Error executing vim.schedule lua callback: /home/mike/.config/nvim/lua/plugins.lua:117: Expected 5 arguments
+stack traceback:
+	[C]: in function 'nvim_buf_set_keymap'
+	/home/mike/.config/nvim/lua/plugins.lua:117: in function 'on_attach'
+	...ocal/share/nvim/lazy/none-ls.nvim/lua/null-ls/client.lua:164: in function 'setup_buffer'
+	...ocal/share/nvim/lazy/none-ls.nvim/lua/null-ls/client.lua:101: in function ''
+	vim/_editor.lua: in function <vim/_editor.lua:0>
+
+
+
+
+20 lines yanked
+
+
+
+"plugins.lua" 
+"plugins.lua" 122L, 3481B written
+"plugins.lua" 122L, 3481B written
+
+
+
+
+4 lines to indent... 
+5 lines indented 
+
+
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 123L, 3530B written
+"plugins.lua" 123L, 3530B written
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+Error detected while processing BufWritePre Autocommands for "<buffer=1>":
+E5108: Error executing lua [string ":lua"]:1: attempt to call field 'formatting_sync' (a nil value)
+stack traceback:
+	[string ":lua"]:1: in main chunk
+"plugins.lua" 
+"plugins.lua" 123L, 3530B written
+
+Error detected while processing BufWritePre Autocommands for "<buffer=1>":
+E5108: Error executing lua [string ":lua"]:1: attempt to call field 'formatting_sync' (a nil value)
+stack traceback:
+	[string ":lua"]:1: in main chunk
+"plugins.lua" 
+"plugins.lua" 123L, 3534B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+
+Error detected while processing BufWritePre Autocommands for "<buffer=1>":
+E5108: Error executing lua [string ":lua"]:1: attempt to call field 'formatting_seq_sync' (a nil value)
+stack traceback:
+	[string ":lua"]:1: in main chunk
+"plugins.lua" 
+"plugins.lua" 123L, 3534B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+
+
+
+
+
+Error detected while processing BufWritePre Autocommands for "<buffer=1>":
+E5108: Error executing lua [string ":lua"]:1: attempt to call field 'formatting_seq_sync' (a nil value)
+stack traceback:
+	[string ":lua"]:1: in main chunk
+"plugins.lua" 
+"plugins.lua" 123L, 3525B written
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+Error detected while processing BufWritePre Autocommands for "<buffer=1>":
+E5108: Error executing lua [string ":lua"]:1: attempt to call field 'formatting' (a nil value)
+stack traceback:
+	[string ":lua"]:1: in main chunk
+"plugins.lua" 
+"plugins.lua" 123L, 3525B written
+
+
+
+Running healthchecks...
+
+NVIM v0.9.5
+Build type: Release
+LuaJIT 2.1.1702233742
+
+   system vimrc file: "$VIM/sysinit.vim"
+  fall-back for $VIM: "/usr/share/nvim"
+
+Run :checkhealth for more info
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%remaps.lua.swp"
+          owned by: mike   dated: Do Apr 04 14:49:18 2024
+         file name: ~mike/.config/nvim/lua/remaps.lua
+          modified: YES
+         user name: mike   host name: mike
+        process ID: 8984
+While opening file "/home/mike/.config/nvim/lua/remaps.lua"
+             dated: Do Apr 04 14:42:19 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/remaps.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%remaps.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%remaps.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: 
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%remaps.lua.swp"
+          owned by: mike   dated: Do Apr 04 14:49:18 2024
+         file name: ~mike/.config/nvim/lua/remaps.lua
+          modified: YES
+         user name: mike   host name: mike
+        process ID: 8984
+While opening file "/home/mike/.config/nvim/lua/remaps.lua"
+             dated: Do Apr 04 14:42:19 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/remaps.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%remaps.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%remaps.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: 
+recording @j
+recording @j
+
+Error detected while processing BufWritePre Autocommands for "<buffer=1>":
+E5108: Error executing lua [string ":lua"]:1: attempt to call field 'formatting' (a nil value)
+stack traceback:
+	[string ":lua"]:1: in main chunk
+"plugins.lua" 
+"plugins.lua" 123L, 3525B writtenrecording @j
+recording @j
+
+E382: Cannot write, 'buftype' option is setrecording @j
+recording @j
+
+Error detected while processing BufWritePre Autocommands for "<buffer=1>":
+E5108: Error executing lua [string ":lua"]:1: attempt to call field 'formatting' (a nil value)
+stack traceback:
+	[string ":lua"]:1: in main chunk
+"plugins.lua" 
+"plugins.lua" 123L, 3525B writtenrecording @j
+
+Error detected while processing BufWritePre Autocommands for "<buffer=1>":
+E5108: Error executing lua [string ":lua"]:1: attempt to call field 'formatting' (a nil value)
+stack traceback:
+	[string ":lua"]:1: in main chunk
+"plugins.lua" 
+"plugins.lua" 123L, 3525B writtenrecording @j
+recording @j
+recording @j
+recording @j
+
+recording @j
+
+Error detected while processing BufWritePre Autocommands for "<buffer=1>":
+E5108: Error executing lua [string ":lua"]:1: attempt to call field 'formatting' (a nil value)
+stack traceback:
+	[string ":lua"]:1: in main chunk
+"plugins.lua" 
+"plugins.lua" 118L, 3257B writtenrecording @j
+
+Error detected while processing BufWritePre Autocommands for "<buffer=1>":
+E5108: Error executing lua [string ":lua"]:1: attempt to call field 'formatting' (a nil value)
+stack traceback:
+	[string ":lua"]:1: in main chunk
+"plugins.lua" 
+"plugins.lua" 118L, 3257B writtenrecording @j
+
+recording @jrecording @jrecording @jrecording @j
+
+recording @j
+recording @j
+recording @j
+recording @j
+
+recording @jrecording @j
+
+recording @j
+18 lines to indent... 
+19 lines indented recording @j
+recording @j
+recording @j
+
+Error detected while processing BufWritePre Autocommands for "<buffer=1>":
+E5108: Error executing lua [string ":lua"]:1: attempt to call field 'formatting' (a nil value)
+stack traceback:
+	[string ":lua"]:1: in main chunk
+"plugins.lua" 
+"plugins.lua" 137L, 4228B writtenrecording @j
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%remaps.lua.swp"
+          owned by: mike   dated: Do Apr 04 14:49:18 2024
+         file name: ~mike/.config/nvim/lua/remaps.lua
+          modified: YES
+         user name: mike   host name: mike
+        process ID: 8984
+While opening file "/home/mike/.config/nvim/lua/remaps.lua"
+             dated: Do Apr 04 14:42:19 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/remaps.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%remaps.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%remaps.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: 
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+
+"plugins.lua" 
+"plugins.lua" 142L, 3165B written
+"plugins.lua" 142L, 3165B written
+
+"plugins.lua" 
+"plugins.lua" 142L, 3165B written
+"plugins.lua" 142L, 3165B written
+
+
+24 lines to indent... 
+25 lines indented 
+
+
+24 lines to indent... 
+25 lines indented 
+
+
+
+
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+
+
+
+
+
+
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 151L, 5616B written
+"remaps.lua" 151L, 5616B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: vim/keymap.lua:0: lhs: expected string, got nil
+stack traceback:
+	[C]: in function 'error'
+	vim/shared.lua: in function 'validate'
+	vim/keymap.lua: in function 'set'
+	/home/mike/.config/nvim/lua/remaps.lua:92: in main chunk
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:3: in main chunk
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+E488: Trailing characters: /command//g
+
+E488: Trailing characters: /command/ /g
+
+
+"remaps.lua" 
+"remaps.lua" 136L, 5361B written
+"remaps.lua" 136L, 5361B written
+
+
+
+
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 111L, 5076B written
+"remaps.lua" 111L, 5076B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%remaps.lua.swp"
+          owned by: mike   dated: Do Apr 04 15:52:21 2024
+         file name: ~mike/.config/nvim/lua/remaps.lua
+          modified: no
+         user name: mike   host name: mike
+        process ID: 12381 (STILL RUNNING)
+While opening file "/home/mike/.config/nvim/lua/remaps.lua"
+             dated: Do Apr 04 15:52:15 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/remaps.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%remaps.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%remaps.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort: 
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: vim/keymap.lua:0: rhs: expected string|function, got nil
+stack traceback:
+	[C]: in function 'error'
+	vim/shared.lua: in function 'validate'
+	vim/keymap.lua: in function 'set'
+	/home/mike/.config/nvim/lua/remaps.lua:92: in main chunk
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:3: in main chunk
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+
+"remaps.lua" 
+"remaps.lua" 91L, 4054B written
+"remaps.lua" 91L, 4054B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp"
+          owned by: mike   dated: Do Apr 04 15:43:12 2024
+         file name: ~mike/.config/nvim/lua/plugins.lua
+          modified: YES
+         user name: mike   host name: mike
+        process ID: 11745
+While opening file "/home/mike/.config/nvim/lua/plugins.lua"
+             dated: Do Apr 04 15:38:45 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/plugins.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: 
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+
+
+
+
+34 lines yanked
+
+
+
+25 lines yanked
+
+"plugins.lua" 
+"plugins.lua" 143L, 3197B written
+"plugins.lua" 143L, 3197B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+
+
+"plugins.lua" 
+"plugins.lua" 142L, 3165B written
+"plugins.lua" 142L, 3165B written
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 142L, 3165B written
+"plugins.lua" 142L, 3165B written
+
+
+
+
+33 lines yanked
+
+
+
+
+
+
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 107L, 2245B written
+"plugins.lua" 107L, 2245B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: /home/mike/.config/nvim/lua/plugins.lua:24: attempt to call a table value
+stack traceback:
+	/home/mike/.config/nvim/lua/plugins.lua:24: in main chunk
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+"plugins.lua" 
+"plugins.lua" 108L, 2248B written
+"plugins.lua" 108L, 2248B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: /home/mike/.config/nvim/lua/plugins.lua:25: attempt to call a table value
+stack traceback:
+	/home/mike/.config/nvim/lua/plugins.lua:25: in main chunk
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+"plugins.lua" 
+"plugins.lua" 108L, 2249B written
+"plugins.lua" 108L, 2249B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+
+
+
+
+
+
+
+13 lines to indent... 
+14 lines indented 
+
+
+
+
+
+
+
+
+34 lines yanked
+
+search hit BOTTOM, continuing at TOP
+E486: Pattern not found: none
+
+
+
+
+
+20 lines yanked
+
+
+
+
+
+
+18 lines <ed 1 time
+18 lines <ed 1 time
+
+"lspconfig.lua" 
+"lspconfig.lua" 20L, 358B written
+"lspconfig.lua" 20L, 358B written
+
+
+
+
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 100L, 2187B written
+"plugins.lua" 100L, 2187B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: /home/mike/.config/nvim/lua/plugins.lua:26: attempt to call a table value
+stack traceback:
+	/home/mike/.config/nvim/lua/plugins.lua:26: in main chunk
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+"plugins.lua" 
+"plugins.lua" 100L, 2188B written
+"plugins.lua" 100L, 2188B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+34 lines yanked
+
+
+
+
+
+
+"none-ls.lua" 
+"none-ls.lua" 34L, 892B written
+"none-ls.lua" 34L, 892B written
+
+
+"plugins.lua" 
+"plugins.lua" 89L, 1952B written
+"plugins.lua" 89L, 1952B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+
+
+
+
+
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 55L, 1033B written
+"plugins.lua" 55L, 1033B written
+
+
+
+"plugins.lua" 
+"plugins.lua" 55L, 1033B written
+"plugins.lua" 55L, 1033B written
+
+"plugins.lua" 
+"plugins.lua" 55L, 1033B written
+"plugins.lua" 55L, 1033B written
+
+"plugins.lua" 
+"plugins.lua" 53L, 1028B written
+"plugins.lua" 53L, 1028B written
+
+"plugins.lua" 
+"plugins.lua" 51L, 1023B written
+"plugins.lua" 51L, 1023B written
+
+
+search hit BOTTOM, continuing at TOP
+E486: Pattern not found: devic
+
+"plugins.lua" 
+"plugins.lua" 51L, 1034B written
+"plugins.lua" 51L, 1034B written
+
+
+E490: No fold found
+
+
+
+"plugins.lua" 
+"plugins.lua" 51L, 1046B written
+"plugins.lua" 51L, 1046B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+
+
+
+
+
+
+
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugin_setup%neotree.lua.swp"
+          owned by: mike   dated: Do Apr 04 15:29:15 2024
+         file name: ~mike/.config/nvim/lua/plugin_setup/neotree.lua
+          modified: YES
+         user name: mike   host name: mike
+        process ID: 7932
+While opening file "plugin_setup/neotree.lua"
+             dated: Do Apr 04 13:27:13 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r plugin_setup/neotree.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugin_setup%neotree.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugin_setup%neotree.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: 
+[Neo-tree ERROR] Error opening file: vim/_editor.lua:0: nvim_exec2(): Vim(buffer):E325: ATTENTION
+
+
+
+
+E490: No fold found
+
+
+"none-ls.lua" 
+"none-ls.lua" 34L, 892B written
+"none-ls.lua" 34L, 892B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+
+"remaps.lua" 
+"remaps.lua" 91L, 4063B written
+"remaps.lua" 91L, 4063B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+
+E21: Cannot make changes, 'modifiable' is off
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 96L, 4105B written
+"remaps.lua" 96L, 4105B written
+
+search hit BOTTOM, continuing at TOP
+E486: Pattern not found: space
+
+
+
+"neotree.lua" 
+"neotree.lua" 282L, 11104B written
+"neotree.lua" 282L, 11104B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%remaps.lua.swp"
+          owned by: mike   dated: Do Apr 04 17:22:32 2024
+         file name: ~mike/.config/nvim/lua/remaps.lua
+          modified: no
+         user name: mike   host name: mike
+        process ID: 15608 (STILL RUNNING)
+While opening file "/home/mike/.config/nvim/lua/remaps.lua"
+             dated: Do Apr 04 17:21:38 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/remaps.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%remaps.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%remaps.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort: 
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+
+
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Failed to run `config` for none-ls.nvim
+
+/home/mike/.config/nvim/lua/plugin_setup/none-ls.lua:12: attempt to index global 'null_ls' (a nil value)
+
+# stacktrace:
+  - plugin_setup/none-ls.lua:12 _in_ **config**
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+"remaps.lua" 
+"remaps.lua" 97L, 4142B written
+"remaps.lua" 97L, 4142B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+"smartsplits.lua" 
+"smartsplits.lua" 61L, 1389B written
+"smartsplits.lua" 61L, 1389B written
+
+"smartsplits.lua" 
+"smartsplits.lua" 61L, 1389B written
+"smartsplits.lua" 61L, 1389B written
+
+"plugins.lua" 
+"plugins.lua" 54L, 1081B written
+"plugins.lua" 54L, 1081B written
+
+"plugins.lua" 
+"plugins.lua" 54L, 1081B written
+"plugins.lua" 54L, 1081B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Failed to run `config` for astrocore
+
+/home/mike/.config/nvim/lua/plugin_setup/smartsplits.lua:9: attempt to index local 'maps' (a nil value)
+
+# stacktrace:
+  - plugin_setup/smartsplits.lua:9 _in_ **values**
+  - remaps.lua:43
+  - ~/.config/nvim/init.lua:3
+
+
+search hit BOTTOM, continuing at TOP
+
+
+
+
+
+
+
+
+
+
+
+53 lines <ed 1 time
+53 lines <ed 1 time
+
+
+
+
+52 lines <ed 1 time
+52 lines <ed 1 time
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"smartsplits.lua" 
+"smartsplits.lua" 56L, 1230B written
+"smartsplits.lua" 56L, 1230B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+E349: No identifier under cursor
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 97L, 4142B written
+"remaps.lua" 97L, 4142B written
+
+"remaps.lua" 
+"remaps.lua" 97L, 4143B written
+"remaps.lua" 97L, 4143B written
+
+"remaps.lua" 
+"remaps.lua" 97L, 4143B written
+"remaps.lua" 97L, 4143B written
+
+
+"remaps.lua" 
+"remaps.lua" 98L, 4156B written
+"remaps.lua" 98L, 4156B written
+
+"remaps.lua" 
+"remaps.lua" 98L, 4156B written
+"remaps.lua" 98L, 4156B written
+
+
+
+"remaps.lua" 
+"remaps.lua" 98L, 4162B written
+"remaps.lua" 98L, 4162B written
+
+"remaps.lua" 
+"remaps.lua" 98L, 4158B written
+"remaps.lua" 98L, 4158B written
+
+"remaps.lua" 
+"remaps.lua" 99L, 4174B written
+"remaps.lua" 99L, 4174B written
+
+
+
+"remaps.lua" 
+"remaps.lua" 99L, 4174B written
+"remaps.lua" 99L, 4174B written
+
+E149: Sorry, no help for <C-h>
+
+search hit BOTTOM, continuing at TOP
+E486: Pattern not found: C-h
+search hit BOTTOM, continuing at TOP
+E486: Pattern not found: h>recording @q
+
+
+E349: No identifier under cursor
+
+
+
+"remaps.lua" 
+"remaps.lua" 99L, 4174B written
+"remaps.lua" 99L, 4174B written
+
+
+
+
+
+
+
+
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 54L, 2437B written
+"remaps.lua" 54L, 2437B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+recording @k
+recording @k
+recording @krecording @k
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%remaps.lua.swp"
+          owned by: mike   dated: Do Apr 04 17:59:38 2024
+         file name: ~mike/.config/nvim/lua/remaps.lua
+          modified: YES
+         user name: mike   host name: mike
+        process ID: 16949 (STILL RUNNING)
+While opening file "/home/mike/.config/nvim/lua/remaps.lua"
+             dated: Do Apr 04 17:54:22 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/remaps.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%remaps.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%remaps.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort: 
+
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp"
+          owned by: mike   dated: Do Apr 04 18:04:18 2024
+         file name: ~mike/.config/nvim/lua/plugins.lua
+          modified: no
+         user name: mike   host name: mike
+        process ID: 30184 (STILL RUNNING)
+While opening file "/home/mike/.config/nvim/lua/plugins.lua"
+             dated: Do Apr 04 18:01:32 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/plugins.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort: 
+W10: Warning: Changing a readonly file
+
+
+"remaps.lua" 
+"remaps.lua" 99L, 4174B written
+"remaps.lua" 99L, 4174B written
+
+
+
+
+
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: /home/mike/.config/nvim/lua/plugins.lua:29: module 'plugin_setup.smartsplits' not found:
+	no field package.preload['plugin_setup.smartsplits']
+	no file './plugin_setup/smartsplits.lua'
+	no file '/usr/share/luajit-2.1/plugin_setup/smartsplits.lua'
+	no file '/usr/local/share/lua/5.1/plugin_setup/smartsplits.lua'
+	no file '/usr/local/share/lua/5.1/plugin_setup/smartsplits/init.lua'
+	no file '/usr/share/lua/5.1/plugin_setup/smartsplits.lua'
+	no file '/usr/share/lua/5.1/plugin_setup/smartsplits/init.lua'
+	no file './plugin_setup/smartsplits.so'
+	no file '/usr/local/lib/lua/5.1/plugin_setup/smartsplits.so'
+	no file '/usr/lib/lua/5.1/plugin_setup/smartsplits.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './plugin_setup.so'
+	no file '/usr/local/lib/lua/5.1/plugin_setup.so'
+	no file '/usr/lib/lua/5.1/plugin_setup.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	/home/mike/.config/nvim/lua/plugins.lua:29: in main chunk
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp"
+          owned by: mike   dated: Do Apr 04 18:04:26 2024
+         file name: ~mike/.config/nvim/lua/plugins.lua
+          modified: no
+         user name: mike   host name: mike
+        process ID: 30184 (STILL RUNNING)
+While opening file "/home/mike/.config/nvim/lua/plugins.lua"
+             dated: Do Apr 04 18:01:32 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/plugins.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort: 
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+
+
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: /home/mike/.config/nvim/lua/plugins.lua:29: module 'plugin_setup.smartsplits' not found:
+	no field package.preload['plugin_setup.smartsplits']
+	no file './plugin_setup/smartsplits.lua'
+	no file '/usr/share/luajit-2.1/plugin_setup/smartsplits.lua'
+	no file '/usr/local/share/lua/5.1/plugin_setup/smartsplits.lua'
+	no file '/usr/local/share/lua/5.1/plugin_setup/smartsplits/init.lua'
+	no file '/usr/share/lua/5.1/plugin_setup/smartsplits.lua'
+	no file '/usr/share/lua/5.1/plugin_setup/smartsplits/init.lua'
+	no file './plugin_setup/smartsplits.so'
+	no file '/usr/local/lib/lua/5.1/plugin_setup/smartsplits.so'
+	no file '/usr/lib/lua/5.1/plugin_setup/smartsplits.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './plugin_setup.so'
+	no file '/usr/local/lib/lua/5.1/plugin_setup.so'
+	no file '/usr/lib/lua/5.1/plugin_setup.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	/home/mike/.config/nvim/lua/plugins.lua:29: in main chunk
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+"plugins.lua" 
+"plugins.lua" 54L, 1078B written
+"plugins.lua" 54L, 1078B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp"
+          owned by: mike   dated: Do Apr 04 18:06:07 2024
+         file name: ~mike/.config/nvim/lua/plugins.lua
+          modified: YES
+         user name: mike   host name: mike
+        process ID: 30730
+While opening file "/home/mike/.config/nvim/lua/plugins.lua"
+             dated: Do Apr 04 18:05:49 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/plugins.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: 
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp"
+          owned by: mike   dated: Do Apr 04 18:06:07 2024
+         file name: ~mike/.config/nvim/lua/plugins.lua
+          modified: YES
+         user name: mike   host name: mike
+        process ID: 30730
+While opening file "/home/mike/.config/nvim/lua/plugins.lua"
+             dated: Do Apr 04 18:05:49 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/plugins.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: 
+
+"plugins.lua" 
+"plugins.lua" 56L, 1097B written
+"plugins.lua" 56L, 1097B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: vim/_init_packages.lua:0: /home/mike/.config/nvim/lua/plugins.lua:56: '}' expected (to close '{' at line 17) near ')'
+stack traceback:
+	[C]: in function 'error'
+	vim/_init_packages.lua: in function <vim/_init_packages.lua:0>
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+
+"plugins.lua" 
+"plugins.lua" 55L, 1091B written
+"plugins.lua" 55L, 1091B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+24 lines to indent... 
+25 lines indented 
+
+"plugins.lua" 
+"plugins.lua" 77L, 2329B written
+"plugins.lua" 77L, 2329B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Failed to run `config` for alpha-nvim
+
+/home/mike/.config/nvim/lua/plugins.lua:56: attempt to index field 'section' (a nil value)
+
+# stacktrace:
+  - plugins.lua:56 _in_ **values**
+  - plugins.lua:16
+  - ~/.config/nvim/init.lua:2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 58L, 1213B written
+"plugins.lua" 58L, 1213B written
+
+"plugins.lua" 
+"plugins.lua" 58L, 1213B written
+"plugins.lua" 58L, 1213B written
+
+
+
+
+
+
+6 lines yanked
+
+
+
+
+
+
+
+
+
+
+
+
+"alpha.lua" 
+"alpha.lua" 82L, 3367B written
+"alpha.lua" 82L, 3367B written
+
+"plugins.lua" 
+"plugins.lua" 53L, 1120B written
+"plugins.lua" 53L, 1120B written
+
+"alpha.lua" 
+"alpha.lua" 82L, 3367B written
+"alpha.lua" 82L, 3367B written
+
+
+search hit BOTTOM, continuing at TOP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+search hit BOTTOM, continuing at TOP
+E486: Pattern not found: astro
+search hit BOTTOM, continuing at TOP
+E486: Pattern not found: astro
+
+"alpha.lua" 
+"alpha.lua" 71L, 2714B written
+"alpha.lua" 71L, 2714B written
+
+
+16 lines yanked
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Already at oldest change
+Already at oldest change
+Already at oldest change
+Already at oldest change
+Already at oldest change
+Already at oldest change
+
+
+17 lines yanked
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+
+
+
+
+18 lines yanked
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+
+
+
+
+
+
+
+"alpha.lua" 
+"alpha.lua" 22L, 1165B written
+"alpha.lua" 22L, 1165B written
+
+
+
+
+
+"alpha.lua" 
+"alpha.lua" 20L, 1055B written
+"alpha.lua" 20L, 1055B written
+
+
+
+
+
+
+
+21 lines to indent... 
+22 lines indented 
+
+
+
+
+29 lines yanked
+
+
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to run generator: ...y/none-ls.nvim/lua/null-ls/helpers/generator_factory.lua:228: error in generator output: `std = "neovim"`, but some libraries could not be found:
+  `neovim`
+ERROR: Could not find all standard library files
+recording @k
+Saved session "last"
+[null-ls] failed to run generator: ...y/none-ls.nvim/lua/null-ls/helpers/generator_factory.lua:228: error in generator output: `std = "neovim"`, but some libraries could not be found:
+  `neovim`
+ERROR: Could not find all standard library files
+
+Saved session "last"
+Saved session "last"
+Saved session "last"
+Saved session "last"
+
+
+
+
+
+
+
+
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 110L, 4573B written
+"remaps.lua" 110L, 4573B written
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 111L, 4629B written
+"remaps.lua" 111L, 4629B written
+Saved session "last"
+Saved session "last"
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%remaps.lua.swp"
+          owned by: mike   dated: Fr Apr 05 08:22:29 2024
+         file name: ~mike/.config/nvim/lua/remaps.lua
+          modified: no
+         user name: mike   host name: mike
+        process ID: 28075 (STILL RUNNING)
+While opening file "/home/mike/.config/nvim/lua/remaps.lua"
+             dated: Fr Apr 05 08:14:45 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/remaps.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%remaps.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%remaps.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort: 
+Saved session "last"
+Saved session "last"
+[null-ls] failed to run generator: ...y/none-ls.nvim/lua/null-ls/helpers/generator_factory.lua:228: error in generator output: `std = "neovim"`, but some libraries could not be found:
+  `neovim`
+ERROR: Could not find all standard library files
+
+Saved session "last"
+Saved session "last"
+Saved session "last"
+[null-ls] failed to run generator: ...y/none-ls.nvim/lua/null-ls/helpers/generator_factory.lua:228: error in generator output: ERROR: Could not collect standard library: failed to parse yml file `/home/mike/.config/nvim/neovim.yml`: globals.vim: data did not match any variant of untagged enum FieldKindSerde at line 6 column 5
+
+
+
+Saved session "last"
+Saved session "last"
+
+
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 111L, 4628B written
+"remaps.lua" 111L, 4628B written
+
+"remaps.lua" 
+"remaps.lua" 111L, 4628B written
+"remaps.lua" 111L, 4628B written
+Saved session "last"
+
+"remaps.lua" 
+"remaps.lua" 111L, 4627B written
+"remaps.lua" 111L, 4627B written
+Saved session "last"
+
+"remaps.lua" 
+"remaps.lua" 111L, 4627B written
+"remaps.lua" 111L, 4627B written
+
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 112L, 4697B written
+"remaps.lua" 112L, 4697B written
+
+
+
+
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 112L, 4702B written
+"remaps.lua" 112L, 4702B written
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 111L, 4724B written
+"remaps.lua" 111L, 4724B written
+search hit BOTTOM, continuing at TOP
+
+
+
+"remaps.lua" 
+"remaps.lua" 113L, 4786B written
+"remaps.lua" 113L, 4786B written
+
+
+
+"remaps.lua" 
+"remaps.lua" 114L, 4804B written
+"remaps.lua" 114L, 4804B written
+
+
+
+
+4 lines yanked
+
+
+
+
+
+
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 116L, 4872B written
+"remaps.lua" 116L, 4872B written
+
+
+
+
+search hit BOTTOM, continuing at TOP
+search hit BOTTOM, continuing at TOP
+search hit BOTTOM, continuing at TOP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 114L, 4854B written
+"remaps.lua" 114L, 4854B written
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 115L, 4933B written
+"remaps.lua" 115L, 4933B written
+
+"remaps.lua" 
+"remaps.lua" 115L, 4933B written
+"remaps.lua" 115L, 4933B written
+
+
+Already at newest change
+Already at newest change
+
+"remaps.lua" 
+"remaps.lua" 114L, 4858B written
+"remaps.lua" 114L, 4858B written
+Saved session "last"
+
+NVIM v0.9.5
+Build type: Release
+LuaJIT 2.1.1702233742
+
+   system vimrc file: "$VIM/sysinit.vim"
+  fall-back for $VIM: "/usr/share/nvim"
+
+Run :checkhealth for more info
+
+
+Saved session "last"
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp"
+          owned by: mike   dated: Fr Apr 05 12:27:24 2024
+         file name: ~mike/.config/nvim/lua/plugins.lua
+          modified: YES
+         user name: mike   host name: mike
+        process ID: 23547
+While opening file "/home/mike/.config/nvim/lua/plugins.lua"
+             dated: Fr Apr 05 12:54:15 2024
+      NEWER than swap file!
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/plugins.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugins.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: 
+
+NVIM v0.9.5
+Build type: Release
+LuaJIT 2.1.1702233742
+
+   system vimrc file: "$VIM/sysinit.vim"
+  fall-back for $VIM: "/usr/share/nvim"
+
+Run :checkhealth for more info
+
+
+
+
+
+
+6 lines >ed 1 time
+6 lines >ed 1 time
+
+
+"plugins.lua" 
+"plugins.lua" 138L, 3244B written
+"plugins.lua" 138L, 3244B written
+
+
+4 lines yanked
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 141L, 3313B written
+"plugins.lua" 141L, 3313B written
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 141L, 3310B written
+"plugins.lua" 141L, 3310B written
+Saved session "last"
+search hit BOTTOM, continuing at TOP
+E486: Pattern not found: kanagaw
+
+
+
+
+4 lines >ed 1 time
+4 lines >ed 1 time
+
+
+
+"plugins.lua" 
+"plugins.lua" 145L, 3404B written
+"plugins.lua" 145L, 3404B written
+Saved session "last"

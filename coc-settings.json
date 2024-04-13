@@ -1,0 +1,21 @@
+{
+  "hover.target": "float",
+  "signature.target": "float",
+  "suggest.floatEnable": true,
+  "suggest.detailMaxLength": 100,
+  "suggest.maxPreviewWidth": 100,
+  "languageserver": {
+    "python": {
+      "command": "pyright-langserver",
+      "args": ["--stdio"],
+      "filetypes": ["python"],
+      "rootPatterns": ["requirements.txt", ".git", "pyproject.toml", "setup.py"]
+    },
+    "lua": {
+      "command": "lua-language-server",
+      "filetypes": ["lua"],
+      "rootPatterns": [".git", "lua"]
+    }
+  }
+}
+

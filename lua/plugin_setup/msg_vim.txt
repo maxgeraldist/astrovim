@@ -1,0 +1,1132 @@
+
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+281 lines to indent... 
+250 lines to indent... 
+200 lines to indent... 
+150 lines to indent... 
+100 lines to indent... 
+50 lines to indent... 
+282 lines indented 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"neotree.lua" 
+"neotree.lua" 313L, 18539B written
+"neotree.lua" 313L, 18539B written
+
+E492: Not an editor command: Format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"neotree.lua" 
+"neotree.lua" 311L, 18480B written
+"neotree.lua" 311L, 18480B written
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"neotree.lua" 
+"neotree.lua" 287L, 16359B written
+"neotree.lua" 287L, 16359B written
+
+"neotree.lua" 287 lines --99%--
+
+"neotree.lua" 287 lines --99%--
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+"neotree.lua" 
+"neotree.lua" 287L, 16359B written
+"neotree.lua" 287L, 16359B written
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+search hit BOTTOM, continuing at TOP
+search hit BOTTOM, continuing at TOP
+search hit BOTTOM, continuing at TOP
+E486: Pattern not found: git =
+
+
+E490: No fold found
+
+
+E490: No fold found
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+
+
+
+
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: ...local/share/nvim/lazy/lazy.nvim/lua/lazy/core/plugin.lua:356: attempt to get length of local 'spec' (a boolean value)
+stack traceback:
+	...local/share/nvim/lazy/lazy.nvim/lua/lazy/core/plugin.lua:356: in function 'normalize'
+	...local/share/nvim/lazy/lazy.nvim/lua/lazy/core/plugin.lua:359: in function 'normalize'
+	...local/share/nvim/lazy/lazy.nvim/lua/lazy/core/plugin.lua:359: in function 'normalize'
+	...local/share/nvim/lazy/lazy.nvim/lua/lazy/core/plugin.lua:43: in function 'parse'
+	...local/share/nvim/lazy/lazy.nvim/lua/lazy/core/plugin.lua:541: in function 'load'
+	...local/share/nvim/lazy/lazy.nvim/lua/lazy/core/loader.lua:37: in function 'setup'
+	.../mike/.local/share/nvim/lazy/lazy.nvim/lua/lazy/init.lua:102: in function 'setup'
+	/home/mike/.config/nvim/lua/plugins.lua:14: in main chunk
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugin_setup%treesitter.lua.swp"
+          owned by: mike   dated: Do Apr 04 13:52:39 2024
+         file name: ~mike/.config/nvim/lua/plugin_setup/treesitter.lua
+          modified: YES
+         user name: mike   host name: mike
+        process ID: 6232
+While opening file "/home/mike/.config/nvim/lua/plugin_setup/treesitter.lua"
+             dated: Do Apr 04 13:51:34 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/plugin_setup/treesitter.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugin_setup%treesitter.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugin_setup%treesitter.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: 
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: ...local/share/nvim/lazy/lazy.nvim/lua/lazy/core/plugin.lua:356: attempt to get length of local 'spec' (a boolean value)
+stack traceback:
+	...local/share/nvim/lazy/lazy.nvim/lua/lazy/core/plugin.lua:356: in function 'normalize'
+	...local/share/nvim/lazy/lazy.nvim/lua/lazy/core/plugin.lua:359: in function 'normalize'
+	...local/share/nvim/lazy/lazy.nvim/lua/lazy/core/plugin.lua:359: in function 'normalize'
+	...local/share/nvim/lazy/lazy.nvim/lua/lazy/core/plugin.lua:43: in function 'parse'
+	...local/share/nvim/lazy/lazy.nvim/lua/lazy/core/plugin.lua:541: in function 'load'
+	...local/share/nvim/lazy/lazy.nvim/lua/lazy/core/loader.lua:37: in function 'setup'
+	.../mike/.local/share/nvim/lazy/lazy.nvim/lua/lazy/init.lua:102: in function 'setup'
+	/home/mike/.config/nvim/lua/plugins.lua:14: in main chunk
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: ...local/share/nvim/lazy/lazy.nvim/lua/lazy/core/plugin.lua:356: attempt to get length of local 'spec' (a boolean value)
+stack traceback:
+	...local/share/nvim/lazy/lazy.nvim/lua/lazy/core/plugin.lua:356: in function 'normalize'
+	...local/share/nvim/lazy/lazy.nvim/lua/lazy/core/plugin.lua:359: in function 'normalize'
+	...local/share/nvim/lazy/lazy.nvim/lua/lazy/core/plugin.lua:359: in function 'normalize'
+	...local/share/nvim/lazy/lazy.nvim/lua/lazy/core/plugin.lua:43: in function 'parse'
+	...local/share/nvim/lazy/lazy.nvim/lua/lazy/core/plugin.lua:541: in function 'load'
+	...local/share/nvim/lazy/lazy.nvim/lua/lazy/core/loader.lua:37: in function 'setup'
+	.../mike/.local/share/nvim/lazy/lazy.nvim/lua/lazy/init.lua:102: in function 'setup'
+	/home/mike/.config/nvim/lua/plugins.lua:14: in main chunk
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+E492: Not an editor command: lazy
+
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+
+
+
+
+
+
+E21: Cannot make changes, 'modifiable' is off
+
+
+E21: Cannot make changes, 'modifiable' is off
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+recording @j
+recording @j
+
+recording @j
+recording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @j
+[Neo-tree INFO] Deleted directory  /home/mike/.config/nvim/lua/plugin_setup/folderrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @j
+recording @j
+
+"neotree.lua" [Modified] 278 lines --49%--recording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @jrecording @j
+[Neo-tree INFO] Deleted directory  /home/mike/.config/nvim/lua/plugin_setup/dirrecording @jrecording @j
+recording @j
+
+recording @j
+
+"neotree.lua" [Modified] 277 lines --54%--recording @j
+recording @j
+recording @j
+recording @j
+[Neo-tree ERROR] debounce  filesystem_navigate  error:  ...are/nvim/lazy/neo-tree.nvim/lua/neo-tree/ui/renderer.lua:1036: Vim:E95: Buffer with this name already existsrecording @j
+recording @j
+recording @j
+[Neo-tree ERROR] debounce  filesystem_navigate  error:  ...are/nvim/lazy/neo-tree.nvim/lua/neo-tree/ui/renderer.lua:1036: Vim:E95: Buffer with this name already existsrecording @j
+recording @j
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+
+"toggleterm.lua" 
+"toggleterm.lua" 33L, 927B written
+"toggleterm.lua" 33L, 927B written
+
+"toggleterm.lua" 
+"toggleterm.lua" 33L, 927B written
+"toggleterm.lua" 33L, 927B written
+
+"toggleterm.lua" 
+"toggleterm.lua" 33L, 927B written
+"toggleterm.lua" 33L, 927B written
+
+"toggleterm.lua" 
+"toggleterm.lua" 33L, 927B written
+"toggleterm.lua" 33L, 927B written
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: /home/mike/.config/nvim/lua/plugins.lua:24: attempt to call a table value
+stack traceback:
+	/home/mike/.config/nvim/lua/plugins.lua:24: in main chunk
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: /home/mike/.config/nvim/lua/plugins.lua:25: attempt to call a table value
+stack traceback:
+	/home/mike/.config/nvim/lua/plugins.lua:25: in main chunk
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugin_setup%neotree.lua.swp"
+          owned by: mike   dated: Do Apr 04 15:29:15 2024
+         file name: ~mike/.config/nvim/lua/plugin_setup/neotree.lua
+          modified: YES
+         user name: mike   host name: mike
+        process ID: 7932
+While opening file "/home/mike/.config/nvim/lua/plugin_setup/neotree.lua"
+             dated: Do Apr 04 13:27:13 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/plugin_setup/neotree.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugin_setup%neotree.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugin_setup%neotree.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: 
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: /home/mike/.config/nvim/lua/plugins.lua:24: attempt to call a table value
+stack traceback:
+	/home/mike/.config/nvim/lua/plugins.lua:24: in main chunk
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+Error detected while processing /home/mike/.config/nvim/init.lua:
+E5113: Error while calling lua chunk: /home/mike/.config/nvim/lua/plugins.lua:24: attempt to call a table value
+stack traceback:
+	/home/mike/.config/nvim/lua/plugins.lua:24: in main chunk
+	[C]: in function 'require'
+	/home/mike/.config/nvim/init.lua:2: in main chunk
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugin_setup%neotree.lua.swp"
+          owned by: mike   dated: Do Apr 04 15:29:15 2024
+         file name: ~mike/.config/nvim/lua/plugin_setup/neotree.lua
+          modified: YES
+         user name: mike   host name: mike
+        process ID: 7932
+While opening file "/home/mike/.config/nvim/lua/plugin_setup/neotree.lua"
+             dated: Do Apr 04 13:27:13 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/plugin_setup/neotree.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugin_setup%neotree.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugin_setup%neotree.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: 
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugin_setup%neotree.lua.swp"
+          owned by: mike   dated: Do Apr 04 15:29:15 2024
+         file name: ~mike/.config/nvim/lua/plugin_setup/neotree.lua
+          modified: YES
+         user name: mike   host name: mike
+        process ID: 7932
+While opening file "/home/mike/.config/nvim/lua/plugin_setup/neotree.lua"
+             dated: Do Apr 04 13:27:13 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/plugin_setup/neotree.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugin_setup%neotree.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugin_setup%neotree.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: 
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+
+
+34 lines yanked
+
+6 lines yanked
+E349: No identifier under cursor
+
+
+"none-ls.lua" 
+"none-ls.lua" 34L, 892B written
+"none-ls.lua" 34L, 892B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Failed to run `config` for none-ls.nvim
+
+/home/mike/.config/nvim/lua/plugin_setup/none-ls.lua:12: attempt to index global 'null_ls' (a nil value)
+
+# stacktrace:
+  - none-ls.lua:12 _in_ **config**
+
+"none-ls.lua" 
+"none-ls.lua" 34L, 892B written
+"none-ls.lua" 34L, 892B written
+
+"none-ls.lua" 
+"none-ls.lua" 34L, 892B written
+"none-ls.lua" 34L, 892B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+[null-ls] failed to load builtin luacheck for method diagnostics; please check your config
+
+
+
+
+
+
+
+"none-ls.lua" 
+"none-ls.lua" 34L, 890B written
+"none-ls.lua" 34L, 890B written
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+E325: ATTENTION
+Found a swap file by the name "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugin_setup%alpha.lua.swp"
+          owned by: mike   dated: Do Apr 04 18:23:09 2024
+         file name: ~mike/.config/nvim/lua/plugin_setup/alpha.lua
+          modified: YES
+         user name: mike   host name: mike
+        process ID: 32004
+While opening file "/home/mike/.config/nvim/lua/plugin_setup/alpha.lua"
+             dated: Do Apr 04 18:21:42 2024
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /home/mike/.config/nvim/lua/plugin_setup/alpha.lua"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/home/mike/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugin_setup%alpha.lua.swp"
+    to avoid this message.
+
+Swap file "~/.local/state/nvim/swap//%home%mike%.config%nvim%lua%plugin_setup%alpha.lua.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: 
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+Error detected while processing /home/mike/.config/nvim/init.lua..nvim_exec2() called at /home/mike/.config/nvim/init.lua:0:
+E216: No such group or event: FileExplorer *
+
+
+
+"alpha.lua" 
+"alpha.lua" 262L, 7604B written
+"alpha.lua" 262L, 7604B written
+
+
+
+"alpha.lua" 
+"alpha.lua" 260L, 7575B written
+"alpha.lua" 260L, 7575B written
+
+
+
+"alpha.lua" 
+"alpha.lua" 262L, 7604B written
+"alpha.lua" 262L, 7604B written
+
+
+
+
+
+
+
+
+
+
+
+
+"remaps.lua" 
+"remaps.lua" 115L, 4927B written
+"remaps.lua" 115L, 4927B written
+
+"remaps.lua" 
+"remaps.lua" 114L, 4858B written
+"remaps.lua" 114L, 4858B written
+
+
+
+"alpha.lua" 
+"alpha.lua" 262L, 7604B written
+"alpha.lua" 262L, 7604B written
+
+"alpha.lua" 
+"alpha.lua" 262L, 7604B written
+"alpha.lua" 262L, 7604B written
+
+"alpha.lua" 
+"alpha.lua" 260L, 7542B written
+"alpha.lua" 260L, 7542B written
+
+"alpha.lua" 
+"alpha.lua" 260L, 7542B written
+"alpha.lua" 260L, 7542B written
+
+
+Saved session "last"
+Saved session "last"
+--- Autocommands ---
+--- Autocommands ---
+lualine  BufEnter
+    *         lua require'lualine.components.branch.git_branch'.find_git_dir()
+--- Autocommands ---
+--- Autocommands ---
+
+NVIM v0.9.5
+Build type: Release
+LuaJIT 2.1.1702233742
+
+   system vimrc file: "$VIM/sysinit.vim"
+  fall-back for $VIM: "/usr/share/nvim"
+
+Run :checkhealth for more info
+
+
+
+
+
+"evil_lualine.lua" 
+"evil_lualine.lua" 218L, 4985B written
+"evil_lualine.lua" 218L, 4985B written
+
+
+
+
+
+
+
+
+
+
+
+
+recording @krecording @krecording @krecording @k
+
+recording @krecording @l
+recording @l
+recording @lrecording @l
+recording @l
+recording @l
+recording @lrecording @l
+recording @l
+recording @lrecording @l
+recording @lrecording @l
+recording @lrecording @l
+
+recording @l
+recording @lrecording @l
+recording @lrecording @l
+
+recording @lrecording @l
+
+"evil_lualine.lua" 
+"evil_lualine.lua" 221L, 5018B writtenrecording @l
+"evil_lualine.lua" 221L, 5018B writtenrecording @lrecording @l
+
+recording @l
+
+recording @l
+
+recording @l
+
+"evil_lualine.lua" 
+"evil_lualine.lua" 215L, 4905B writtenrecording @l
+"evil_lualine.lua" 215L, 4905B writtenrecording @l
+recording @lrecording @l
+
+recording @lrecording @l
+
+recording @lrecording @l
+recording @l
+recording @l
+recording @l
+recording @l
+
+recording @lrecording @l
+recording @l
+recording @lrecording @l
+
+E185: Cannot find color scheme '?'recording @l
+
+E518: Unknown option: colorscheme recording @l
+recording @lrecording @l
+recording @l
+recording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @lrecording @l
+recording @l
+recording @lrecording @l
+search hit BOTTOM, continuing at TOPrecording @lrecording @l
+search hit BOTTOM, continuing at TOPrecording @l
+search hit BOTTOM, continuing at TOPrecording @l
+search hit BOTTOM, continuing at TOPrecording @lrecording @l
+search hit BOTTOM, continuing at TOPrecording @l
+search hit BOTTOM, continuing at TOPrecording @l
+search hit BOTTOM, continuing at TOPrecording @lrecording @l
+search hit BOTTOM, continuing at TOPrecording @lrecording @lrecording @l
+search hit BOTTOM, continuing at TOPrecording @lrecording @l
+search hit BOTTOM, continuing at TOPrecording @lrecording @l
+search hit BOTTOM, continuing at TOPrecording @lrecording @lrecording @l
+search hit BOTTOM, continuing at TOPrecording @l
+recording @lrecording @l
+recording @lrecording @l
+recording @l
+recording @l
+recording @l
+recording @l
+recording @lrecording @l
+recording @lrecording @l
+recording @lrecording @l
+
+"neotree.lua" 
+"neotree.lua" 283L, 11063B writtenrecording @l
+"neotree.lua" 283L, 11063B writtenrecording @l
+recording @lrecording @l
+
+"neotree.lua" 
+"neotree.lua" 283L, 11062B writtenrecording @l
+"neotree.lua" 283L, 11062B writtenrecording @l
+recording @l
+recording @l
+recording @l
+recording @l
+recording @l
+recording @l
+recording @l
+[Neo-tree ERROR] debounce  filesystem_navigate  error:  ...are/nvim/lazy/neo-tree.nvim/lua/neo-tree/ui/renderer.lua:1036: Vim:E95: Buffer with this name already existsrecording @lrecording @j
+recording @jrecording @qrecording @j
+recording @j
+recording @j
+[Neo-tree ERROR] debounce  filesystem_navigate  error:  ...are/nvim/lazy/neo-tree.nvim/lua/neo-tree/ui/renderer.lua:1036: Vim:E95: Buffer with this name already existsrecording @j
+recording @j
+recording @j
+[Neo-tree ERROR] debounce  filesystem_navigate  error:  ...are/nvim/lazy/neo-tree.nvim/lua/neo-tree/ui/renderer.lua:1036: Vim:E95: Buffer with this name already existsrecording @j
+recording @j
+recording @j
+[Neo-tree ERROR] debounce  filesystem_navigate  error:  ...are/nvim/lazy/neo-tree.nvim/lua/neo-tree/ui/renderer.lua:1036: Vim:E95: Buffer with this name already existsrecording @j
+recording @j
+recording @j
+recording @j
+[Neo-tree ERROR] debounce  filesystem_navigate  error:  ...are/nvim/lazy/neo-tree.nvim/lua/neo-tree/ui/renderer.lua:1036: Vim:E95: Buffer with this name already existsrecording @j
+
+
+
+[Neo-tree ERROR] debounce  filesystem_navigate  error:  ...are/nvim/lazy/neo-tree.nvim/lua/neo-tree/ui/renderer.lua:1036: Vim:E95: Buffer with this name already existsrecording @j
+recording @j
+E21: Cannot make changes, 'modifiable' is offrecording @j
+Saved session "last"
+--- Autocommands ---
+--- Autocommands ---
+lualine  BufEnter
+    *         lua require'lualine.components.branch.git_branch'.find_git_dir()
+--- Autocommands ---
+--- Autocommands ---
+
+NVIM v0.9.5
+Build type: Release
+LuaJIT 2.1.1702233742
+
+   system vimrc file: "$VIM/sysinit.vim"
+  fall-back for $VIM: "/usr/share/nvim"
+
+Run :checkhealth for more info
+
+
+
+
+
+
+"bufferline.lua" 
+"bufferline.lua" 108L, 5926B written
+"bufferline.lua" 108L, 5926B written
+
+
+
+"bufferline.lua" 
+"bufferline.lua" 108L, 5901B written
+"bufferline.lua" 108L, 5901B written
+Already at newest change
+
+
+"bufferline.lua" 
+"bufferline.lua" 108L, 5891B written
+"bufferline.lua" 108L, 5891B written
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"bufferline.lua" 
+"bufferline.lua" 106L, 4352B written
+"bufferline.lua" 106L, 4352B written
+
+
+
+
+"bufferline.lua" 
+"bufferline.lua" 106L, 4336B written
+"bufferline.lua" 106L, 4336B written
+
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+Already at newest change
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"plugins.lua" 
+"plugins.lua" 144L, 3433B written
+"plugins.lua" 144L, 3433B written
+
+"bufferline.lua" 
+"bufferline.lua" 105L, 4245B written
+"bufferline.lua" 105L, 4245B written
+search hit BOTTOM, continuing at TOP
+search hit BOTTOM, continuing at TOP
+search hit BOTTOM, continuing at TOP
+
+search hit BOTTOM, continuing at TOP
+E486: Pattern not found: slanted
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"bufferline.lua" 
+"bufferline.lua" [New] 74L, 2746B written
+"bufferline.lua" [New] 74L, 2746B written
+
+
+
+"bufferline.lua" 
+"bufferline.lua" 70L, 2514B written
+"bufferline.lua" 70L, 2514B written
+
+"bufferline.lua" 
+"bufferline.lua" 70L, 2514B written
+"bufferline.lua" 70L, 2514B written
+
+
+
+
+
+
+11 lines yanked
+
+
+
+
+
+"bufferline.lua" 
+"bufferline.lua" 105L, 4245B written
+"bufferline.lua" 105L, 4245B written
+
+"bufferline.lua" 
+"bufferline.lua" 106L, 4336B written
+"bufferline.lua" 106L, 4336B written
+Already at newest change
+
+"bufferline.lua" 
+"bufferline.lua" 105L, 4245B written
+"bufferline.lua" 105L, 4245B written
+search hit BOTTOM, continuing at TOP
+E486: Pattern not found: slanted
+
+
+
+
+
+
+
+
+"bufferline.lua" 
+"bufferline.lua" 83L, 3407B written
+"bufferline.lua" 83L, 3407B written
+search hit BOTTOM, continuing at TOP
+E486: Pattern not found: slanted
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"bufferline.lua" 
+"bufferline.lua" 68L, 2478B written
+"bufferline.lua" 68L, 2478B written
+
+
+
+"bufferline.lua" 
+"bufferline.lua" 66L, 2371B written
+"bufferline.lua" 66L, 2371B written
+
+
+"bufferline.lua" 
+"bufferline.lua" 66L, 2371B written
+"bufferline.lua" 66L, 2371B written
+
+
+
+
+
+"bufferline.lua" 
+"bufferline.lua" 66L, 2370B written
+"bufferline.lua" 66L, 2370B written
+
+
+
+
+
+
+
+
+
+
+
+
+
+"bufferline.lua" 
+"bufferline.lua" 66L, 2381B written
+"bufferline.lua" 66L, 2381B written
+
+
+
+
+66 lines yanked
+
+"bufferline.lua" 
+"bufferline.lua" 66L, 2381B written
+"bufferline.lua" 66L, 2381B written
+
+
+
+
+"bufferline.lua" 
+"bufferline.lua" 34L, 1112B written
+"bufferline.lua" 34L, 1112B written
+
+
+
+"bufferline.lua" 
+"bufferline.lua" 11L, 195B written
+"bufferline.lua" 11L, 195B written
+search hit BOTTOM, continuing at TOP
+E486: Pattern not found: slanted
+
+"bufferline.lua" 
+"bufferline.lua" 66L, 2381B written
+"bufferline.lua" 66L, 2381B written
+
+"bufferline.lua" 
+"bufferline.lua" 66L, 2381B written
+"bufferline.lua" 66L, 2381B written
+
+
+
+
+23 lines yanked
+
+
+
+
+
+
+
+
+
+
+"bufferline.lua" 
+"bufferline.lua" 69L, 2445B written
+"bufferline.lua" 69L, 2445B written
+
+"bufferline.lua" 
+"bufferline.lua" 68L, 2420B written
+"bufferline.lua" 68L, 2420B written
+
+"bufferline.lua" 
+"bufferline.lua" 67L, 2404B written
+"bufferline.lua" 67L, 2404B written
+
+
+
+
+"bufferline.lua" 
+"bufferline.lua" 7L, 118B written
+"bufferline.lua" 7L, 118B written
+
+"bufferline.lua" 
+"bufferline.lua" 7L, 118B written
+"bufferline.lua" 7L, 118B written
+
+
+"bufferline.lua" 
+"bufferline.lua" 66L, 2344B written
+"bufferline.lua" 66L, 2344B written
+
+"bufferline.lua" 
+"bufferline.lua" 67L, 2404B written
+"bufferline.lua" 67L, 2404B written
+Already at newest change
+
+
+
+
+
+
+"bufferline.lua" 
+"bufferline.lua" 66L, 2344B written
+"bufferline.lua" 66L, 2344B written
+
+
+
+
+
+
+
+11 lines yanked
+
+
+"bufferline.lua" 
+"bufferline.lua" 68L, 2420B written
+"bufferline.lua" 68L, 2420B written
+Already at newest change
+
+"bufferline.lua" 
+"bufferline.lua" 68L, 2426B written
+"bufferline.lua" 68L, 2426B written
+
+"bufferline.lua" 
+"bufferline.lua" 68L, 2426B written
+"bufferline.lua" 68L, 2426B written
+Saved session "last"
