@@ -3,7 +3,7 @@ vim.opt.number = true
 vim.opt.numberwidth = 1
 vim.opt.relativenumber = true
 vim.opt.undofile = true
-vim.opt.verbosefile = "msg_vim.txt"
+--vim.opt.verbosefile = "msg_vim.txt"
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.showmode = false
@@ -26,9 +26,21 @@ vim.opt.scrolloff = 999
 vim.opt.termguicolors = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-vim.keymap.set("n", "<Leader>f", function()
-	vim.lsp.buf.format({ async = true })
-end, opts)
+
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_ruby_provider = 0
 
 --Mappings
 vim.g.mapleader = " "
+
+function compile_on_write()
+	vim.api.nvim_exec(
+		[[
+    autocmd BufWritePost *.tex silent! !pdflatex % >/dev/null 2>&1
+    autocmd BufWritePost *.tex echo "LaTeX file compiled."
+  ]],
+		false
+	)
+end
+
+compile_on_write()

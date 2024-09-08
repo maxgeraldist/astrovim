@@ -51,6 +51,15 @@ vim.keymap.set("n", "di>", '"_di>', { desc = "Delete in angle brackets without y
 vim.keymap.set("n", "dd", '"_dd', { desc = "Delete line" })
 vim.keymap.set("n", "D", '"_D', { desc = "Delete until line end" })
 
+function ToggleConceal()
+	if vim.wo.conceallevel == 0 then
+		vim.wo.conceallevel = 1
+	else
+		vim.wo.conceallevel = 0
+	end
+end
+
+vim.keymap.set("n", "<leader>uS", ":lua ToggleConceal()<CR>", { desc = "Toggle conceallevel" })
 vim.keymap.set("n", "gg", "gg0", { desc = "First line" })
 vim.keymap.set("n", "G", "G$", { desc = "Last line" })
 vim.keymap.set("n", "<leader>bn", "<cmd>tabnew<cr>", { desc = "New tab" })
@@ -77,12 +86,6 @@ vim.keymap.set("i", "kk", "<esc>", { desc = "Exit normal mode" })
 -- Telescope
 
 vim.api.nvim_set_keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap(
-	"n",
-	"<leader>fd",
-	"<cmd>Telescope lsp_document_diagnostics<cr>",
-	{ noremap = true, silent = true }
-)
 vim.api.nvim_set_keymap("n", "<leader>fw", "<cmd>Telescope live_grep<cr>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap(
 	"n",
@@ -147,12 +150,20 @@ vim.keymap.set(
 	"<Cmd>ToggleTerm size=80 direction=vertical<CR>",
 	{ desc = "ToggleTerm vertical split" }
 )
+
 vim.keymap.set(
 	"n",
 	"<leader>th",
 	"<Cmd>ToggleTerm size=10 direction=horizontal<CR>",
 	{ desc = "ToggleTerm horizontal split" }
 )
+
+local Terminal = require("toggleterm.terminal").Terminal
+local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
+function _lazygit_toggle()
+	lazygit:toggle()
+end
+vim.api.nvim_set_keymap("n", "<leader>gg", "<cmd>lua _lazygit_toggle()<CR>", { noremap = true, silent = true })
 
 --LSPconfig
 vim.api.nvim_set_keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
@@ -162,6 +173,9 @@ vim.api.nvim_set_keymap(
 	'<cmd>lua require("telescope.builtin").live_grep({ default_text = vim.fn.expand("<cword>") })<CR>',
 	{ noremap = true, silent = true }
 )
+vim.api.nvim_set_keymap("n", "]g", "<cmd>lua vim.diagnostic.goto_next()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "[g", "<cmd>lua vim.diagnostic.goto_prev()<CR>", { noremap = true, silent = true })
+
 -- Neorg
 
 vim.api.nvim_set_keymap("n", "<Leader>ni", "<cmd>Neorg index <CR>", { noremap = true, silent = true })
@@ -176,4 +190,4 @@ vim.keymap.set(
 	"<cmd> BufferLineMoveNext <CR>",
 	{ desc = "Move buffer right", noremap = true, silent = true }
 )
-vim.keymap.set("n", "<Leader>bc", "<cmd>bp|bd #<CR>", { desc = "Close buffer", noremap = true, silent = true })
+vim.keymap.set("n", "<Leader>c", "<cmd>bp|bd #<CR>", { desc = "Close buffer", noremap = true, silent = true })

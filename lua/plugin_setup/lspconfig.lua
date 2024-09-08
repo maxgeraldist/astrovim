@@ -1,6 +1,6 @@
 return {
 	"neovim/nvim-lspconfig",
-	ft = { "python", "lua" },
+	ft = { "python", "lua", "tex", "latex", "sql" },
 	config = function()
 		local lspconfig = require("lspconfig")
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
@@ -20,6 +20,26 @@ return {
 			},
 		})
 		lspconfig.lua_ls.setup({})
+		lspconfig.sqlls.setup({
+			settings = {
+				sql = {
+					format = {
+						enabled = true,
+					},
+				},
+			},
+			root_dir = function(fname)
+				return require("lspconfig").util.path.dirname(fname)
+			end,
+		})
+		lspconfig.texlab.setup({})
+		lspconfig.ltex.setup({
+			settings = {
+				ltex = {
+					language = "en-GB",
+				},
+			},
+		})
 	end,
 	dependencies = { "hrsh7th/nvim-cmp", "hrsh7th/cmp-buffer", "hrsh7th/cmp-nvim-lsp" },
 }

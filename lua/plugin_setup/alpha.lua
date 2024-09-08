@@ -198,7 +198,7 @@ return {
 				local v = vim.version()
 				local dev = ""
 				if v.prerelease == "dev" then
-					dev = "-dev+" .. v.build
+					dev = "-dev+" .. tostring(v.build)
 				else
 					dev = ""
 				end

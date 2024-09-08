@@ -31,9 +31,11 @@ require("lazy").setup({
 	require("plugin_setup.gitsigns"),
 	require("plugin_setup.bufferline"),
 	require("plugin_setup.coc"),
+	require("plugin_setup.resession"),
+	require("plugin_setup.neorg"),
 	{
 		"nvim-treesitter/nvim-treesitter-textobjects",
-		ft = { "python", "lua" },
+		ft = { "python", "lua", "sql" },
 	},
 
 	{
@@ -49,8 +51,7 @@ require("lazy").setup({
 
 	{
 		"nvim-telescope/telescope.nvim",
-		requires = { { "nvim-lua/plenary.nvim" }, lazy = true },
-		dependencies = { "fannheyward/telescope-coc.nvim" },
+		dependencies = { "fannheyward/telescope-coc.nvim", "nvim-lua/plenary.nvim" },
 		opts = function(_, opts)
 			require("telescope").load_extension("coc")
 			if not opts.extensions then
@@ -61,27 +62,6 @@ require("lazy").setup({
 				prefer_locations = true, -- always use Telescope locations to preview definitions/declarations/implementations etc
 			}
 		end,
-	},
-
-	{
-		"stevearc/resession.nvim",
-		config = function()
-			local resession = require("resession")
-			resession.setup()
-			vim.api.nvim_set_keymap("n", "<leader>ss", ":lua require('resession').save('last')<CR>", {})
-			vim.api.nvim_set_keymap("n", "<leader>sl", ":lua require('resession').load('last')<CR>", {})
-			vim.api.nvim_set_keymap("n", "<leader>sd", ":lua require('resession').delete('last')<CR>", {})
-			vim.api.nvim_exec(
-				[[
-            augroup resession_autosave
-            autocmd!
-            autocmd VimLeavePre * lua require('resession').save('last')
-            augroup END
-            ]],
-				false
-			)
-		end,
-		opts = {},
 	},
 
 	{
@@ -104,28 +84,6 @@ require("lazy").setup({
 		lazy = true,
 		priority = 1000, -- We'd like this plugin to load first out of the rest
 		config = true, -- This automatically runs `require("luarocks-nvim").setup()`
-	},
-	{
-		"nvim-neorg/neorg",
-		cmd = "Neorg",
-		dependencies = { "luarocks.nvim" },
-		-- put any other flags you wanted to pass to lazy here!
-		config = function()
-			require("neorg").setup({
-				load = {
-					["core.defaults"] = {}, -- Loads default behaviour
-					["core.concealer"] = {}, -- Adds pretty icons to your documents
-					["core.dirman"] = { -- Manages Neorg workspaces
-						config = {
-							workspaces = {
-								notes = "~/Documents/notes",
-							},
-							default_workspace = "notes",
-						},
-					},
-				},
-			})
-		end,
 	},
 	{
 		"zbirenbaum/copilot.lua",
@@ -163,7 +121,54 @@ require("lazy").setup({
 	{
 		"hoob3rt/lualine.nvim",
 		event = { "BufRead", "BufNewFile" },
-		requires = { "kyazdani42/nvim-web-devicons", opt = true },
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+	},
+	{
+		"numToStr/Comment.nvim",
+		opts = {
+			---Add a space b/w comment and the line
+			padding = true,
+			---Whether the cursor should stay at its position
+			sticky = true,
+			---Lines to be ignored while (un)comment
+			ignore = nil,
+			---LHS of toggle mappings in NORMAL mode
+			toggler = {
+				---Line-comment toggle keymap
+				line = "gcc",
+				---Block-comment toggle keymap
+				block = "gbc",
+			},
+			---LHS of operator-pending mappings in NORMAL and VISUAL mode
+			opleader = {
+				---Line-comment keymap
+				line = "gc",
+				---Block-comment keymap
+				block = "gb",
+			},
+			---LHS of extra mappings
+			extra = {
+				---Add comment on the line above
+				above = "gcO",
+				---Add comment on the line below
+				below = "gco",
+				---Add comment at the end of line
+				eol = "gcA",
+			},
+			---Enable keybindings
+			---NOTE: If given `false` then the plugin won't create any mappings
+			mappings = {
+				---Operator-pending mapping; `gcc` `gbc` `gc[count]{motion}` `gb[count]{motion}`
+				basic = true,
+				---Extra mapping; `gco`, `gcO`, `gcA`
+				extra = true,
+			},
+			---Function to call before (un)comment
+			pre_hook = nil,
+			---Function to call after (un)comment
+			post_hook = nil,
+		},
+		lazy = false,
 	},
 })
 
