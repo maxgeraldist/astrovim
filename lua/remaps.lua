@@ -1,12 +1,10 @@
 local vim = vim
--- Todo:
--- K to show documentation/definition (for custom functions) for word under cursor - better way than the function below, I think there is a CocAction
-
 -- Normal mode
 vim.keymap.set("n", "<leader>e", ":Neotree<CR>", { desc = "Open Neotree" })
 vim.keymap.set("n", "<leader>q", ":q<CR>", { desc = "Quit" })
 vim.keymap.set("n", "<leader>Q", ":q!<CR>", { desc = "Force quit" })
 vim.keymap.set("n", "<leader>w", ":w!<CR>", { desc = "Write file" })
+vim.keymap.set("n", "<leader>h", ":Alpha", { desc = "Go to Dashboard" })
 
 vim.keymap.set("n", "cw", '"_cw', { desc = "Delete word without yank" })
 vim.keymap.set("n", "cgg", '"_cgg', { desc = "Delete until beginning" })
@@ -73,7 +71,7 @@ function docs()
 		vim.api.nvim_command("!" .. vim.o.keywordprg .. " " .. cw)
 	end
 end
-vim.api.nvim_set_keymap("n", "K", "<cmd>lua docs()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "K", "<cmd>lua docs()<CR>", { desc = "Function Docs", noremap = true, silent = true })
 
 -- Visual mode
 vim.keymap.set("v", "d", '"_d', { desc = "Delete without yanking" })
@@ -85,18 +83,58 @@ vim.keymap.set("i", "kk", "<esc>", { desc = "Exit normal mode" })
 
 -- Telescope
 
-vim.api.nvim_set_keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>fw", "<cmd>Telescope live_grep<cr>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>ff",
+	"<cmd>Telescope find_files<cr>",
+	{ desc = "Find files", noremap = true, silent = true }
+)
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>fw",
+	"<cmd>Telescope live_grep<cr>",
+	{ desc = "Find word in directory", noremap = true, silent = true }
+)
 vim.api.nvim_set_keymap(
 	"n",
 	"<leader>fc",
 	"<cmd>Telescope find_files cwd=~/.config/nvim<cr>",
-	{ noremap = true, silent = true }
+	{ desc = "Find config files", noremap = true, silent = true }
 )
-vim.api.nvim_set_keymap("n", "<leader>fh", "<cmd>Telescope commands<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>fb", "<cmd>Telescope git_bcommits<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>fo", "<cmd>Telescope vim_options<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>fr", "<cmd>Telescope lsp_references<cr>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>fh",
+	"<cmd>Telescope commands<cr>",
+	{ desc = "Find Telescope commands", noremap = true, silent = true }
+)
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>fb",
+	"<cmd>Telescope git_bcommits<cr>",
+	{ desc = "find Git commits", noremap = true, silent = true }
+)
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>fo",
+	"<cmd>Telescope vim_options<cr>",
+	{ desc = "Find vim options", noremap = true, silent = true }
+)
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>fr",
+	"<cmd>Telescope lsp_references<cr>",
+	{ desc = "Find LSP variable references", noremap = true, silent = true }
+)
+
+vim.api.nvim_create_user_command("OpenDiagnostics", function()
+	vim.diagnostic.setqflist()
+end, {})
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>fd",
+	":OpenDiagnostics<CR>",
+	{ desc = "List diagnostic erorrs", noremap = true, silent = true }
+)
 
 -- Splits
 -- resizing splits
@@ -163,22 +201,38 @@ local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
 function _lazygit_toggle()
 	lazygit:toggle()
 end
-vim.api.nvim_set_keymap("n", "<leader>gg", "<cmd>lua _lazygit_toggle()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>gg",
+	"<cmd>lua _lazygit_toggle()<CR>",
+	{ desc = "Toggle LazyGit", noremap = true, silent = true }
+)
 
 --LSPconfig
-vim.api.nvim_set_keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap(
+	"n",
+	"gd",
+	"<cmd>lua vim.lsp.buf.definition()<CR>",
+	{ desc = "Go to definition", noremap = true, silent = true }
+)
 vim.api.nvim_set_keymap(
 	"n",
 	"<leader>fm",
 	'<cmd>lua require("telescope.builtin").live_grep({ default_text = vim.fn.expand("<cword>") })<CR>',
-	{ noremap = true, silent = true }
+	{ desc = "Find word under cursor", noremap = true, silent = true }
 )
-vim.api.nvim_set_keymap("n", "]g", "<cmd>lua vim.diagnostic.goto_next()<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "[g", "<cmd>lua vim.diagnostic.goto_prev()<CR>", { noremap = true, silent = true })
-
--- Neorg
-
-vim.api.nvim_set_keymap("n", "<Leader>ni", "<cmd>Neorg index <CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap(
+	"n",
+	"]g",
+	"<cmd>lua vim.diagnostic.goto_next()<CR>",
+	{ desc = "Next diagnostic", noremap = true, silent = true }
+)
+vim.api.nvim_set_keymap(
+	"n",
+	"[g",
+	"<cmd>lua vim.diagnostic.goto_prev()<CR>",
+	{ desc = "Previous diagnostic", noremap = true, silent = true }
+)
 
 -- Bufferline
 vim.keymap.set("n", "[b", "<cmd> BufferLineCyclePrev <CR>", { desc = "Previous buffer", noremap = true, silent = true })

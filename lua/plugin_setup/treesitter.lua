@@ -1,6 +1,6 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
-	ft = { "python", "lua", "sql", "mysql" },
+	ft = { "python", "lua", "sql", "mysql", "markdown" },
 	config = function()
 		require("nvim-treesitter.configs").setup({
 			ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "python", "sql" },
@@ -8,6 +8,7 @@ return {
 			auto_install = true,
 			highlight = {
 				enable = true,
+				disable = { "markdown", "md" },
 			},
 			require("nvim-treesitter.configs").setup({
 				textobjects = {

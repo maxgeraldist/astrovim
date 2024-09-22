@@ -139,6 +139,9 @@ ins_left({
 		color_warn = { fg = colors.yellow },
 		color_info = { fg = colors.cyan },
 	},
+	on_click = function()
+		vim.cmd("OpenDiagnostics")
+	end,
 })
 
 -- Insert mid section. You can make any number of sections in neovim :)

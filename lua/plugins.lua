@@ -32,7 +32,6 @@ require("lazy").setup({
 	require("plugin_setup.bufferline"),
 	require("plugin_setup.coc"),
 	require("plugin_setup.resession"),
-	require("plugin_setup.neorg"),
 	{
 		"nvim-treesitter/nvim-treesitter-textobjects",
 		ft = { "python", "lua", "sql" },

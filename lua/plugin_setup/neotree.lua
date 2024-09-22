@@ -23,26 +23,7 @@ return {
 			open_files_do_not_replace_types = { "terminal", "trouble", "qf" }, -- when opening files, do not use windows containing these filetypes or buftypes
 			sort_case_insensitive = true, -- used when sorting files and directories in the tree
 			sort_function = nil, -- use a custom function for sorting files and directories in the tree
-			event_handlers = {
-				{
-					event = "neo_tree_buffer_leave",
-					handler = function()
-						local shown_buffers = {}
-						for _, win in ipairs(vim.api.nvim_list_wins()) do
-							shown_buffers[vim.api.nvim_win_get_buf(win)] = true
-						end
-						for _, buf in ipairs(vim.api.nvim_list_bufs()) do
-							if
-								not shown_buffers[buf]
-								and vim.api.nvim_buf_get_option(buf, "buftype") == "nofile"
-								and vim.api.nvim_buf_get_option(buf, "filetype") == "neo-tree"
-							then
-								vim.api.nvim_buf_delete(buf, {})
-							end
-						end
-					end,
-				},
-			},
+			event_handlers = {},
 			-- sort_function = function (a,b)
 			--       if a.type == b.type then
 			--           return a.path > b.path
