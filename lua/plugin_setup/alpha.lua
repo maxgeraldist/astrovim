@@ -1,4 +1,7 @@
 -- this is a copy of the alpha.themes.theta
+local config_dir = vim.loop.os_uname().sysname == "Windows_NT" and "C:/Users/EmilyMaxim/AppData/Local/nvim" or "~/.config/nvim"
+
+
 return {
 	"goolord/alpha-nvim",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -187,7 +190,7 @@ return {
 				dashboard.button("SPC f f", "󰈞  Find file"),
 				dashboard.button("SPC f w", "󰊄  Find text"),
 				dashboard.button("l", "󰚰 " .. "LazyUI", ":Lazy <CR>"),
-				dashboard.button("c", "  Configuration", "<cmd>cd ~/.config/nvim/ <CR>"),
+                dashboard.button("c", "  Configuration", "<cmd>cd " .. config_dir .. " <CR>"),
 				dashboard.button("q", "󰅚  Quit", "<cmd>qa<CR>"),
 			},
 			position = "center",

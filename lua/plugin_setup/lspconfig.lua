@@ -7,21 +7,16 @@ return {
 		local capabilities = cmp_nvim_lsp.default_capabilities()
 
 		-- Pyright for Python
-		lspconfig.pyright.setup({
+		-- Basedpyright for Python
+		lspconfig.basedpyright.setup({
 			capabilities = capabilities,
 			settings = {
 				python = {
-					analysis = {
-						autoSearchPaths = true,
-						useLibraryCodeForTypes = true,
-					},
-					formatting = {
-						provider = "black",
-					},
+					analysis = { autoSearchPaths = true, useLibraryCodeForTypes = true },
+					formatting = { provider = "black" },
 				},
 			},
 		})
-
 		-- Lua
 		lspconfig.lua_ls.setup({})
 
