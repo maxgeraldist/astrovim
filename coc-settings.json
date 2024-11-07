@@ -6,7 +6,7 @@
   "suggest.maxPreviewWidth": 100,
   "languageserver": {
     "python": {
-      "command": "pyright-langserver",
+      "command": "basedpyright-langserver",
       "args": ["--stdio"],
       "filetypes": ["python"],
       "rootPatterns": ["requirements.txt", ".git", "pyproject.toml", "setup.py"]
