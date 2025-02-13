@@ -11,9 +11,15 @@ return {
 		lspconfig.basedpyright.setup({
 			capabilities = capabilities,
 			settings = {
-				python = {
-					analysis = { autoSearchPaths = true, useLibraryCodeForTypes = true },
-					formatting = { provider = "black" },
+				basedpyright = { -- Changed from "python" to "basedpyright"
+					analysis = {
+						autoSearchPaths = true,
+						useLibraryCodeForTypes = true,
+						typeCheckingMode = "off", -- This should now work
+					},
+					formatting = {
+						provider = "black",
+					},
 				},
 			},
 		})

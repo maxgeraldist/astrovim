@@ -4,7 +4,7 @@ vim.keymap.set("n", "<leader>e", ":Neotree<CR>", { desc = "Open Neotree" })
 vim.keymap.set("n", "<leader>q", ":q<CR>", { desc = "Quit" })
 vim.keymap.set("n", "<leader>Q", ":q!<CR>", { desc = "Force quit" })
 vim.keymap.set("n", "<leader>w", ":w!<CR>", { desc = "Write file" })
-vim.keymap.set("n", "<leader>h", ":Alpha", { desc = "Go to Dashboard" })
+vim.keymap.set("n", "<leader>h", ":Alpha<CR>", { desc = "Go to Dashboard" })
 
 vim.keymap.set("n", "cw", '"_cw', { desc = "Delete word without yank" })
 vim.keymap.set("n", "cgg", '"_cgg', { desc = "Delete until beginning" })
@@ -95,12 +95,16 @@ vim.api.nvim_set_keymap(
 	"<cmd>Telescope live_grep<cr>",
 	{ desc = "Find word in directory", noremap = true, silent = true }
 )
+local config_dir = vim.loop.os_uname().sysname == "Windows_NT" and "C:/Users/maxge/AppData/Local/nvim"
+	or "~/.config/nvim"
+
 vim.api.nvim_set_keymap(
 	"n",
 	"<leader>fc",
-	"<cmd>Telescope find_files cwd=~/.config/nvim<cr>",
+	string.format("<cmd>lua require('telescope.builtin').find_files({ cwd = '%s' })<cr>", config_dir),
 	{ desc = "Find config files", noremap = true, silent = true }
 )
+
 vim.api.nvim_set_keymap(
 	"n",
 	"<leader>fh",
