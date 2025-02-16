@@ -1,9 +1,9 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
-	ft = { "python", "lua", "sql", "mysql", "markdown" },
+	ft = { "python", "lua", "sql", "mysql", "markdown", "r" },
 	config = function()
 		require("nvim-treesitter.configs").setup({
-			ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "python", "sql" },
+			ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "python", "sql", "r" },
 			sync_install = true,
 			auto_install = true,
 			highlight = {
