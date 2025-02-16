@@ -1,6 +1,6 @@
 return {
 	"nvimtools/none-ls.nvim",
-	ft = { "python", "lua", "sql", "mysql" },
+	ft = { "python", "lua", "sql", "mysql", "r" },
 	config = function()
 		local none_ls = require("null-ls")
 
@@ -11,6 +11,7 @@ return {
 				none_ls.builtins.formatting.stylua,
 				none_ls.builtins.diagnostics.selene,
 				none_ls.builtins.formatting.sql_formatter,
+				none_ls.builtins.formatting.format_r,
 			},
 			on_attach = function(client, bufnr)
 				-- Enable formatting on sync

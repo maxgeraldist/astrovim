@@ -5,6 +5,11 @@
   "suggest.detailMaxLength": 100,
   "suggest.maxPreviewWidth": 100,
   "languageserver": {
+    "R": {
+        "command": "/usr/bin/R",
+        "args": ["--slave", "-e", "languageserver::run()"],
+        "filetypes": ["r"]
+      },
     "basedpyright": {
       "command": "basedpyright-langserver",
       "args": ["--stdio"],
@@ -25,6 +30,7 @@
       "filetypes": ["lua"],
       "rootPatterns": [".git", "lua"]
     }
+
   }
 }
 
