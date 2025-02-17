@@ -7,7 +7,7 @@ return {
 		none_ls.setup({
 			sources = {
 				none_ls.builtins.formatting.black,
-				none_ls.builtins.diagnostics.pylint,
+				-- none_ls.builtins.diagnostics.pylint,
 				none_ls.builtins.formatting.stylua,
 				none_ls.builtins.diagnostics.selene,
 				none_ls.builtins.formatting.sql_formatter,
