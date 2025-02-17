@@ -1,6 +1,6 @@
 return {
 	"neovim/nvim-lspconfig",
-	ft = { "python", "lua", "tex", "latex", "sql", "markdown", "r"},
+	ft = { "python", "lua", "tex", "latex", "sql", "markdown", "r" },
 	config = function()
 		local lspconfig = require("lspconfig")
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
@@ -46,16 +46,15 @@ return {
 			},
 			filetypes = { "markdown" },
 		})
-        -- R Language Server
-        lspconfig.r_language_server.setup({
-            cmd = { "R", "--slave", "-e", "languageserver::run()" },
-            filetypes = { "r" },
-            capabilities = capabilities,
-            root_dir = function(fname)
-                return lspconfig.util.root_pattern(".git", ".")(fname) or lspconfig.util.path.dirname(fname)
-            end,
-        })
-
+		-- R Language Server
+		lspconfig.r_language_server.setup({
+			cmd = { "R", "--slave", "-e", "languageserver::run()" },
+			filetypes = { "r" },
+			capabilities = capabilities,
+			root_dir = function(fname)
+				return lspconfig.util.root_pattern(".git", ".")(fname) or lspconfig.util.path.dirname(fname)
+			end,
+		})
 	end,
 	dependencies = { "hrsh7th/nvim-cmp", "hrsh7th/cmp-buffer", "hrsh7th/cmp-nvim-lsp" },
 }
