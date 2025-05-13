@@ -22,6 +22,20 @@ return {
 				return require("lspconfig").util.path.dirname(fname)
 			end,
 		})
+		-- Python
+		lspconfig.basedpyright.setup({
+			settings = {
+				basedpyright = {
+					analysis = {
+						autoSearchPaths = true,
+						useLibraryCodeForTypes = true,
+						diagnosticMode = "workspace",
+						typeCheckingMode = "off",
+						reportUnknownVariableType = false,
+					},
+				},
+			},
+		})
 
 		-- LaTeX
 		lspconfig.texlab.setup({ filetypes = { "tex", "latex", "bibtex" } })

@@ -34,7 +34,7 @@ require("lazy").setup({
 	require("plugin_setup.resession"),
 	{
 		"nvim-treesitter/nvim-treesitter-textobjects",
-		ft = { "python", "lua", "sql" },
+		ft = { "python", "lua", "sql, r" },
 	},
 
 	{
@@ -46,7 +46,7 @@ require("lazy").setup({
 		end,
 	},
 
-	{ "onsails/lspkind.nvim", ft = { "python", "lua" } },
+	{ "onsails/lspkind.nvim", ft = { "python", "lua", "r" } },
 
 	{
 		"nvim-telescope/telescope.nvim",
@@ -78,28 +78,6 @@ require("lazy").setup({
 		end,
 	},
 	{ "mrjones2014/smart-splits.nvim", lazy = true },
-	{
-		"vhyrro/luarocks.nvim",
-		lazy = true,
-		priority = 1000, -- We'd like this plugin to load first out of the rest
-		config = true, -- This automatically runs `require("luarocks-nvim").setup()`
-	},
-	{
-		"zbirenbaum/copilot.lua",
-		cmd = "Copilot",
-		event = { "BufRead", "BufNewFile" },
-		dependencies = { "zbirenbaum/copilot-cmp" },
-		opts = {
-			suggestion = {
-				auto_trigger = true,
-				debounce = 150,
-			},
-		},
-		config = function()
-			require("copilot").setup(opts)
-			require("copilot_cmp").setup()
-		end,
-	},
 	{
 		"rcarriga/nvim-notify",
 		config = function()
@@ -158,37 +136,61 @@ require("lazy").setup({
 				"<Plug>RStart",
 				{ desc = "Start R", noremap = true, silent = true }
 			)
-            vim.api.nvim_set_keymap(
-                "n",
-                "<Leader>re",
-                "<Plug>RShowEx",
-                { desc = "Show examples", noremap = true, silent = true}
-           )
-            vim.api.nvim_set_keymap(
-                "n",
-                "<Leader>rd",
-                "<Plug>RClearConsole",
-                { desc = "Clear R Console", noremap = true, silent = true}
-           )
-            vim.api.nvim_set_keymap(
-                "n",
-                "<Leader>rc",
-                "<Plug>RClearAll",
-                { desc = "Clear All", noremap = true, silent = true}
-           )
-            vim.api.nvim_set_keymap(
-                "n",
-                "<Leader>rh",
-                "<Plug>RHelp",
-                { desc = "Show docs on hover", noremap = true, silent = true}
-           )
-       end,
+			vim.api.nvim_set_keymap(
+				"n",
+				"<Leader>re",
+				"<Plug>RShowEx",
+				{ desc = "Show examples", noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap(
+				"n",
+				"<Leader>rd",
+				"<Plug>RClearConsole",
+				{ desc = "Clear R Console", noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap(
+				"n",
+				"<Leader>rc",
+				"<Plug>RClearAll",
+				{ desc = "Clear All", noremap = true, silent = true }
+			)
+			vim.api.nvim_set_keymap(
+				"n",
+				"<Leader>rh",
+				"<Plug>RHelp",
+				{ desc = "Show docs on hover", noremap = true, silent = true }
+			)
+		end,
 	},
-    {
-        "R-nvim/cmp-r",
-        lazy = true,
-        ft = "r",
-    },
+	{
+		"R-nvim/cmp-r",
+		lazy = true,
+		ft = "r",
+	},
+	{
+		"poliquin/stata-vim",
+		lazy = true,
+		ft = "stata",
+	},
+	{
+		"human-d3v/stata-nvim",
+		branch = "main",
+		ft = { "stata" },
+		build = "git pull && cd lsp-server && npm init -y && npm install && bun build ./server/src/server.ts --compile --outfile server_bin && cd ..",
+		opts = {},
+		config = function()
+			require("stata-nvim")
+		end,
+		dependencies = { "human-d3v/term-repl.nvim" },
+	},
 })
 
 require("plugin_setup.evil_lualine")
+
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "stata",
+	callback = function()
+		local stata = require("stata-nvim")
+		stata.setup({ dev = false })
+	end,
+})

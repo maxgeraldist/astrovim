@@ -22,7 +22,6 @@ return {
 				{ name = "nvim_lsp" }, -- lsp
 				{ name = "buffer" }, -- text within current buffer
 				{ name = "path" }, -- file system paths
-				{ name = "copilot" },
 				{ name = "cmp_r" },
 			}),
 			-- configure lspkind for vs-code like icons
