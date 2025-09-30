@@ -2,28 +2,28 @@ return {
     "neovim/nvim-lspconfig",
     ft = { "python", "lua", "tex", "latex", "sql", "markdown", "r" },
     config = function()
-        local lspconfig = require("lspconfig")
-        -- local cmp_nvim_lsp = require("cmp_nvim_lsp")
-        -- local capabilities = cmp_nvim_lsp.default_capabilities()
+        -- use vim.lsp.config to register server configs, then enable them
+        local cfg = vim.lsp.config
 
         -- Lua
-        lspconfig.lua_ls.setup({})
+        cfg("lua_ls", {})
+        vim.lsp.enable("lua_ls")
 
         -- SQL
-        lspconfig.sqlls.setup({
+        cfg("sqlls", {
             settings = {
-                sql = {
-                    format = {
-                        enabled = true,
-                    },
-                },
+                sql = { format = { enabled = true } },
             },
+            filetypes = { "sql" },
+            -- prefer vim.fs (neovim core) for simple path helpers
             root_dir = function(fname)
-                return require("lspconfig").util.path.dirname(fname)
+                return vim.fs.dirname(fname)
             end,
         })
-        -- Python
-        lspconfig.basedpyright.setup({
+        vim.lsp.enable("sqlls")
+
+        -- Python (basedpyright)
+        cfg("basedpyright", {
             settings = {
                 basedpyright = {
                     analysis = {
@@ -36,38 +36,39 @@ return {
                 },
             },
         })
+        vim.lsp.enable("basedpyright")
 
         -- LaTeX
-        lspconfig.texlab.setup({ filetypes = { "tex", "latex", "bibtex" } })
+        cfg("texlab", { filetypes = { "tex", "latex", "bibtex" } })
+        vim.lsp.enable("texlab")
 
         -- LTeX for grammar checking
-        lspconfig.ltex.setup({
-            settings = {
-                ltex = {
-                    language = "en-GB",
-                },
-            },
+        cfg("ltex", {
+            settings = { ltex = { language = "en-GB" } },
             filetypes = { "tex", "latex", "bibtex" },
         })
+        vim.lsp.enable("ltex")
 
         -- Remark Language Server for Markdown
-        lspconfig.remark_ls.setup({
-            capabilities = capabilities,
-            settings = {
-                remark = {
-                    requireConfig = true,
-                },
-            },
+        -- If you want to set capabilities globally you can do it via vim.lsp.config('*', { capabilities = ... })
+        cfg("remark_ls", {
+            settings = { remark = { requireConfig = true } },
             filetypes = { "markdown" },
         })
+        vim.lsp.enable("remark_ls")
+
         -- R Language Server
-        lspconfig.r_language_server.setup({
+        cfg("r_language_server", {
             cmd = { "R", "--slave", "-e", "languageserver::run()" },
             filetypes = { "r" },
-            capabilities = capabilities,
+            -- root detection: try .git else buffer dir
             root_dir = function(fname)
-                return lspconfig.util.root_pattern(".git", ".")(fname) or lspconfig.util.path.dirname(fname)
+                -- you can use vim.fs.find or vim.fs.dirname here
+                return vim.fs.find({ ".git" }, { path = fname, upward = true }) and
+                    vim.fs.find({ ".git" }, { path = fname, upward = true })[1]
+                    or vim.fs.dirname(fname)
             end,
         })
-    end,
+        vim.lsp.enable("r_language_server")
+    end
 }
