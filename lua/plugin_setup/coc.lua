@@ -1,5 +1,5 @@
 return {
-	"neoclide/coc.nvim",
-	branch = "release",
-	event = { "BufRead", "BufNewFile" },
+    "neoclide/coc.nvim",
+    branch = "release",
+    event = { "BufRead", "BufNewFile" },
 }

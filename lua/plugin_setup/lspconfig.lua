@@ -1,74 +1,73 @@
 return {
-	"neovim/nvim-lspconfig",
-	ft = { "python", "lua", "tex", "latex", "sql", "markdown", "r" },
-	config = function()
-		local lspconfig = require("lspconfig")
-		local cmp_nvim_lsp = require("cmp_nvim_lsp")
-		local capabilities = cmp_nvim_lsp.default_capabilities()
+    "neovim/nvim-lspconfig",
+    ft = { "python", "lua", "tex", "latex", "sql", "markdown", "r" },
+    config = function()
+        local lspconfig = require("lspconfig")
+        -- local cmp_nvim_lsp = require("cmp_nvim_lsp")
+        -- local capabilities = cmp_nvim_lsp.default_capabilities()
 
-		-- Lua
-		lspconfig.lua_ls.setup({})
+        -- Lua
+        lspconfig.lua_ls.setup({})
 
-		-- SQL
-		lspconfig.sqlls.setup({
-			settings = {
-				sql = {
-					format = {
-						enabled = true,
-					},
-				},
-			},
-			root_dir = function(fname)
-				return require("lspconfig").util.path.dirname(fname)
-			end,
-		})
-		-- Python
-		lspconfig.basedpyright.setup({
-			settings = {
-				basedpyright = {
-					analysis = {
-						autoSearchPaths = true,
-						useLibraryCodeForTypes = true,
-						diagnosticMode = "workspace",
-						typeCheckingMode = "off",
-						reportUnknownVariableType = false,
-					},
-				},
-			},
-		})
+        -- SQL
+        lspconfig.sqlls.setup({
+            settings = {
+                sql = {
+                    format = {
+                        enabled = true,
+                    },
+                },
+            },
+            root_dir = function(fname)
+                return require("lspconfig").util.path.dirname(fname)
+            end,
+        })
+        -- Python
+        lspconfig.basedpyright.setup({
+            settings = {
+                basedpyright = {
+                    analysis = {
+                        autoSearchPaths = true,
+                        useLibraryCodeForTypes = true,
+                        diagnosticMode = "workspace",
+                        typeCheckingMode = "off",
+                        reportUnknownVariableType = false,
+                    },
+                },
+            },
+        })
 
-		-- LaTeX
-		lspconfig.texlab.setup({ filetypes = { "tex", "latex", "bibtex" } })
+        -- LaTeX
+        lspconfig.texlab.setup({ filetypes = { "tex", "latex", "bibtex" } })
 
-		-- LTeX for grammar checking
-		lspconfig.ltex.setup({
-			settings = {
-				ltex = {
-					language = "en-GB",
-				},
-			},
-			filetypes = { "tex", "latex", "bibtex" },
-		})
+        -- LTeX for grammar checking
+        lspconfig.ltex.setup({
+            settings = {
+                ltex = {
+                    language = "en-GB",
+                },
+            },
+            filetypes = { "tex", "latex", "bibtex" },
+        })
 
-		-- Remark Language Server for Markdown
-		lspconfig.remark_ls.setup({
-			capabilities = capabilities,
-			settings = {
-				remark = {
-					requireConfig = true,
-				},
-			},
-			filetypes = { "markdown" },
-		})
-		-- R Language Server
-		lspconfig.r_language_server.setup({
-			cmd = { "R", "--slave", "-e", "languageserver::run()" },
-			filetypes = { "r" },
-			capabilities = capabilities,
-			root_dir = function(fname)
-				return lspconfig.util.root_pattern(".git", ".")(fname) or lspconfig.util.path.dirname(fname)
-			end,
-		})
-	end,
-	dependencies = { "hrsh7th/nvim-cmp", "hrsh7th/cmp-buffer", "hrsh7th/cmp-nvim-lsp" },
+        -- Remark Language Server for Markdown
+        lspconfig.remark_ls.setup({
+            capabilities = capabilities,
+            settings = {
+                remark = {
+                    requireConfig = true,
+                },
+            },
+            filetypes = { "markdown" },
+        })
+        -- R Language Server
+        lspconfig.r_language_server.setup({
+            cmd = { "R", "--slave", "-e", "languageserver::run()" },
+            filetypes = { "r" },
+            capabilities = capabilities,
+            root_dir = function(fname)
+                return lspconfig.util.root_pattern(".git", ".")(fname) or lspconfig.util.path.dirname(fname)
+            end,
+        })
+    end,
 }

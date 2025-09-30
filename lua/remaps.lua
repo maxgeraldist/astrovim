@@ -50,11 +50,11 @@ vim.keymap.set("n", "dd", '"_dd', { desc = "Delete line" })
 vim.keymap.set("n", "D", '"_D', { desc = "Delete until line end" })
 
 function ToggleConceal()
-	if vim.wo.conceallevel == 0 then
-		vim.wo.conceallevel = 1
-	else
-		vim.wo.conceallevel = 0
-	end
+    if vim.wo.conceallevel == 0 then
+        vim.wo.conceallevel = 1
+    else
+        vim.wo.conceallevel = 0
+    end
 end
 
 vim.keymap.set("n", "<leader>uS", ":lua ToggleConceal()<CR>", { desc = "Toggle conceallevel" })
@@ -62,16 +62,33 @@ vim.keymap.set("n", "gg", "gg0", { desc = "First line" })
 vim.keymap.set("n", "G", "G$", { desc = "Last line" })
 vim.keymap.set("n", "<leader>bn", "<cmd>tabnew<cr>", { desc = "New tab" })
 function docs()
-	local cw = vim.fn.expand("<cword>")
-	if vim.fn.index({ "vim", "help" }, vim.bo.filetype) >= 0 then
-		vim.api.nvim_command("h " .. cw)
-	elseif vim.api.nvim_eval("coc#rpc#ready()") then
-		vim.fn.CocActionAsync("doHover")
-	else
-		vim.api.nvim_command("!" .. vim.o.keywordprg .. " " .. cw)
-	end
+    local cw = vim.fn.expand("<cword>")
+    if vim.fn.index({ "vim", "help" }, vim.bo.filetype) >= 0 then
+        vim.api.nvim_command("h " .. cw)
+    elseif vim.api.nvim_eval("coc#rpc#ready()") then
+        vim.fn.CocActionAsync("doHover")
+    else
+        vim.api.nvim_command("!" .. vim.o.keywordprg .. " " .. cw)
+    end
 end
+
 vim.api.nvim_set_keymap("n", "K", "<cmd>lua docs()<CR>", { desc = "Function Docs", noremap = true, silent = true })
+vim.api.nvim_set_keymap(
+    "i",
+    "<CR>",
+    [[coc#pum#visible() ? coc#pum#confirm() : "\<CR>"]],
+    { desc = "Accept Suggestion", expr = true, noremap = true, silent = true }
+)
+vim.keymap.set("i", "<CR>", function()
+    return vim.fn["coc#pum#visible"]() == 1 and vim.fn["coc#pum#confirm"]() or "<CR>"
+end, { expr = true, silent = true, desc = "Accept current suggestion" })
+vim.keymap.set("i", "<C-Space>", vim.fn["coc#refresh"], { silent = true, desc = "Trigger completion" })
+vim.keymap.set("i", "<M-j>", function()
+    return vim.fn["coc#pum#visible"]() == 1 and vim.fn["coc#pum#next"](1) or vim.fn["coc#refresh"]()
+end, { expr = true, silent = true, desc = "Next suggestion" })
+vim.keymap.set("i", "<M-k>", function()
+    return vim.fn["coc#pum#visible"]() == 1 and vim.fn["coc#pum#prev"](1) or vim.fn["coc#refresh"]()
+end, { expr = true, silent = true, desc = "Previous suggestion" })
 
 -- Visual mode
 vim.keymap.set("v", "d", '"_d', { desc = "Delete without yanking" })
@@ -84,60 +101,60 @@ vim.keymap.set("i", "kk", "<esc>", { desc = "Exit normal mode" })
 -- Telescope
 
 vim.api.nvim_set_keymap(
-	"n",
-	"<leader>ff",
-	"<cmd>Telescope find_files<cr>",
-	{ desc = "Find files", noremap = true, silent = true }
+    "n",
+    "<leader>ff",
+    "<cmd>Telescope find_files<cr>",
+    { desc = "Find files", noremap = true, silent = true }
 )
 vim.api.nvim_set_keymap(
-	"n",
-	"<leader>fw",
-	"<cmd>Telescope live_grep<cr>",
-	{ desc = "Find word in directory", noremap = true, silent = true }
+    "n",
+    "<leader>fw",
+    "<cmd>Telescope live_grep<cr>",
+    { desc = "Find word in directory", noremap = true, silent = true }
 )
-local config_dir = vim.loop.os_uname().sysname == "Windows_NT" and "C:/Users/maxge/AppData/Local/nvim"
-	or "~/.config/nvim"
+local config_dir = vim.loop.os_uname().sysname == "Windows_NT" and "C:/Users/mefimov/AppData/Local/nvim"
+    or "~/.config/nvim"
 
 vim.api.nvim_set_keymap(
-	"n",
-	"<leader>fc",
-	string.format("<cmd>lua require('telescope.builtin').find_files({ cwd = '%s' })<cr>", config_dir),
-	{ desc = "Find config files", noremap = true, silent = true }
+    "n",
+    "<leader>fc",
+    string.format("<cmd>lua require('telescope.builtin').find_files({ cwd = '%s' })<cr>", config_dir),
+    { desc = "Find config files", noremap = true, silent = true }
 )
 
 vim.api.nvim_set_keymap(
-	"n",
-	"<leader>fh",
-	"<cmd>Telescope commands<cr>",
-	{ desc = "Find Telescope commands", noremap = true, silent = true }
+    "n",
+    "<leader>fh",
+    "<cmd>Telescope commands<cr>",
+    { desc = "Find Telescope commands", noremap = true, silent = true }
 )
 vim.api.nvim_set_keymap(
-	"n",
-	"<leader>fb",
-	"<cmd>Telescope git_bcommits<cr>",
-	{ desc = "find Git commits", noremap = true, silent = true }
+    "n",
+    "<leader>fb",
+    "<cmd>Telescope git_bcommits<cr>",
+    { desc = "find Git commits", noremap = true, silent = true }
 )
 vim.api.nvim_set_keymap(
-	"n",
-	"<leader>fo",
-	"<cmd>Telescope vim_options<cr>",
-	{ desc = "Find vim options", noremap = true, silent = true }
+    "n",
+    "<leader>fo",
+    "<cmd>Telescope vim_options<cr>",
+    { desc = "Find vim options", noremap = true, silent = true }
 )
 vim.api.nvim_set_keymap(
-	"n",
-	"<leader>fr",
-	"<cmd>Telescope lsp_references<cr>",
-	{ desc = "Find LSP variable references", noremap = true, silent = true }
+    "n",
+    "<leader>fr",
+    "<cmd>Telescope lsp_references<cr>",
+    { desc = "Find LSP variable references", noremap = true, silent = true }
 )
 
 vim.api.nvim_create_user_command("OpenDiagnostics", function()
-	vim.diagnostic.setqflist()
+    vim.diagnostic.setqflist()
 end, {})
 vim.api.nvim_set_keymap(
-	"n",
-	"<leader>fd",
-	":OpenDiagnostics<CR>",
-	{ desc = "List diagnostic erorrs", noremap = true, silent = true }
+    "n",
+    "<leader>fd",
+    ":OpenDiagnostics<CR>",
+    { desc = "List diagnostic erorrs", noremap = true, silent = true }
 )
 
 -- Splits
@@ -154,88 +171,89 @@ vim.keymap.set({ "n", "i" }, "<C-j>", require("smart-splits").move_cursor_down, 
 vim.keymap.set({ "n", "i" }, "<C-k>", require("smart-splits").move_cursor_up, { desc = "Move to the upper buffer" })
 vim.keymap.set({ "n", "i" }, "<C-l>", require("smart-splits").move_cursor_right, { desc = "Move to the right buffer" })
 vim.keymap.set(
-	{ "n", "i" },
-	"<C-\\>",
-	require("smart-splits").move_cursor_previous,
-	{ desc = "Move to the previous buffer" }
+    { "n", "i" },
+    "<C-\\>",
+    require("smart-splits").move_cursor_previous,
+    { desc = "Move to the previous buffer" }
 )
 -- swapping buffers between windows
 vim.keymap.set(
-	"n",
-	"<leader><leader>h",
-	require("smart-splits").swap_buf_left,
-	{ desc = "Swap the buffer with the left one" }
+    "n",
+    "<leader><leader>h",
+    require("smart-splits").swap_buf_left,
+    { desc = "Swap the buffer with the left one" }
 )
 vim.keymap.set(
-	"n",
-	"<leader><leader>j",
-	require("smart-splits").swap_buf_down,
-	{ desc = "Swap the buffer with the lower one" }
+    "n",
+    "<leader><leader>j",
+    require("smart-splits").swap_buf_down,
+    { desc = "Swap the buffer with the lower one" }
 )
 vim.keymap.set(
-	"n",
-	"<leader><leader>k",
-	require("smart-splits").swap_buf_up,
-	{ desc = "Swap the buffer with the upper one" }
+    "n",
+    "<leader><leader>k",
+    require("smart-splits").swap_buf_up,
+    { desc = "Swap the buffer with the upper one" }
 )
 vim.keymap.set(
-	"n",
-	"<leader><leader>l",
-	require("smart-splits").swap_buf_right,
-	{ desc = "Swap the buffer with the right one" }
+    "n",
+    "<leader><leader>l",
+    require("smart-splits").swap_buf_right,
+    { desc = "Swap the buffer with the right one" }
 )
 
 -- Toggleterm
 vim.keymap.set(
-	"n",
-	"<leader>tv",
-	"<Cmd>ToggleTerm size=80 direction=vertical<CR>",
-	{ desc = "ToggleTerm vertical split" }
+    "n",
+    "<leader>tv",
+    "<Cmd>ToggleTerm size=80 direction=vertical<CR>",
+    { desc = "ToggleTerm vertical split" }
 )
 
 vim.keymap.set(
-	"n",
-	"<leader>th",
-	"<Cmd>ToggleTerm size=10 direction=horizontal<CR>",
-	{ desc = "ToggleTerm horizontal split" }
+    "n",
+    "<leader>th",
+    "<Cmd>ToggleTerm size=10 direction=horizontal<CR>",
+    { desc = "ToggleTerm horizontal split" }
 )
 
 local Terminal = require("toggleterm.terminal").Terminal
 local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
 function _lazygit_toggle()
-	lazygit:toggle()
+    lazygit:toggle()
 end
+
 vim.api.nvim_set_keymap(
-	"n",
-	"<leader>gg",
-	"<cmd>lua _lazygit_toggle()<CR>",
-	{ desc = "Toggle LazyGit", noremap = true, silent = true }
+    "n",
+    "<leader>gg",
+    "<cmd>lua _lazygit_toggle()<CR>",
+    { desc = "Toggle LazyGit", noremap = true, silent = true }
 )
 
 --LSPconfig
 vim.api.nvim_set_keymap(
-	"n",
-	"gd",
-	"<cmd>lua vim.lsp.buf.definition()<CR>",
-	{ desc = "Go to definition", noremap = true, silent = true }
+    "n",
+    "gd",
+    "<cmd>lua vim.lsp.buf.definition()<CR>",
+    { desc = "Go to definition", noremap = true, silent = true }
 )
 vim.api.nvim_set_keymap(
-	"n",
-	"<leader>fm",
-	'<cmd>lua require("telescope.builtin").live_grep({ default_text = vim.fn.expand("<cword>") })<CR>',
-	{ desc = "Find word under cursor", noremap = true, silent = true }
+    "n",
+    "<leader>fm",
+    '<cmd>lua require("telescope.builtin").live_grep({ default_text = vim.fn.expand("<cword>") })<CR>',
+    { desc = "Find word under cursor", noremap = true, silent = true }
 )
 vim.api.nvim_set_keymap(
-	"n",
-	"]g",
-	"<cmd>lua vim.diagnostic.goto_next()<CR>",
-	{ desc = "Next diagnostic", noremap = true, silent = true }
+    "n",
+    "]g",
+    "<cmd>lua vim.diagnostic.goto_next()<CR>",
+    { desc = "Next diagnostic", noremap = true, silent = true }
 )
 vim.api.nvim_set_keymap(
-	"n",
-	"[g",
-	"<cmd>lua vim.diagnostic.goto_prev()<CR>",
-	{ desc = "Previous diagnostic", noremap = true, silent = true }
+    "n",
+    "[g",
+    "<cmd>lua vim.diagnostic.goto_prev()<CR>",
+    { desc = "Previous diagnostic", noremap = true, silent = true }
 )
 
 -- Bufferline
@@ -243,9 +261,9 @@ vim.keymap.set("n", "[b", "<cmd> BufferLineCyclePrev <CR>", { desc = "Previous b
 vim.keymap.set("n", "[B", "<cmd> BufferLineMovePrev <CR>", { desc = "Move buffer left", noremap = true, silent = true })
 vim.keymap.set("n", "]b", "<cmd> BufferLineCycleNext <CR>", { desc = "Next buffer", noremap = true, silent = true })
 vim.keymap.set(
-	"n",
-	"]B",
-	"<cmd> BufferLineMoveNext <CR>",
-	{ desc = "Move buffer right", noremap = true, silent = true }
+    "n",
+    "]B",
+    "<cmd> BufferLineMoveNext <CR>",
+    { desc = "Move buffer right", noremap = true, silent = true }
 )
 vim.keymap.set("n", "<Leader>c", "<cmd>bp|bd #<CR>", { desc = "Close buffer", noremap = true, silent = true })

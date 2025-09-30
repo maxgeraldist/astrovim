@@ -4,33 +4,60 @@
   "suggest.floatEnable": true,
   "suggest.detailMaxLength": 100,
   "suggest.maxPreviewWidth": 100,
+  "suggest.enablePreview": true,
+  "suggest.noselect": false,
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "C:/Users/mefimov/AppData/Local/Programs/Python/Python313/Scripts/black.exe",
+  "coc.preferences.formatOnSaveFiletypes": ["lua", "python"],
+  "diagnostic.enable": true,
+  "diagnostic.checkCurrentLine": true,
   "languageserver": {
     "R": {
-        "command": "/usr/bin/R",
-        "args": ["--slave", "-e", "languageserver::run()"],
-        "filetypes": ["r"]
-      },
-    "basedpyright": {
-      "command": "basedpyright-langserver",
-      "args": ["--stdio"],
+      "command": "/usr/bin/R",
+      "args": ["--slave", "-e", "languageserver::run()"],
+      "filetypes": ["r"]
+    },
+    "pylsp": {
+      "command": "pylsp",
       "filetypes": ["python"],
       "settings": {
-        "basedpyright": {
-          "analysis": {
-            "typeCheckingMode": "off"
+        "pylsp": {
+          "plugins": {
+            "black": { "enabled": true },
+            "pyflakes": { "enabled": false },
+            "pylint": { "enabled": true,
+            "args": [
+                "--rcfile",
+                "C:/Users/Maxim/.pylintrc"
+              ]
+            },
+            "pycodestyle": {
+              "enabled": true,
+              "maxLineLength": 1000
+            }
           }
         }
       }
-    },
-    "python": {
-      "enable": false
     },
     "lua": {
       "command": "lua-language-server",
       "filetypes": ["lua"],
       "rootPatterns": [".git", "lua"]
     }
-
+  },
+  "formatters": {
+    "stylua": {
+      "command": "stylua",
+      "args": [
+        "-"
+      ],
+      "filetypes": [
+        "lua"
+      ]
+    }
+  },
+  "[lua]": {
+    "format.provider": "stylua"
   }
 }
 

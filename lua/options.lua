@@ -30,17 +30,28 @@ vim.opt.smartcase = true
 vim.g.loaded_perl_provider = 0
 vim.g.loaded_ruby_provider = 0
 
+--For coc
+vim.opt.updatetime = 300
+vim.opt.signcolumn = "yes"
+-- vim.api.nvim_create_augroup("CocGroup", {})
+-- vim.api.nvim_create_autocmd("CursorHold", {
+-- 	group = "CocGroup",
+-- 	command = "silent call CocActionAsync('highlight')",
+-- 	desc = "Highlight symbol under cursor on CursorHold",
+-- })
+
 --Mappings
 vim.g.mapleader = " "
 
+--Compile latex on write
 function compile_on_write()
-	vim.api.nvim_exec(
-		[[
+    vim.api.nvim_exec(
+        [[
     autocmd BufWritePost *.tex silent! !pdflatex % >/dev/null 2>&1
     autocmd BufWritePost *.tex echo "LaTeX file compiled."
   ]],
-		false
-	)
+        false
+    )
 end
 
 compile_on_write()
