@@ -24,7 +24,7 @@ require("lazy").setup({
     require("plugin_setup.treesitter"),
     require("plugin_setup.neotree"),
     require("plugin_setup.toggleterm"),
-    require("plugin_setup.lspconfig"),
+    -- require("plugin_setup.lspconfig"),
     -- require("plugin_setup.none-ls"),
     require("plugin_setup.alpha"),
     require("plugin_setup.gitsigns"),
@@ -45,10 +45,9 @@ require("lazy").setup({
         end,
     },
 
-    { "onsails/lspkind.nvim",          ft = { "python", "lua", "r" } },
-
     {
         "nvim-telescope/telescope.nvim",
+        cmd = "Telescope",
         dependencies = { "fannheyward/telescope-coc.nvim", "nvim-lua/plenary.nvim" },
         opts = function(_, opts)
             require("telescope").load_extension("coc")

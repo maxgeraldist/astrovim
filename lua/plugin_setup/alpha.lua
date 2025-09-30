@@ -1,7 +1,5 @@
 -- this is a copy of the alpha.themes.theta
-local config_dir = vim.loop.os_uname().sysname == "Windows_NT" and "C:/Users/mefimov/AppData/Local/nvim" or
-    "~/.config/nvim"
-
+local config_dir = vim.fn.stdpath("config")
 
 return {
     "goolord/alpha-nvim",

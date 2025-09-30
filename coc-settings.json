@@ -6,6 +6,14 @@
   "suggest.maxPreviewWidth": 100,
   "suggest.enablePreview": true,
   "suggest.noselect": false,
+  "suggest.completionItemKindLabels": {
+    "method": "  ",
+    "function": " ƒ ",
+    "variable": "  ",
+    "class": "  ",
+    "interface": "  ",
+    "keyword": "  "
+  },
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "C:/Users/mefimov/AppData/Local/Programs/Python/Python313/Scripts/black.exe",
   "coc.preferences.formatOnSaveFiletypes": ["lua", "python"],
