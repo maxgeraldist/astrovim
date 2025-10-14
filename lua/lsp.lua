@@ -1,6 +1,6 @@
 local cfg = vim.lsp.config;
 local config_dir = vim.fn.stdpath("config");
-
+local ruff_config_path = vim.fs.joinpath(config_dir, "ruff.toml");
 -- 1. Lua
 cfg("lua_ls",
     {
@@ -41,21 +41,17 @@ cfg("sqlls", {
 vim.lsp.enable("sqlls");
 
 -- 3. Python
-local pylintrc_path = vim.fs.joinpath(config_dir, ".pylintrc");
 cfg("pylsp", {
     cmd = { "pylsp" },
     filetypes = { "python" },
     settings = {
         pylsp = {
             plugins = {
-                black = { enabled = false, preview = false },
-                pylint = {
-                    enabled = false,
-                    args = { "--rcfile", pylintrc_path }
-                },
                 ruff = {
                     enabled = true,
                     formatEnabled = true,
+                    config = ruff_config_path,
+                    format = { "I" },
                 },
             }
         }
@@ -110,8 +106,3 @@ for type, icon in pairs(signs) do
     local hl = "DiagnosticSign" .. type;
     vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl });
 end;
-vim.api.nvim_create_autocmd("CursorHold", {
-    callback = function()
-        vim.diagnostic.open_float(nil, { focusable = false });
-    end,
-});

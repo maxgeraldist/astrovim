@@ -24,7 +24,7 @@ require("lazy").setup({
     require("plugin_setup.treesitter"),
     require("plugin_setup.neotree"),
     require("plugin_setup.toggleterm"),
-    require("plugin_setup.cmp"),
+    require("plugin_setup.blink"),
     require("plugin_setup.alpha"),
     require("plugin_setup.gitsigns"),
     require("plugin_setup.bufferline"),
