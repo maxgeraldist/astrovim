@@ -1,4 +1,4 @@
-require("options")
-require("plugins")
-require("remaps")
-require("lsp")
+require("options");
+require("lsp");
+require("plugins");
+require("remaps");
