@@ -48,17 +48,15 @@ cfg("pylsp", {
     settings = {
         pylsp = {
             plugins = {
-                black = { enabled = true, preview = false },
-                pyflakes = { enabled = false },
-                mypy = { enabled = true, live_mode = false },
+                black = { enabled = false, preview = false },
                 pylint = {
-                    enabled = true,
+                    enabled = false,
                     args = { "--rcfile", pylintrc_path }
                 },
-                pycodestyle = {
+                ruff = {
                     enabled = true,
-                    maxLineLength = 100
-                }
+                    formatEnabled = true,
+                },
             }
         }
     },
@@ -95,7 +93,7 @@ cfg("r_language_server", {
 
 vim.lsp.enable("r_language_server");
 vim.diagnostic.config({
-    virtual_text = false,     -- inline hints
+    virtual_text = true,      -- inline hints
     signs = true,             -- gutter signs
     underline = true,         -- underline offending code
     update_in_insert = false, -- diagnostics update while inserting
