@@ -20,7 +20,10 @@ require("lazy").setup({
             vim.cmd.colorscheme("kanagawa-wave");
         end,
     },
-
+    {
+        "nvim-treesitter/nvim-treesitter-textobjects",
+        ft = { "python", "lua", "sql, r" },
+    },
     require("plugin_setup.treesitter"),
     require("plugin_setup.neotree"),
     require("plugin_setup.toggleterm"),
@@ -29,10 +32,6 @@ require("lazy").setup({
     require("plugin_setup.gitsigns"),
     require("plugin_setup.bufferline"),
     require("plugin_setup.resession"),
-    {
-        "nvim-treesitter/nvim-treesitter-textobjects",
-        ft = { "python", "lua", "sql, r" },
-    },
     {
         "folke/which-key.nvim",
         config = function()
@@ -81,8 +80,7 @@ require("lazy").setup({
         end,
     },
     {
-        "hoob3rt/lualine.nvim",
-        event = { "BufRead", "BufNewFile" },
+        "nvim-lualine/lualine.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" },
     },
     {
