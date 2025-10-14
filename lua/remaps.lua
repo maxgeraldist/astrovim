@@ -1,7 +1,7 @@
 local vim = vim;
 -- Normal mode
 vim.keymap.set("n", "<leader>e", "<Cmd>Neotree toggle<CR>", { desc = "Toggle Neotree" });
-vim.keymap.set("n", "<leader>q", "<Cmd>q<CR>", { desc = "Quit" });
+vim.keymap.set("n", "<leader>q", vim.cmd.quit, { desc = "Quit" });
 vim.keymap.set("n", "<leader>Q", "<Cmd>q!<CR>", { desc = "Force quit" });
 vim.keymap.set("n", "<leader>w", function()
     vim.lsp.buf.format({ async = false });
