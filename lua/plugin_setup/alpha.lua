@@ -143,8 +143,6 @@ return {
             opts = {
                 position = "center",
                 hl = "AlphaHeader",
-                --hl =pick_color(),
-                -- wrap = "overflow";
             },
         };
 

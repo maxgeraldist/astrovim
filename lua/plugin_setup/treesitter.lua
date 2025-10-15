@@ -7,8 +7,6 @@ return {
             ensure_installed = {
                 "lua", "vim", "vimdoc", "query", "python", "sql", "r"
             },
-            highlight = { enable = true },
-            indent = { enable = true },
 
             textobjects = {
                 select = {
