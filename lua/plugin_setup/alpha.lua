@@ -1,136 +1,128 @@
 -- this is a copy of the alpha.themes.theta
-local config_dir = vim.fn.stdpath("config")
-
+local config_dir = vim.fn.stdpath("config");
 return {
     "goolord/alpha-nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
-        local path_ok, plenary_path = pcall(require, "plenary.path")
+        local alpha = require("alpha");
+        local augroup = vim.api.nvim_create_augroup("AlphaTemp", { clear = true });
+        local nvim_web_devicons_api = require("nvim-web-devicons");
+        local path_ok, plenary_path = pcall(require, "plenary.path");
         if not path_ok then
-            return
-        end
+            return;
+        end;
 
-        local dashboard = require("alpha.themes.dashboard")
-        local cdir = vim.fn.getcwd()
-        local if_nil = vim.F.if_nil
+        local dashboard = require("alpha.themes.dashboard");
+        local cdir = vim.fn.getcwd();
 
         local nvim_web_devicons = {
             enabled = true,
             highlight = true,
-        }
+        };
 
         local function get_extension(fn)
-            local match = fn:match("^.+(%..+)$")
-            local ext = ""
-            if match ~= nil then
-                ext = match:sub(2)
-            end
-            return ext
-        end
+            return fn:match("^.+%.(.+)$") or "";
+        end;
 
         local function icon(fn)
-            local nwd = require("nvim-web-devicons")
-            local ext = get_extension(fn)
-            return nwd.get_icon(fn, ext, { default = true })
-        end
+            local ext = get_extension(fn);
+            return nvim_web_devicons_api.get_icon(fn, ext, { default = true });
+        end;
 
         local function file_button(fn, sc, short_fn, autocd)
-            short_fn = short_fn or fn
-            local ico_txt
-            local fb_hl = {}
+            short_fn = short_fn or fn;
+            local ico_txt;
+            local fb_hl = {};
 
             if nvim_web_devicons.enabled then
-                local ico, hl = icon(fn)
-                local hl_option_type = type(nvim_web_devicons.highlight)
+                local ico, hl = icon(fn);
+                local hl_option_type = type(nvim_web_devicons.highlight);
                 if hl_option_type == "boolean" then
                     if hl and nvim_web_devicons.highlight then
-                        table.insert(fb_hl, { hl, 0, #ico })
-                    end
-                end
+                        table.insert(fb_hl, { hl, 0, #ico });
+                    end;
+                end;
                 if hl_option_type == "string" then
-                    table.insert(fb_hl, { nvim_web_devicons.highlight, 0, #ico })
-                end
-                ico_txt = ico .. "  "
+                    table.insert(fb_hl, { nvim_web_devicons.highlight, 0, #ico });
+                end;
+                ico_txt = ico .. "  ";
             else
-                ico_txt = ""
-            end
-            local cd_cmd = (autocd and " | cd %:p:h" or "")
+                ico_txt = "";
+            end;
+            local cd_cmd = (autocd and " | cd %:p:h" or "");
             local file_button_el =
-                dashboard.button(sc, ico_txt .. short_fn, "<cmd>e " .. vim.fn.fnameescape(fn) .. cd_cmd .. " <CR>")
-            local fn_start = short_fn:match(".*[/\\]")
+                dashboard.button(sc, ico_txt .. short_fn,
+                    "<cmd>e " .. vim.fn.fnameescape(fn) .. cd_cmd .. " <CR>");
+            local fn_start = short_fn:match(".*[/\\]");
             if fn_start ~= nil then
-                table.insert(fb_hl, { "Comment", #ico_txt - 2, #fn_start + #ico_txt })
-            end
-            file_button_el.opts.hl = fb_hl
-            return file_button_el
-        end
+                table.insert(fb_hl, { "Comment", #ico_txt - 2, #fn_start + #ico_txt });
+            end;
+            file_button_el.opts.hl = fb_hl;
+            return file_button_el;
+        end;
 
-        local default_mru_ignore = { "gitcommit" }
-
+        local default_mru_ignore = { "gitcommit" };
         local mru_opts = {
             ignore = function(path, ext)
-                return (string.find(path, "COMMIT_EDITMSG")) or (vim.tbl_contains(default_mru_ignore, ext))
+                return (string.find(path, "COMMIT_EDITMSG")) or
+                    (vim.tbl_contains(default_mru_ignore, ext));
             end,
             autocd = false,
-        }
+        };
 
         --- @param start number
         --- @param cwd string? optional
         --- @param items_number number? optional number of items to generate, default = 10
         local function mru(start, cwd, items_number, opts)
-            opts = opts or mru_opts
-            items_number = if_nil(items_number, 10)
+            opts = opts or mru_opts;
+            items_number = items_number or 10;
 
-            local oldfiles = {}
+            local oldfiles = {};
             for _, v in pairs(vim.v.oldfiles) do
                 if #oldfiles == items_number then
-                    break
-                end
-                local cwd_cond
+                    break;
+                end;
+                local cwd_cond;
                 if not cwd then
-                    cwd_cond = true
+                    cwd_cond = true;
                 else
-                    cwd_cond = vim.startswith(v, cwd)
-                end
-                local ignore = (opts.ignore and opts.ignore(v, get_extension(v))) or false
+                    cwd_cond = vim.startswith(v, cwd);
+                end;
+                local ignore = (opts.ignore and opts.ignore(v, get_extension(v))) or false;
                 if (vim.fn.filereadable(v) == 1) and cwd_cond and not ignore then
-                    oldfiles[#oldfiles + 1] = v
-                end
-            end
-            local target_width = 35
+                    oldfiles[#oldfiles + 1] = v;
+                end;
+            end;
+            local target_width = 35;
 
-            local tbl = {}
+            local tbl = {};
             for i, fn in ipairs(oldfiles) do
-                local short_fn
+                local short_fn;
                 if cwd then
-                    short_fn = vim.fn.fnamemodify(fn, ":.")
+                    short_fn = vim.fn.fnamemodify(fn, ":.");
                 else
-                    short_fn = vim.fn.fnamemodify(fn, ":~")
-                end
+                    short_fn = vim.fn.fnamemodify(fn, ":~");
+                end;
 
                 if #short_fn > target_width then
-                    short_fn = plenary_path.new(short_fn):shorten(1, { -2, -1 })
+                    short_fn = plenary_path.new(short_fn):shorten(1, { -2, -1 });
                     if #short_fn > target_width then
-                        short_fn = plenary_path.new(short_fn):shorten(1, { -1 })
-                    end
-                end
+                        short_fn = plenary_path.new(short_fn):shorten(1, { -1 });
+                    end;
+                end;
 
-                local shortcut = tostring(i + start - 1)
+                local shortcut = tostring(i + start - 1);
 
-                local file_button_el = file_button(fn, shortcut, short_fn, opts.autocd)
-                tbl[i] = file_button_el
-            end
+                local file_button_el = file_button(fn, shortcut, short_fn, opts.autocd);
+                tbl[i] = file_button_el;
+            end;
             return {
                 type = "group",
                 val = tbl,
                 opts = {},
-            }
-        end
+            };
+        end;
 
-        --local function pick_color()
-        --	local colors = { "String", "Identifier", "Keyword", "Number" }
-        --	return colors[math.random(#colors)]
-        --end
         local header = {
             type = "text",
             val = {
@@ -154,7 +146,7 @@ return {
                 --hl =pick_color(),
                 -- wrap = "overflow";
             },
-        }
+        };
 
         local section_mru = {
             type = "group",
@@ -172,12 +164,12 @@ return {
                 {
                     type = "group",
                     val = function()
-                        return { mru(0, cdir) }
+                        return { mru(0, cdir) };
                     end,
                     opts = { shrink_margin = false },
                 },
             },
-        }
+        };
 
         local buttons = {
             type = "group",
@@ -185,7 +177,8 @@ return {
                 { type = "text",    val = "Quick links", opts = { hl = "SpecialComment", position = "center" } },
                 { type = "padding", val = 1 },
                 dashboard.button("n", "  New file", "<cmd>ene<CR>"),
-                dashboard.button("s", "󰀈  Last Session", "<cmd>lua require('resession').load('last')<CR>"),
+                dashboard.button("s", "󰀈  Last Session",
+                    "<cmd>lua require('resession').load('last')<CR>"),
                 dashboard.button("SPC f f", "󰈞  Find file"),
                 dashboard.button("SPC f w", "󰊄  Find text"),
                 dashboard.button("l", "󰚰 " .. "LazyUI", ":Lazy <CR>"),
@@ -193,41 +186,23 @@ return {
                 dashboard.button("q", "󰅚  Quit", "<cmd>qa<CR>"),
             },
             position = "center",
-        }
+        };
         local footer = {
-            type = "text",
+            type = "group",
             val = function()
-                local v = vim.version()
-                local dev = ""
-                if v.prerelease == "dev" then
-                    dev = "-dev+" .. tostring(v.build)
-                else
-                    dev = ""
-                end
-                local version = v.major .. "." .. v.minor .. "." .. v.patch .. dev
-                local stats = require("lazy").stats()
-                local plugins_count = stats.loaded .. "/" .. stats.count
-                local ms = math.floor(stats.startuptime + 0.5)
-                local line1 = "󰃭 Current directory: " .. cdir -- display the current directory
-                local line2 = " " .. plugins_count .. " plugins loaded in " .. ms .. "ms"
-                local line3 = " " .. version
-
-                local line1_width = vim.fn.strdisplaywidth(line1)
-                local line2Padded = string.rep(" ", (line1_width - vim.fn.strdisplaywidth(line2)) / 2) .. line2
-                local line3Padded = string.rep(" ", (line1_width - vim.fn.strdisplaywidth(line3)) / 2) .. line3
-
+                local v = vim.version();
+                local dev = v.prerelease == "dev" and "-dev+" .. tostring(v.build) or "";
+                local version = v.major .. "." .. v.minor .. "." .. v.patch .. dev;
+                local stats = require("lazy").stats();
+                local plugins_count = stats.loaded .. "/" .. stats.count;
+                local ms = math.floor(stats.startuptime + 0.5);
                 return {
-                    line1,
-                    line2Padded,
-                    line3Padded,
-                }
-            end,
-            opts = {
-                position = "center",
-                hl = "AlphaFooter",
-            },
-        }
-
+                    { type = "text", val = "󰃭 Current directory: " .. cdir, opts = { position = "center", hl = "AlphaFooter" } },
+                    { type = "text", val = " " .. plugins_count .. " plugins loaded in " .. ms .. "ms", opts = { position = "center", hl = "AlphaFooter" } },
+                    { type = "text", val = " " .. version, opts = { position = "center", hl = "AlphaFooter" } },
+                };
+            end
+        };
         local config = {
             layout = {
                 header,
@@ -243,23 +218,23 @@ return {
                 setup = function()
                     vim.api.nvim_create_autocmd("DirChanged", {
                         pattern = "*",
-                        group = "alpha_temp",
+                        group = augroup,
                         callback = function()
-                            cdir = vim.fn.getcwd()
-                            require("alpha").redraw()
-                            vim.cmd("AlphaRemap")
+                            cdir = vim.fn.getcwd();
+                            alpha.redraw();
+                            vim.cmd("AlphaRemap"); -- optional, keep if you need remapped keys
                         end,
-                    })
+                    });
                     vim.api.nvim_create_autocmd("User", {
                         pattern = "LazyVimStarted",
                         callback = function()
-                            pcall(vim.cmd.AlphaRedraw)
+                            pcall(vim.cmd.AlphaRedraw);
                         end,
-                    })
+                    });
                 end,
             },
-        }
+        };
 
-        require("alpha").setup(config)
+        require("alpha").setup(config);
     end,
-}
+};

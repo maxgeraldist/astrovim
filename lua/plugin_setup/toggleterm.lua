@@ -4,33 +4,38 @@ return {
     version = "*",
     config = true,
     opts = {
-        highlights = {
-            Normal = { link = "Normal" },
-            NormalNC = { link = "NormalNC" },
-            NormalFloat = { link = "NormalFloat" },
-            FloatBorder = { link = "FloatBorder" },
-            StatusLine = { link = "StatusLine" },
-            StatusLineNC = { link = "StatusLineNC" },
-            WinBar = { link = "WinBar" },
-            WinBarNC = { link = "WinBarNC" },
-        },
-        size = 10,
-        on_create = function(t)
-            vim.opt_local.foldcolumn = "0"
-            vim.opt_local.signcolumn = "no"
-            local function set_terminal_keymaps()
-                local opts = { buffer = t.bufnr }
-                vim.keymap.set("t", "<esc>", [[<C-\><C-n>]], opts)
-                vim.keymap.set("t", "<C-h>", [[<Cmd>wincmd h<CR>]], opts)
-                vim.keymap.set("t", "<C-j>", [[<Cmd>wincmd j<CR>]], opts)
-                vim.keymap.set("t", "<C-k>", [[<Cmd>wincmd k<CR>]], opts)
-                vim.keymap.set("t", "<C-l>", [[<Cmd>wincmd l<CR>]], opts)
-                vim.keymap.set("t", "<C-w>", [[<C-\><C-n><C-w>]], opts)
-            end
-            set_terminal_keymaps()
-        end,
+
         shading_factor = 2,
         direction = "float",
         float_opts = { border = "rounded" },
+
+        on_create = (function()
+            local term_maps = {
+                { mode = "t", lhs = "<esc>", rhs = [[<C-\><C-n>]] },
+                { mode = "t", lhs = "<C-h>", rhs = [[<Cmd>wincmd h<CR>]] },
+                { mode = "t", lhs = "<C-j>", rhs = [[<Cmd>wincmd j<CR>]] },
+                { mode = "t", lhs = "<C-k>", rhs = [[<Cmd>wincmd k<CR>]] },
+                { mode = "t", lhs = "<C-l>", rhs = [[<Cmd>wincmd l<CR>]] },
+                { mode = "t", lhs = "<C-w>", rhs = [[<C-\><C-n><C-w>]] },
+            };
+
+            local function set_terminal_keymaps(bufnr)
+                for _, m in ipairs(term_maps) do
+                    vim.keymap.set(m.mode, m.lhs, m.rhs, { buffer = bufnr, silent = true });
+                end;
+            end;
+
+            return function(t)
+                if t and t.winid then
+                    pcall(vim.api.nvim_win_set_option, t.winid, "foldcolumn", "0");
+                    pcall(vim.api.nvim_win_set_option, t.winid, "signcolumn", "no");
+                end;
+
+                if t and t.bufnr then
+                    set_terminal_keymaps(t.bufnr);
+                end;
+            end;
+        end)(),
     },
 }
+;

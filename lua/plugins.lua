@@ -16,6 +16,7 @@ vim.opt.rtp:prepend(lazypath);
 require("lazy").setup({
     {
         "rebelot/kanagawa.nvim",
+        compile = true,
         config = function()
             vim.cmd.colorscheme("kanagawa-wave");
         end,
@@ -46,14 +47,11 @@ require("lazy").setup({
         cmd = "Telescope",
         dependencies = { "nvim-lua/plenary.nvim" },
     },
-
     {
         "kevinhwang91/nvim-ufo",
         event = { "BufRead", "BufNewFile" },
         dependencies = "kevinhwang91/promise-async",
         config = function()
-            vim.keymap.set("n", "zR", require("ufo").openAllFolds);
-            vim.keymap.set("n", "zM", require("ufo").closeAllFolds);
             require("ufo").setup({
                 provider_selector = function(bufnr, filetype, buftype)
                     return { "treesitter", "indent" };
@@ -62,23 +60,6 @@ require("lazy").setup({
         end,
     },
     { "mrjones2014/smart-splits.nvim", lazy = true },
-    {
-        "rcarriga/nvim-notify",
-        config = function()
-            require("notify").setup({
-                stages = "fade",
-                timeout = 5000,
-                background_colour = "#000000",
-                icons = {
-                    ERROR = "",
-                    WARN = "",
-                    INFO = "",
-                    DEBUG = "",
-                    TRACE = "✎",
-                },
-            });
-        end,
-    },
     {
         "nvim-lualine/lualine.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -182,4 +163,4 @@ vim.api.nvim_create_autocmd("FileType", {
         stata.setup({ dev = false });
     end,
 });
-vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, { desc = "Signature help" });
+-- vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, { desc = "Signature help" });
