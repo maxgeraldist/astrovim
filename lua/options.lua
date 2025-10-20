@@ -49,6 +49,6 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 -- Highlight on yank
 vim.api.nvim_create_autocmd("TextYankPost", {
     callback = function()
-        vim.highlight.on_yank({ higroup = "Todo", timeout = 100 });
+        vim.hl.on_yank({ higroup = "Todo", timeout = 100 });
     end,
 });
