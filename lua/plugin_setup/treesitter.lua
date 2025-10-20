@@ -1,13 +1,12 @@
 return {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
-    ft = { "python", "lua", "sql", "mysql", "r" },
+    ft = { "python", "lua", "sql", "mysql", "r", "markdown" },
     config = function()
         require("nvim-treesitter.configs").setup({
             ensure_installed = {
                 "lua", "vim", "vimdoc", "query", "python", "sql", "r"
             },
-
             textobjects = {
                 select = {
                     enable = true,
@@ -67,6 +66,13 @@ return {
                         ["<leader>dF"] = "@class.outer",
                     },
                 },
+            },
+
+            highlight = {
+                enable = true
+            },
+            indent = {
+                enable = true
             },
         });
     end,

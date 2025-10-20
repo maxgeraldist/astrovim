@@ -1,7 +1,28 @@
 local cfg = vim.lsp.config;
 local config_dir = vim.fn.stdpath("config");
 local ruff_config_path = vim.fs.joinpath(config_dir, "ruff.toml");
--- 1. Lua
+
+
+-- 1. Python
+cfg("pylsp", {
+    cmd = { "pylsp" },
+    filetypes = { "python" },
+    settings = {
+        pylsp = {
+            plugins = {
+                ruff = {
+                    enabled = true,
+                    formatEnabled = true,
+                    config = ruff_config_path,
+                    format = { "I" },
+                },
+            }
+        }
+    },
+});
+vim.lsp.enable("pylsp");
+
+-- 2. Lua
 cfg("lua_ls",
     {
         cmd = { "lua-language-server" },
@@ -28,7 +49,7 @@ cfg("lua_ls",
 
 vim.lsp.enable("lua_ls");
 
--- 2. SQL
+-- 3. SQL
 cfg("sqlls", {
     settings = {
         sql = { format = { enabled = true } },
@@ -39,26 +60,6 @@ cfg("sqlls", {
     end,
 });
 vim.lsp.enable("sqlls");
-
--- 3. Python
-cfg("pylsp", {
-    cmd = { "pylsp" },
-    filetypes = { "python" },
-    settings = {
-        pylsp = {
-            plugins = {
-                ruff = {
-                    enabled = true,
-                    formatEnabled = true,
-                    config = ruff_config_path,
-                    format = { "I" },
-                },
-            }
-        }
-    },
-});
-vim.lsp.enable("pylsp");
-
 -- 4. LaTeX
 cfg("texlab", { filetypes = { "tex", "latex", "bibtex" } });
 vim.lsp.enable("texlab");

@@ -184,7 +184,7 @@ vim.keymap.set("n", "]g", vim.diagnostic.goto_next,
     { desc = "Next diagnostic", noremap = true, silent = true });
 vim.keymap.set("n", "[g", vim.diagnostic.goto_prev,
     { desc = "Previous diagnostic", noremap = true, silent = true });
-
+vim.keymap.set("n", "<leader>gr", vim.lsp.buf.rename, { desc = "LSP: Rename symbol" });
 
 -- Bufferline
 vim.keymap.set("n", "[b", function()
