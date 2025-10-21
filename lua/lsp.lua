@@ -61,16 +61,22 @@ cfg("sqlls", {
 });
 vim.lsp.enable("sqlls");
 -- 4. LaTeX
-cfg("texlab", { filetypes = { "tex", "latex", "bibtex" } });
+cfg("texlab", {
+    cmd = { "texlab" },
+    filetypes = { "tex", "latex", "bibtex" },
+    lint = {
+        onChange = true
+    },
+});
 vim.lsp.enable("texlab");
 
 -- 5. LTeX (Grammar checking)
-cfg("ltex", {
-    settings = { ltex = { language = "en-GB" } },
-    filetypes = { "tex", "latex", "bibtex", "markdown" }, -- Also useful for Markdown
-});
-vim.lsp.enable("ltex");
-
+-- cfg("ltex", {
+--     settings = { ltex = { language = "en-GB" } },
+--     filetypes = { "tex", "latex", "bibtex", "markdown" }, -- Also useful for Markdown
+-- });
+-- vim.lsp.enable("ltex");
+--
 -- 6. Remark (Markdown)
 cfg("remark_ls", {
     settings = { remark = { requireConfig = true } },

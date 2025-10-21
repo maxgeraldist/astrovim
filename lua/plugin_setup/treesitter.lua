@@ -1,7 +1,7 @@
 return {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
-    ft = { "python", "lua", "sql", "mysql", "r", "markdown" },
+    ft = { "python", "lua", "sql", "mysql", "r", "markdown", "latex", "tex" },
     config = function()
         require("nvim-treesitter.configs").setup({
             ensure_installed = {
