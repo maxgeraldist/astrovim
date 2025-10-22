@@ -206,12 +206,7 @@ vim.keymap.set("n", "<Leader>c", "<cmd>bp|bd #<CR>",
 
 vim.api.nvim_create_user_command("LspCapabilities", function()
     for _, client in pairs(vim.lsp.get_clients()) do
-        local caps = client.server_capabilities;
         print("Client:", client.name);
-        print("  Definition:", caps.definitionProvider and "Yes" or "No");
-        print("  Rename:", caps.renameProvider and "Yes" or "No");
-        print("  Hover:", caps.hoverProvider and "Yes" or "No");
-        print("  References:", caps.referencesProvider and "Yes" or "No");
-        print("  Formatting:", caps.documentFormattingProvider and "Yes" or "No");
+        print(vim.inspect(client.server_capabilities));
     end;
 end, {});

@@ -142,9 +142,15 @@ require("lazy").setup({
         ft = { "stata" },
         build =
         "git pull && cd lsp-server && npm init -y && npm install && bun build ./server/src/server.ts --compile --outfile server_bin && cd ..",
-        opts = {},
-        config = function()
-            require("stata-nvim");
+        opts = {}, -- optional, can be used to pass options
+        config = function(_, opts)
+            vim.api.nvim_create_autocmd('FileType', {
+                pattern = 'stata',
+                callback = function()
+                    local stata = require('stata-nvim');
+                    stata.setup({ dev = false, stata_license_type = "stata-mp" });
+                end,
+            });
         end,
         dependencies = { "human-d3v/term-repl.nvim" },
     },
