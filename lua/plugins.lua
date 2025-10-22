@@ -137,7 +137,7 @@ require("lazy").setup({
         ft = "stata",
     },
     {
-        "human-d3v/stata-nvim",
+        "maxgeraldist/stata-nvim",
         branch = "main",
         ft = { "stata" },
         build =
