@@ -1,7 +1,7 @@
 return {
     "Saghen/blink.cmp",
     version = "1.*",
-    ft = { "python", "lua" },
+    ft = { "python", "lua", "stata" },
     config = function()
         local blink = require("blink.cmp");
 
