@@ -137,7 +137,7 @@ require("lazy").setup({
         ft = "stata",
     },
     {
-        "human-d3v/stata-nvim",
+        "maxgeraldist/stata-nvim",
         branch = "main",
         ft = { "stata" },
         build =
@@ -156,11 +156,4 @@ require("lazy").setup({
 
 require("plugin_setup.evil_lualine");
 
-vim.api.nvim_create_autocmd("FileType", {
-    pattern = "stata",
-    callback = function()
-        local stata = require("stata-nvim");
-        stata.setup({ dev = false });
-    end,
-});
 -- vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, { desc = "Signature help" });
