@@ -2,7 +2,6 @@ local cfg = vim.lsp.config;
 local config_dir = vim.fn.stdpath("config");
 local ruff_config_path = vim.fs.joinpath(config_dir, "ruff.toml");
 
-
 -- 1. Python
 cfg("pylsp", {
     cmd = { "pylsp" },
@@ -49,17 +48,17 @@ cfg("lua_ls",
 
 vim.lsp.enable("lua_ls");
 
--- 3. SQL
-cfg("sqlls", {
-    settings = {
-        sql = { format = { enabled = true } },
-    },
-    filetypes = { "sql" },
-    root_dir = function(fname)
-        return vim.fs.dirname(fname);
-    end,
-});
-vim.lsp.enable("sqlls");
+-- -- 3. SQL
+-- cfg("sqlls", {
+--     settings = {
+--         sql = { format = { enabled = true } },
+--     },
+--     filetypes = { "sql" },
+--     root_dir = function(fname)
+--         return vim.fs.dirname(fname);
+--     end,
+-- });
+-- vim.lsp.enable("sqlls");
 -- 4. LaTeX
 cfg("texlab", {
     cmd = { "texlab" },
@@ -96,7 +95,7 @@ cfg("texlab", {
             -- Directory to store auxiliary files (.aux, .log, etc.).
             -- Setting this can keep your main project directory clean.
             -- Example: "build" or ".aux"
-            auxDirectory = ".",
+            -- auxDirectory = ".",
             -- A list of BibTeX files to be used for completion and diagnostics.
             bibtexFiles = {},
             -- A list of paths to search for bibtex files.
@@ -121,31 +120,54 @@ cfg("texlab", {
 });
 vim.lsp.enable("texlab");
 
--- 5. LTeX (Grammar checking)
+-- -- 3. SQL
+-- cfg("sqlls", {
+--     settings = {
+--         sql = { format = { enabled = true } },
+--     },
+--     filetypes = { "sql" },
+--     root_dir = function(fname)
+--         return vim.fs.dirname(fname);
+--     end,
+-- });
+-- vim.lsp.enable("sqlls");
+
+-- -- 4. LaTeX
+-- cfg("texlab", {
+--     cmd = { "texlab" },
+--     filetypes = { "tex", "latex", "bibtex" },
+--     lint = {
+--         onChange = true
+--     },
+-- });
+-- vim.lsp.enable("texlab");
+
+-- -- 5. LTeX (Grammar checking)
 -- cfg("ltex", {
 --     settings = { ltex = { language = "en-GB" } },
 --     filetypes = { "tex", "latex", "bibtex", "markdown" }, -- Also useful for Markdown
 -- });
 -- vim.lsp.enable("ltex");
+
+-- -- 6. Remark (Markdown)
+-- cfg("remark_ls", {
+--     settings = { remark = { requireConfig = true } },
+--     filetypes = { "markdown" },
+-- });
+-- vim.lsp.enable("remark_ls");
+
+-- -- 7. R Language Server
+-- cfg("r_language_server", {
+--     cmd = { "R", "--slave", "-e", "languageserver::run()" },
+--     filetypes = { "r" },
+--     root_dir = function(fname)
+--         local root = vim.fs.find({ ".git" }, { path = fname, upward = true });
+--         return root and root[1] or vim.fs.dirname(fname);
+--     end,
+-- });
 --
--- 6. Remark (Markdown)
-cfg("remark_ls", {
-    settings = { remark = { requireConfig = true } },
-    filetypes = { "markdown" },
-});
-vim.lsp.enable("remark_ls");
-
--- 7. R Language Server
-cfg("r_language_server", {
-    cmd = { "R", "--slave", "-e", "languageserver::run()" },
-    filetypes = { "r" },
-    root_dir = function(fname)
-        local root = vim.fs.find({ ".git" }, { path = fname, upward = true });
-        return root and root[1] or vim.fs.dirname(fname);
-    end,
-});
-
-vim.lsp.enable("r_language_server");
+-- vim.lsp.enable("r_language_server");
+--
 vim.diagnostic.config({
     virtual_text = true,      -- inline hints
     signs = true,             -- gutter signs

@@ -201,3 +201,12 @@ vim.keymap.set("n", "]B", function()
 end, { desc = "Move buffer right", noremap = true, silent = true });
 vim.keymap.set("n", "<Leader>c", "<cmd>bp|bd #<CR>",
     { desc = "Close buffer", noremap = true, silent = true });
+
+
+
+vim.api.nvim_create_user_command("LspCapabilities", function()
+    for _, client in pairs(vim.lsp.get_clients()) do
+        print("Client:", client.name);
+        print(vim.inspect(client.server_capabilities));
+    end;
+end, {});
