@@ -8,6 +8,7 @@ cfg("pylsp", {
     filetypes = { "python" },
     settings = {
         pylsp = {
+            configurationSources = { "ruff" },
             plugins = {
                 ruff = {
                     enabled = true,
@@ -15,7 +16,8 @@ cfg("pylsp", {
                     config = ruff_config_path,
                     format = { "I" },
                 },
-            }
+            },
+            skip_token_initialization = true,
         }
     },
 });
