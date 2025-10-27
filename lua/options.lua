@@ -29,6 +29,23 @@ vim.opt.smartcase = true;
 
 vim.g.loaded_perl_provider = 0;
 vim.g.loaded_ruby_provider = 0;
+vim.g.loaded_node_provider = 0;
+if vim.loop.os_uname().sysname == "Windows_NT" then
+    python_path = vim.fn.expand("$USERPROFILE") ..
+        "\\AppData\\Local\\Programs\\Python\\Python313\\python.exe";
+else
+    python_path = vim.fn.expand("$USERPROFILE") ..
+        "\\AppData\\Local\\Programs\\Python\\Python313\\python.exe";
+end;
+vim.g.python3_host_prog = python_path;
+vim.g.loaded_gzip = 1;
+vim.g.loaded_zip = 1;
+vim.g.loaded_zipPlugin = 1;
+vim.g.loaded_tar = 1;
+vim.g.loaded_tarPlugin = 1;
+vim.g.loaded_tutor = 1;
+vim.g.loaded_man = 1;
+vim.g.loaded_tohtml = 1;
 
 --For coc
 vim.opt.updatetime = 300;
