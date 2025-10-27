@@ -132,11 +132,6 @@ require("lazy").setup({
     -- 	ft = "r",
     -- },
     {
-        "poliquin/stata-vim",
-        lazy = true,
-        ft = "stata",
-    },
-    {
         "maxgeraldist/stata-nvim",
         branch = "main",
         ft = { "stata" },
