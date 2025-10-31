@@ -50,6 +50,33 @@ cfg("lua_ls",
 
 vim.lsp.enable("lua_ls");
 
+
+cfg("stata-lsp", {
+    cmd = { "stata-language-server" },
+    filetypes = { "stata" },
+    root_markers = { ".git" },
+    single_file_support = true,
+    settings = {
+        stata = {
+            setMaxLineLength = 82,
+            setIndentSpace = 4,
+            enableCompletion = true,
+            enableDocstring = true,
+            enableStyleChecking = true,
+            enableFormatting = true,
+        },
+    },
+    capabilities = {
+        workspace = {
+            didChangeConfiguration = {
+                dynamicRegistration = true,
+            },
+        },
+    },
+});
+vim.lsp.enable("stata-lsp");
+vim.lsp.set_log_level("debug");
+
 -- -- 3. SQL
 -- cfg("sqlls", {
 --     settings = {
@@ -61,66 +88,67 @@ vim.lsp.enable("lua_ls");
 --     end,
 -- });
 -- vim.lsp.enable("sqlls");
+
 -- 4. LaTeX
-cfg("texlab", {
-    cmd = { "texlab" },
-    filetypes = { "tex", "latex", "bibtex" },
-    lint = {
-        onChange = true
-    },
-    settings = {
-        texlab = {
-            build = {
-                executable = "latexmk",
-                args = { "-pdf", "-interaction=nonstopmode", "-synctex=1", "%f" },
-                onSave = true,
-                forwardSearchAfter = true,
-            },
-            forwardSearch = {
-                executable = "SumatraPDF",
-                -- %l is line number, %f is file path, %p is the PDF file path.
-                args = { "--synctex-forward", "%l:%c:%f", "%p" },
-            },
-            -- Configuration for the ChkTeX linter
-            chktex = {
-                onOpenAndSave = true,
-                onEdit = false,
-            },
-            diagnosticsDelay = 300,
-            formatterLineLength = 88,
-            latexFormatter = "latexindent",
-            bibtexFormatter = "latexindent",
-            latexindent = {
-                ["local"] = nil,
-                modifyLineBreaks = true,
-            },
-            -- Directory to store auxiliary files (.aux, .log, etc.).
-            -- Setting this can keep your main project directory clean.
-            -- Example: "build" or ".aux"
-            -- auxDirectory = ".",
-            -- A list of BibTeX files to be used for completion and diagnostics.
-            bibtexFiles = {},
-            -- A list of paths to search for bibtex files.
-            bibtexSearchPaths = {},
-            codeActions = {
-                enabled = true,
-            },
-            expl3 = {
-                enabled = true,
-            },
-            forwardSearchDependencies = { "bbl", "cls", "sty" },
-            packageDocSearchPaths = {},
-            packageSearchPaths = {},
-            preview = {
-                enabled = true,
-            },
-            poll = {
-                enabled = true,
-            },
-        },
-    },
-});
-vim.lsp.enable("texlab");
+-- cfg("texlab", {
+--     cmd = { "texlab" },
+--     filetypes = { "tex", "latex", "bibtex" },
+--     lint = {
+--         onChange = true
+--     },
+--     settings = {
+--         texlab = {
+--             build = {
+--                 executable = "latexmk",
+--                 args = { "-pdf", "-interaction=nonstopmode", "-synctex=1", "%f" },
+--                 onSave = true,
+--                 forwardSearchAfter = true,
+--             },
+--             forwardSearch = {
+--                 executable = "SumatraPDF",
+--                 -- %l is line number, %f is file path, %p is the PDF file path.
+--                 args = { "--synctex-forward", "%l:%c:%f", "%p" },
+--             },
+--             -- Configuration for the ChkTeX linter
+--             chktex = {
+--                 onOpenAndSave = true,
+--                 onEdit = false,
+--             },
+--             diagnosticsDelay = 300,
+--             formatterLineLength = 88,
+--             latexFormatter = "latexindent",
+--             bibtexFormatter = "latexindent",
+--             latexindent = {
+--                 ["local"] = nil,
+--                 modifyLineBreaks = true,
+--             },
+--             -- Directory to store auxiliary files (.aux, .log, etc.).
+--             -- Setting this can keep your main project directory clean.
+--             -- Example: "build" or ".aux"
+--             -- auxDirectory = ".",
+--             -- A list of BibTeX files to be used for completion and diagnostics.
+--             bibtexFiles = {},
+--             -- A list of paths to search for bibtex files.
+--             bibtexSearchPaths = {},
+--             codeActions = {
+--                 enabled = true,
+--             },
+--             expl3 = {
+--                 enabled = true,
+--             },
+--             forwardSearchDependencies = { "bbl", "cls", "sty" },
+--             packageDocSearchPaths = {},
+--             packageSearchPaths = {},
+--             preview = {
+--                 enabled = true,
+--             },
+--             poll = {
+--                 enabled = true,
+--             },
+--         },
+--     },
+-- });
+-- vim.lsp.enable("texlab");
 
 -- -- 3. SQL
 -- cfg("sqlls", {

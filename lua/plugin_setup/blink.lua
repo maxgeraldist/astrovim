@@ -8,6 +8,7 @@ return {
         vim.opt.completeopt = "menu,menuone,noselect";
         blink.setup({
             completion = {
+                list = { selection = { preselect = false, auto_insert = true } },
                 documentation = {
                     auto_show = true,
                 },
