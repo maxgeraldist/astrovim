@@ -1,14 +1,17 @@
 local vim = vim;
 -- Normal mode
-
-vim.keymap.set("n", "<leader>e", "<Cmd>Neotree toggle<CR>", { desc = "Toggle Neotree" });
-vim.keymap.set("n", "<leader>q", function() vim.cmd("q"); end, { desc = "Quit" });
-vim.keymap.set("n", "<leader>Q", "<Cmd>q!<CR>", { desc = "Force quit" });
+vim.keymap.set("n", "<leader>e", function()
+    require("neo-tree.command").execute({ toggle = true });
+end, { desc = "Toggle Neotree" });
+vim.keymap.set("n", "<leader>q", vim.cmd.quit, { desc = "Quit" });
+vim.keymap.set("n", "<leader>Q", function() vim.cmd.quit({ bang = true }); end,
+    { desc = "Force Quit Window" });
 vim.keymap.set("n", "<leader>w", function()
     vim.lsp.buf.format({ async = false });
-    vim.cmd("w!");
-end, { desc = "Format (if LSP) and write file" });
-vim.keymap.set("n", "<leader>h", "<Cmd>Alpha<CR>", { desc = "Go to Dashboard" });
+    vim.api.nvim_cmd({ cmd = "write", bang = true, mods = { silent = true } }, {});
+end, { desc = "Format and Write" });
+vim.keymap.set("n", "<leader>h", function() vim.api.nvim_command("Alpha"); end,
+    { desc = "Go to Dashboard" });
 
 vim.keymap.set("n", "cgg", '"_cgg', { desc = "Delete until beginning" });
 vim.keymap.set("n", "cG", '"_cG', { desc = "Delete until end" });
@@ -141,19 +144,12 @@ vim.keymap.set(
 );
 
 -- Toggleterm
-vim.keymap.set(
-    "n",
-    "<leader>tv",
-    "<Cmd>ToggleTerm size=80 direction=vertical<CR>",
-    { desc = "ToggleTerm vertical split" }
-);
-
-vim.keymap.set(
-    "n",
-    "<leader>th",
-    "<Cmd>ToggleTerm size=10 direction=horizontal<CR>",
-    { desc = "ToggleTerm horizontal split" }
-);
+vim.keymap.set("n", "<leader>tv", function()
+    require("toggleterm").toggle(nil, 80, nil, "vertical");
+end, { desc = "ToggleTerm vertical split" });
+vim.keymap.set("n", "<leader>th", function()
+    require("toggleterm").toggle(nil, 10, nil, "horizontal");
+end, { desc = "ToggleTerm horizontal split" });
 
 local Terminal = require("toggleterm.terminal").Terminal;
 local lazygit = Terminal:new({ cmd = "lazygit", hidden = true });
@@ -201,12 +197,3 @@ vim.keymap.set("n", "]B", function()
 end, { desc = "Move buffer right", noremap = true, silent = true });
 vim.keymap.set("n", "<Leader>c", "<cmd>bp|bd #<CR>",
     { desc = "Close buffer", noremap = true, silent = true });
-
-
-
-vim.api.nvim_create_user_command("LspCapabilities", function()
-    for _, client in pairs(vim.lsp.get_clients()) do
-        print("Client:", client.name);
-        print(vim.inspect(client.server_capabilities));
-    end;
-end, {});
